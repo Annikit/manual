@@ -1,0 +1,228 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1250">
+<title>MagicTune 2.5- Overview</title>
+<style type="text/css">
+	<!--
+	a:link {color: #0000ff; font-size: 12pt; text-decoration:none}
+	a:visited {color: #0000ff; font-size: 12pt; text-decoration:none}
+	a:hover {color: #0000ff; font-size: 12pt; text-decoration:underline}x
+	a:active {color: #0000ff; font-size: 12pt; text-decoration:underline}
+
+	a.Mlink:link {color: #aaaaaa; font-size: 12pt; text-decoration:none}
+	a.Mlink:visited {color: #aaaaaa; font-size: 12pt; text-decoration:none}
+	a.Mlink:hover {color: #aaaaaa; font-size: 12pt; text-decoration:underline}
+	a.Mlink:active {color: #aaaaaa; font-size: 12pt; text-decoration:underline}
+
+	body, p, td, left, TABLE {font-family: Arial, Helvetica, sans-serif; font-size: 11pt; line-height: 140%; }
+
+	BODY {OVERFLOW-X: hidden; OVERFLOW: scroll}
+	.popmsgper {VISIBILITY: hidden; POSITION: absolute}
+	a.Hlink:link {color: #2F90F3; font-size: 12pt; text-decoration:none}
+	a.Hlink:visited {color: #2F90F3; font-size: 12pt; text-decoration:none}
+	a.Hlink:hover {color: #008000; font-size: 12pt; text-decoration:none}
+	a.Hlink:active {color: #008000; font-size: 12pt; text-decoration:none}
+	-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF" marginwidth="0" marginheight="0" oncontextmenu="return false" ondragstart="return false">
+
+<DIV class=popmsgper id=topdeck> </DIV>
+<SCRIPT language="JAVASCRIPT">
+<!--
+var nav = (document.layers);
+var iex = (document.all);
+var skn = (nav) ? document.topdeck : topdeck.style;
+
+if (nav) document.captureEvents(Event.MOUSEMOVE);
+
+document.onmousemove = mousepos;
+
+function popmsg(msg1,msg2){
+
+	var width = document.body.offsetWidth;
+
+	if (width > 1000)
+	{width=500}
+	else
+	{width="95%"}
+
+	var content ="<TABLE WIDTH="+width+" BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#0062b2><TR><TD><TABLE WIDTH=100% BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD><CENTER><FONT COLOR=#FFFFFF font-size: 9pt><B>pomoći</B></FONT></CENTER></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#FFFFFF><TR><TD><FONT COLOR=#000000 font-size: 9pt><b><left>"+msg1+"</left></b></FONT></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#FFFFFF><TR><TD><FONT COLOR=#000000 font-size: 9pt><left>"+msg2+"</left></FONT></TD></TR></TABLE></TD></TR></TABLE>";
+	
+	if (nav)
+	{
+		skn.document.write(content);
+		skn.document.close();
+		skn.visibility = "visible";
+	}
+	else if (iex)
+	{
+		document.all("topdeck").innerHTML = content;
+		skn.visibility = "visible";
+	}
+}
+
+function mousepos(e){
+	var x = (nav) ? e.pageX : event.x+document.body.scrollLeft;
+	var y = (nav) ? e.pageY : event.y+document.body.scrollTop;
+	skn.left = x - 60;
+	skn.top  = y+20;
+}
+
+function hiddenmsg(){
+	skn.visibility = "hidden";
+}
+
+//-->
+</SCRIPT>
+
+<table border="0" cellspacing="0" cellpadding="0" width="600"> 
+	<tr> 
+		<td> 
+			<p><a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0><img border="0" width="600" height="152" src="eng_top01.gif"></a></p>
+		</td>
+	</tr>
+</table>
+ 
+
+
+
+
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" width="600" height="40"> 
+<tr> 
+  <td>
+ &nbsp;<font color="#ffffff"><B>Pregled</B></font>
+ &nbsp;
+ </td>
+
+<td>	
+<font color="#aaaaaa">|</font>
+&nbsp;<a href="install.html" onfocus='this.blur()' class="Mlink">Instalacija</a> 
+&nbsp;
+</td>
+
+<td>	
+<font color="#aaaaaa">|</font>
+&nbsp;<a href="modes.html" onfocus='this.blur()' class="Mlink"> OSD način rada</a>
+&nbsp;
+</td>
+ 
+
+<td>
+<font color="#aaaaaa">|</font>
+&nbsp;<a href="uninstall.html" onfocus='this.blur()' class="Mlink">Deinstalacija</a>
+&nbsp;
+</td>
+
+<td>
+<font color="#aaaaaa">|</font>
+&nbsp;<a href="tips.html" onfocus='this.blur()' class="Mlink">Otklanjanje
+  poteškoća</a>
+&nbsp;;
+</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table border="0" cellspacing="0" cellpadding="10" width="600"> 
+	<tr> 
+		<td> <br>
+		
+			<h2><img src="../eng/icon01.gif" border="0">	Pregled</h2><BR><BR><BR>
+			
+			<h3><a name="Overview01"><img src="../eng/icon04.gif" border="0">	Što je MagicTune&trade;</a></h3>
+			
+			<p>Rad monitora može varirati ovisno o grafičkoj kartici, računalu, uvjetima osvjetljenja i drugim faktorima u radnoj okolini. Da biste dobili najbolju moguću sliku na monitoru, morate ga ugoditi prema svojim specifičnim postavkama. Nažalost, ručne komande za ugađanje slike često stvaraju velike poteškoće. Za odgovarajuće ugađanje potreban je jednostavan program koji će vas korak po korak voditi kroz postupak dobivanja sveukupno najbolje kvalitete slike.  </p>
+      <p>U većini slučajeva već jednostavno dotjerivanje svjetline ili kontrasta zahtijeva navigaciju pomoću zaslonskih (OSD) izbornika s više razina koje nije lako razumjeti. 
+Osim toga, nema povratnih informacija koje bi vam pomogle da ispravno dotjerate postavke monitora. MagicTune&trade;  je softverski uslužni program koji vas vodi kroz 
+postupak ugađanja pomoću lako razumljivih uputa i specifičnih pozadinskih uzoraka za svaku kontrolu monitora. Postavke prikaza za svakog korisnika mogu se 
+spremiti, što omogućuje jednostavan odabir karakteristika prikaza ako se računalom služi više korisnika ili ako jedan korisnik ima više definiranih pretprogramiranih 
+postavki za različite sadržaje i ambijentalna osvjetljenja. 
+  <!--       The display settings for each user can be saved, providing an easy way 
+        to select display characteristics in a multi-user environment, or having
+        a single user have multiple defined presets based on content and ambient 
+        lighting. --> </p>
+			<BR><BR>
+
+
+
+			<table>
+				<tr>
+				</td>
+			<img src="../eng/line01.gif" align="right">
+			</td>
+			</tr>
+			</table>
+
+
+
+
+			<h3><a name="Overview02"><img src="../eng/icon04.gif" border="0">	Osnovna
+  funkcionalnost</a></h3>
+			
+			<p> 	
+			
+			
+			MagicTune&trade;  je softverski alat koji omogućuje dotjerivanje postavki monitora i ugađanje boja pomoću protokola
+		<a onmouseover="popmsg('DDC/CI(Display Data Channel Command Interface – Naredbeno sučelje kanala za prikaz  podataka)','Standardom su definirani protokoli  različitih razina složenosti koji se temelje na I2C te se koriste na DDC kanalu radi kontrole monitora i eventualnih dodatnih uređaja. Kao odgovor na uključi-i-radi potrebe krajnjih  korisnika, VESA je definirala standard DDC, koji obuhvaća različite razine komunikacija. Razine DDC2Bi, DDC2B+ i DDC2AB nude dvosmjernu komunikaciju između izvora računalne grafike  i uređaja za njezin prikaz.')" onmouseout=hiddenmsg() href="#" onClick="return false;" style="cursor:help" onfocus='this.blur()' class="Hlink">DDC/CI
+  (Display Data Channel Command Interface – Naredbeno sučelje kanala za prikaz
+  podataka)</a  >Sva dotjerivanja prikaza vrše se pomoću softvera kako bi se eliminirala potreba za korištenjem zaslonskih (OSD) izbornika monitora.</a> protocol.&nbsp; 
+         &nbsp;  MagicTune podržava
+  Windows 98SE, Me, 2000, NT, XP Home i XP Professional.</p>
+      <p><!-- MagicTune&trade;  radi u pozadini i može mu se pristupiti preko trake sa zadacima, izbornika Start ili pritiskom na desnu tipku miša na radnoj površini. -->
+MagicTune&trade;  omogućuje brzo i precizno ugađanje prikaza uz mogućnost jednostavnog spremanja i korištenja konfiguracija monitora koje su najbolje prilagođene 
+vama. <!-- MagicTune supports Windows 98 SE, ME, 2000, NT, XP Home and XP Professional Editions.  --></p>
+			<BR><BR>
+
+
+
+			<table>
+				<tr>
+				</td>
+			<img src="../eng/line01.gif" align="right">
+			</td>
+			</tr>
+			</table>
+
+
+
+			
+			<h3><a name="Overview03"><img src="../eng/icon04.gif" border="0">	 OSD način rada</a></h3>
+			<p>OSD način rada omogućuje jednostavno dotjerivanje
+  postavki monitora bez poduzimanja unaprijed definiranih koraka. S lakoćom možete
+  pristupiti željenoj stavci izbornika.  </p><BR><BR>
+
+		</td>
+	</tr>
+</table>
+
+<table border="0" cellspacing="0" cellpadding="10" width="600"> 
+	<tr> 
+		<td> <!-- <br>
+
+			<p><font size="1">»çľçŔş żą°í ľřŔĚ şŻ°ćµÉ Ľö ŔÖ˝Ŕ´Ď´Ů. 
+			<BR>MagicTuneŔş Samsung, Inc.ŔÇ »óÇĄŔĚ¸ç  Windows˘ç´Â Microsoft˘ç Corp.ŔÇ µî·Ď »óÇĄŔÔ´Ď´Ů. 
+			<BR>´Ů¸Ą »óÇĄ´Â ÇŘ´ç Č¸»çŔÇ ĽŇŔŻŔÔ´Ď´Ů.</font></p> -->
+
+			<p><a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0><img src="base.gif" border="0"> 
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>

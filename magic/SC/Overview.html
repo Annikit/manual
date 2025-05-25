@@ -1,0 +1,220 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<title>MagicTune Help - Overview</title>
+<style type="text/css">
+	<!--
+	a:link {color: #0000ff; font-size: 12pt; text-decoration:none}
+	a:visited {color: #0000ff; font-size: 12pt; text-decoration:none}
+	a:hover {color: #0000ff; font-size: 12pt; text-decoration:underline}
+	a:active {color: #0000ff; font-size: 12pt; text-decoration:underline}
+
+	a.Mlink:link {color: #aaaaaa; font-size: 12pt; text-decoration:none}
+	a.Mlink:visited {color: #aaaaaa; font-size: 12pt; text-decoration:none}
+	a.Mlink:hover {color: #aaaaaa; font-size: 12pt; text-decoration:underline}
+	a.Mlink:active {color: #aaaaaa; font-size: 12pt; text-decoration:underline}
+
+	body, p, td, left, TABLE {font-family: Arial, Helvetica, sans-serif; font-size: 11pt; line-height: 140%; }
+
+	BODY {OVERFLOW-X: hidden; OVERFLOW: scroll}
+	.popmsgper {VISIBILITY: hidden; POSITION: absolute}
+	a.Hlink:link {color: #2F90F3; font-size: 12pt; text-decoration:none}
+	a.Hlink:visited {color: #2F90F3; font-size: 12pt; text-decoration:none}
+	a.Hlink:hover {color: #008000; font-size: 12pt; text-decoration:none}
+	a.Hlink:active {color: #008000; font-size: 12pt; text-decoration:none}
+	-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF" marginwidth="0" marginheight="0" oncontextmenu="return false" ondragstart="return false">
+
+<DIV class=popmsgper id=topdeck> </DIV>
+<SCRIPT language="JAVASCRIPT">
+<!--
+var nav = (document.layers);
+var iex = (document.all);
+var skn = (nav) ? document.topdeck : topdeck.style;
+
+if (nav) document.captureEvents(Event.MOUSEMOVE);
+
+document.onmousemove = mousepos;
+
+function popmsg(msg1,msg2){
+
+	var width = document.body.offsetWidth;
+
+	if (width > 1000)
+	{width=500}
+	else
+	{width="95%"}
+
+	var content ="<TABLE WIDTH="+width+" BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#0062b2><TR><TD><TABLE WIDTH=100% BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD><CENTER><FONT COLOR=#FFFFFF font-size: 9pt><B>帮助</B></FONT></CENTER></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#FFFFFF><TR><TD><FONT COLOR=#000000 font-size: 9pt><b><left>"+msg1+"</left></b></FONT></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#FFFFFF><TR><TD><FONT COLOR=#000000 font-size: 9pt><left>"+msg2+"</left></FONT></TD></TR></TABLE></TD></TR></TABLE>";
+	
+	if (nav)
+	{
+		skn.document.write(content);
+		skn.document.close();
+		skn.visibility = "visible";
+	}
+	else if (iex)
+	{
+		document.all("topdeck").innerHTML = content;
+		skn.visibility = "visible";
+	}
+}
+
+function mousepos(e){
+	var x = (nav) ? e.pageX : event.x+document.body.scrollLeft;
+	var y = (nav) ? e.pageY : event.y+document.body.scrollTop;
+	skn.left = x - 60;
+	skn.top  = y+20;
+}
+
+function hiddenmsg(){
+	skn.visibility = "hidden";
+}
+
+//-->
+</SCRIPT>
+
+<table border="0" cellspacing="0" cellpadding="0" width="600"> 
+	<tr> 
+		<td> 
+			<p><a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0><img border="0" width="600" height="152" src="eng_top01.gif"></a></p>
+		</td>
+	</tr>
+</table>
+ 
+
+
+
+
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" width="600" height="40"> 
+<tr> 
+  <td>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffffff"><B>综述</B></font>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </td>
+
+<td>	
+<font color="#aaaaaa">|</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="install.html" onfocus='this.blur()' class="Mlink">安装</a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+</td>
+
+<td>	
+<font color="#aaaaaa">|</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="modes.html" onfocus='this.blur()' class="Mlink">OSD 模式</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+ 
+
+<td>
+<font color="#aaaaaa">|</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="uninstall.html" onfocus='this.blur()' class="Mlink">卸载</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+
+<td>
+<font color="#aaaaaa">|</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	<a href="tips.html" onfocus='this.blur()' class="Mlink">故障排除</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table border="0" cellspacing="0" cellpadding="10" width="600"> 
+	<tr> 
+		<td> <br>
+		
+			<h2><img src="icon01.gif" border="0">	综述</h2><BR><BR><BR>
+			
+			<h3><a name="Overview01"><img src="icon04.gif" border="0">	MagicTune&trade; 介</a></h3>
+			
+			<p>随着图形卡、主机计算机、照明条件以及其他环境因素的不同，显示器的性能可能会发生变化。 
+要在显示器上获得最佳图像效果，您需要针对个人设置对其进行调节。 遗憾的是，用于调节图像的手动控制功能经常是很难使用。 
+要正确进行调节（调谐），就需要一个易于使用的程序，以完成循序渐进的步骤，获得最佳的整体图像效果。 </p>
+      <p>在大多数情况下，即使是最简单的“亮度”、“对比度”调节也需要使用难于理解的多级屏幕显示 (OSD) 菜单。 
+另外，没有任何反馈信息可以对正确设置显示器各控制功能进行辅助。 MagicTune&trade; 
+是一个软件实用程序，通过易于理解的操作指示和专门为每个显示器控制功能而设计的背景图形指导您完成整个调谐步骤。 
+可以将每个用户的显示设置保存起来，从而在多用户环境中可以轻松选择各显示特征，或者让一个用户拥有多个定义好的针对不同内容和环境照明的预设值。 
+  <!--       The display settings for each user can be saved, providing an easy way 
+        to select display characteristics in a multi-user environment, or having
+        a single user have multiple defined presets based on content and ambient 
+        lighting. --> </p>
+			<BR><BR>
+
+
+
+			<table>
+				<tr>
+				</td>
+			<img src="line01.gif" align="right">
+			</td>
+			</tr>
+			</table>
+
+
+
+
+			<h3><a name="Overview02"><img src="icon04.gif" border="0">	基本功能</a></h3>
+			
+			<p> 	
+			
+			
+			MagicTune&trade; 是一个软件实用程序，<a onmouseover="popmsg('DDC/CI（显示数据通道命令接口）','该标准定义了具有多种复杂性等级的基于 12C 的协议；此类协议在 DDC 运行于通道上，目的是控制显示器和可选附属设备。为了响应最终用户的即插即用需要，VESA 定义了包含不同的通信等级的  DDC 标准。DDC2Bi、DDC2B+ 和DDC2AB 等级可以提供计算机图形主机与显示设备之间的双向通信。.')" onmouseout=hiddenmsg() href="#" onClick="return false;" style="cursor:help" onfocus='this.blur()' class="Hlink">DDC/CI（显示数据通道命令接口）</a> 协议进行显示器调节和色彩调谐。 对显示屏进行的所有调节都是通过软件进行控制的，从而无需使用显示器屏幕显示 (OSD)。&nbsp; MagicTune supports 
+        MagicTune 支持 Windows 98SE、Me、2000、 NT、 XP 家庭版和 XP 专业版。</p>
+      <p> <!-- MagicTune 在后台运行，可以通过任务栏、开始菜单或右键单击桌面进行访问。 -->MagicTune 能够便捷地保存和调用最适合您的显示器配置信息，对显示屏进行快速而准确的调谐。  <!-- MagicTune supports Windows 98 SE, ME, 2000, NT, XP Home and XP Professional Editions.  --></p>
+			<BR><BR>
+
+
+
+			<table>
+				<tr>
+				</td>
+			<img src="line01.gif" align="right">
+			</td>
+			</tr>
+			</table>
+
+
+
+			
+			<h3><a name="Overview03"><img src="icon04.gif" border="0">	OSD 模式</a></h3>
+			<p>OSD 模式使得无需执行预先定义的步骤，就可以便捷地调整各项显示器设置。您可以访问所要的菜单项目来轻松设置。 </p><BR><BR>
+
+		</td>
+	</tr>
+</table>
+
+<table border="0" cellspacing="0" cellpadding="10" width="600"> 
+	<tr> 
+		<td> <!-- <br>
+
+			<p><font size="1">荤剧篮 抗绊 绝捞 函版瞪 荐 乐嚼聪促. 
+			<BR>MagicTune篮 Samsung, Inc.狼 惑钎捞哥  Windows㈢绰 Microsoft㈢ Corp.狼 殿废 惑钎涝聪促. 
+			<BR>促弗 惑钎绰 秦寸 雀荤狼 家蜡涝聪促.</font></p> -->
+
+			<p><a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0><img src="base.gif" border="0"> 
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>

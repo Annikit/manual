@@ -1,0 +1,259 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<title>MagicTune Help - Installation</title>
+<style type="text/css">
+	<!--
+	a:link {color: #0000ff; font-size: 12pt; text-decoration:none}
+	a:visited {color: #0000ff; font-size: 12pt; text-decoration:none}
+	a:hover {color: #0000ff; font-size: 12pt; text-decoration:underline}
+	a:active {color: #0000ff; font-size: 12pt; text-decoration:underline}
+
+	a.Mlink:link {color: #aaaaaa; font-size: 12pt; text-decoration:none}
+	a.Mlink:visited {color: #aaaaaa; font-size: 12pt; text-decoration:none}
+	a.Mlink:hover {color: #aaaaaa; font-size: 12pt; text-decoration:underline}
+	a.Mlink:active {color: #aaaaaa; font-size: 12pt; text-decoration:underline}
+
+	body, p, td, left, TABLE {font-family: Arial, Helvetica, sans-serif; font-size: 11pt; line-height: 140%; }
+
+	BODY {OVERFLOW-X: hidden; OVERFLOW: scroll}
+	.popmsgper {VISIBILITY: hidden; POSITION: absolute}
+	a.Hlink:link {color: #2F90F3; font-size: 12pt; text-decoration:none}
+	a.Hlink:visited {color: #2F90F3; font-size: 12pt; text-decoration:none}
+	a.Hlink:hover {color: #008000; font-size: 12pt; text-decoration:none}
+	a.Hlink:active {color: #008000; font-size: 12pt; text-decoration:none}
+	-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF" marginwidth="0" marginheight="0" oncontextmenu="return false" ondragstart="return false">
+
+<DIV class=popmsgper id=topdeck> </DIV>
+<SCRIPT language="JAVASCRIPT">
+<!--
+var nav = (document.layers);
+var iex = (document.all);
+var skn = (nav) ? document.topdeck : topdeck.style;
+
+if (nav) document.captureEvents(Event.MOUSEMOVE);
+
+document.onmousemove = mousepos;
+
+function popmsg(msg1,msg2){
+
+	var width = document.body.offsetWidth;
+
+	if (width > 1000)
+	{width=500}
+	else
+	{width="95%"}
+
+	var content ="<TABLE WIDTH="+width+" BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#0E1F83><TR><TD><TABLE WIDTH=100% BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD><CENTER><FONT COLOR=#FFFFFF SIZE=2><B>HELP</B></FONT></CENTER></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#FFFFFF><TR><TD><FONT COLOR=#000000 SIZE=2><b><left>"+msg1+"</left></b></FONT></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#FFFFFF><TR><TD><FONT COLOR=#000000 SIZE=2><left>"+msg2+"</left></FONT></TD></TR></TABLE></TD></TR></TABLE>";
+	
+	if (nav)
+	{
+		skn.document.write(content);
+		skn.document.close();
+		skn.visibility = "visible";
+	}
+	else if (iex)
+	{
+		document.all("topdeck").innerHTML = content;
+		skn.visibility = "visible";
+	}
+}
+
+function mousepos(e){
+	var x = (nav) ? e.pageX : event.x+document.body.scrollLeft;
+	var y = (nav) ? e.pageY : event.y+document.body.scrollTop;
+	skn.left = x - 60;
+	skn.top  = y+20;
+}
+
+function hiddenmsg(){
+	skn.visibility = "hidden";
+}
+
+//-->
+</SCRIPT>
+
+<table border="0" cellspacing="0" cellpadding="0" width="600"> 
+	<tr> 
+		<td> 
+			<p><a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0><img border="0" width="600" height="152" src="eng_top01.gif"></a></p>
+		</td>
+	</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" width="600" height="40"> 
+<tr> 
+  <td>
+ &nbsp;&nbsp;&nbsp;<a href="Overview.html" onfocus='this.blur()' class="Mlink">Pregled</a>
+ &nbsp;&nbsp;&nbsp;
+ </td>
+
+<td>	
+<font color="#aaaaaa">|</font>
+&nbsp;&nbsp;&nbsp;<font color="#ffffff"><B>Namestitev</B>
+&nbsp;&nbsp;&nbsp;	
+</td>
+
+<td>	
+<font color="#aaaaaa">|</font>
+&nbsp;&nbsp;&nbsp;<a href="modes.html" onfocus='this.blur()' class="Mlink">Način OSD</a>
+&nbsp;&nbsp;&nbsp;
+</td>
+ 
+
+<td>
+<font color="#aaaaaa">|</font>
+&nbsp;&nbsp;&nbsp;<a href="uninstall.html" onfocus='this.blur()' class="Mlink">Odstranitev</a>
+&nbsp;&nbsp;&nbsp;
+</td>
+
+<td>
+<font color="#aaaaaa">|</font>
+&nbsp;&nbsp;&nbsp;	<a href="tips.html" onfocus='this.blur()' class="Mlink">Odpravljanje težav</a>
+&nbsp;&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+
+
+
+
+
+<table border="0" cellspacing="0" cellpadding="10" width="600"> 
+	<tr> 
+		<td> <br>
+		
+			<h2><a name="Installation"><img src="icon01.gif" border="0">	Namestitev </a></h2>
+			
+	
+			<!-- <h4><a name="Installation03"><img src="icon04.gif" border="0">	ĽłÄˇ ĽřĽ­</a></h4> -->
+
+			<font style="line-height:220%">
+			<ol>
+				<li>Vstavite namestitveni CD v pogon CD-ROM.</li>
+				<li>Kliknite namestitveno datoteko programa MagicTune. </li>
+				<li>Izberite jezik namestitve in kliknite "Next".<br>
+					<img src="setup_01.gif" border="0" alt="Langguage"></li>
+				<!-- <li>The "Preparing installation" dialog appears.<br>
+					<img src="setup_02.gif" border="0" alt="Preparing installation"></li> -->
+				<li>Ko se prikaže okno čarovnika InstallShield, kliknite "Next."    <br>
+					<img src="setup_03.gif" border="0" alt="InstallationShield Wizard"></li>
+				<li>Izberite "I accept to the terms of the license agreement", če se strinjate s pogoji uporabe. <br>
+					<img src="setup_04.gif" border="0" alt="license agreement"></li>
+				<li>Izberite mapo, kamor želite namestiti MagicTune.<br>
+					<img src="setup_06.gif" border="0" alt="folder to install"></li>
+				<li>Kliknite "Install."<br>
+					<img src="setup_05.gif" border="0" alt="install"></li>
+				<li>Odpre se pogovorno okno "Installationation Status".<br>
+					<img src="setup_07.gif" border="0" alt="Installationation Status"></li>
+				<li>Kliknite "Finish."<br>
+					<img src="setup_08.gif" border="0" alt="Finish"></li>
+				<li>Ko bo namestitev končana, se bo na vašem namizju pojavila ikona programa MagicTune 2.5.<br>
+					<img src="setup_09icon.gif" border="0" alt="icon"> Dvokliknite ikono in tako zaženite program.<br></li>
+
+				<CENTER>
+					<table width="550">
+		         <tr>
+		           <Td width="550" colspan="2">
+                <p align="center"><img src="osd_t2.gif" border="0"></Td>
+				   </tr>
+				   <Td width="80">
+				 
+            <p align="center">  <img src="memo01.gif" border="0"></Td>
+				   <Td width="470">
+				  <FONT COLOR="#003399">Lahko se zgodi, da se npr. ikona MagicTune ne prikaže, ker je odvisna od specifikacij računalniškega sistema ali monitorja. Če se to zgodi, pritisnite tipko F5.
+				</B></FONT></Td>
+					</tr>
+					<tr>
+		           <Td width="550" colspan="2">				   
+            <p align="center"><img src="osd_t2.gif" border="0"></Td></tr>
+				   </table></CENTER>
+
+
+					
+				<li>Če je bila namestitev uspešna, se bo odprlo tole okno.<br>
+					<img src="setup_10.gif" border="0" alt="MagicTune 2.5"></li>
+				<li>To sporočilo o napaki vas bo opozorilo, da sistem uporablja video kartico, ki je MagicTune ne podpira. <br>
+					<img src="setup_09error.gif" border="0" alt="error message"></li>
+			</ol>
+			</font>
+		
+
+
+			<table>
+				<tr>
+				<td><BR><BR>
+			<img src="line01.gif" align="right">
+			</td>
+			</tr>
+			</table>
+
+
+
+				
+			<h4><a name="Installation01"><img src="icon03.gif" border="0">	 Težave pri namestitvi </a></h4>
+			
+			<p>Na namestitev orodja MagicTune 2.5 lahko vplivajo dejavniki, kot so video kartica, matična plošča in omrežno okolje.  <BR>
+			Če ste med nameščanjem naleteli na težave, poglejte v odsek <a href="tips.html" onfocus='this.blur()'>"Odpravljanje težav" </a>. <br>
+
+			<h4><a name="Installation02"><img src="icon02.gif" border="0">	 Sistemske zahteve</a></h4>
+			
+			<p><b>Operacijski sistem</b><br>
+
+			<ul>
+				<li>Windows 98 SE</li>
+				<li>Windows Me</li>
+				<li>Windows NT</li>
+				<li>Windows 2000</li>
+				<li>Windows XP Home Edition</li>
+				<li>Windows XP Professional</li>
+			</ul></p>
+
+			<p><b>Strojna oprema</b><br>
+
+			<ul>
+				<li>Vsaj 32 MB pomnilnika</li>
+				<li>Vsaj 25 MB prostora na trdem disku.</li>
+		 
+			</ul></p>
+
+	
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<p>* <a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0>Če želite več informacij, obiščite spletno stran programa MagicTune.</a> </p>
+
+		</td>
+	</tr>
+</table>
+
+<table border="0" cellspacing="0" cellpadding="10" width="600"> 
+	<tr> 
+		<td> <!-- <br>
+
+			<p><font size="1">»çľçŔş żą°í ľřŔĚ şŻ°ćµÉ Ľö ŔÖ˝Ŕ´Ď´Ů. 
+			<BR>MagicTuneŔş Samsung, Inc.ŔÇ »óÇĄŔĚ¸ç  Windows˘ç´Â Microsoft˘ç Corp.ŔÇ µî·Ď »óÇĄŔÔ´Ď´Ů. 
+			<BR>´Ů¸Ą »óÇĄ´Â ÇŘ´ç Č¸»çŔÇ ĽŇŔŻŔÔ´Ď´Ů.</font></p> -->
+
+			<p><a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0><img src="base.gif" border="0"> 
+		</td>
+	</tr>
+</table>
+
+
+</body>
+</html>

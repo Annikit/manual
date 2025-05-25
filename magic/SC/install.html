@@ -1,0 +1,283 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<title>MagicTune 帮助 - 安装</title>
+<style type="text/css">
+	<!--
+	a:link {color: #0000ff; font-size: 12pt; text-decoration:none}
+	a:visited {color: #0000ff; font-size: 12pt; text-decoration:none}
+	a:hover {color: #0000ff; font-size: 12pt; text-decoration:underline}
+	a:active {color: #0000ff; font-size: 12pt; text-decoration:underline}
+
+	a.Mlink:link {color: #aaaaaa; font-size: 12pt; text-decoration:none}
+	a.Mlink:visited {color: #aaaaaa; font-size: 12pt; text-decoration:none}
+	a.Mlink:hover {color: #aaaaaa; font-size: 12pt; text-decoration:underline}
+	a.Mlink:active {color: #aaaaaa; font-size: 12pt; text-decoration:underline}
+
+	body, p, td, left, TABLE {font-family: Arial, Helvetica, sans-serif; font-size: 11pt; line-height: 140%; }
+
+	BODY {OVERFLOW-X: hidden; OVERFLOW: scroll}
+	.popmsgper {VISIBILITY: hidden; POSITION: absolute}
+	a.Hlink:link {color: #2F90F3; font-size: 12pt; text-decoration:none}
+	a.Hlink:visited {color: #2F90F3; font-size: 12pt; text-decoration:none}
+	a.Hlink:hover {color: #008000; font-size: 12pt; text-decoration:none}
+	a.Hlink:active {color: #008000; font-size: 12pt; text-decoration:none}
+	-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF" marginwidth="0" marginheight="0" oncontextmenu="return false" ondragstart="return false">
+
+<DIV class=popmsgper id=topdeck> </DIV>
+<SCRIPT language="JAVASCRIPT">
+<!--
+var nav = (document.layers);
+var iex = (document.all);
+var skn = (nav) ? document.topdeck : topdeck.style;
+
+if (nav) document.captureEvents(Event.MOUSEMOVE);
+
+document.onmousemove = mousepos;
+
+function popmsg(msg1,msg2){
+
+	var width = document.body.offsetWidth;
+
+	if (width > 1000)
+	{width=500}
+	else
+	{width="95%"}
+
+	var content ="<TABLE WIDTH="+width+" BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#0E1F83><TR><TD><TABLE WIDTH=100% BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD><CENTER><FONT COLOR=#FFFFFF SIZE=2><B>帮助</B></FONT></CENTER></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#FFFFFF><TR><TD><FONT COLOR=#000000 SIZE=2><b><left>"+msg1+"</left></b></FONT></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#FFFFFF><TR><TD><FONT COLOR=#000000 SIZE=2><left>"+msg2+"</left></FONT></TD></TR></TABLE></TD></TR></TABLE>";
+	
+	if (nav)
+	{
+		skn.document.write(content);
+		skn.document.close();
+		skn.visibility = "visible";
+	}
+	else if (iex)
+	{
+		document.all("topdeck").innerHTML = content;
+		skn.visibility = "visible";
+	}
+}
+
+function mousepos(e){
+	var x = (nav) ? e.pageX : event.x+document.body.scrollLeft;
+	var y = (nav) ? e.pageY : event.y+document.body.scrollTop;
+	skn.left = x - 60;
+	skn.top  = y+20;
+}
+
+function hiddenmsg(){
+	skn.visibility = "hidden";
+}
+
+//-->
+</SCRIPT>
+
+<table border="0" cellspacing="0" cellpadding="0" width="600"> 
+	<tr> 
+		<td> 
+			<p><a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0><img border="0" width="600" height="152" src="eng_top01.gif"></a></p>
+		</td>
+	</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" width="600" height="40"> 
+<tr> 
+  <td>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffffff"><a href="Overview.html" onfocus='this.blur()' class="Mlink">综述</a>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </td>
+
+<td>	
+<font color="#aaaaaa">|</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffffff"><B>安装</B>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+</td>
+
+<td>	
+<font color="#aaaaaa">|</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="modes.html" onfocus='this.blur()' class="Mlink">OSD 模式</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+ 
+
+<td>
+<font color="#aaaaaa">|</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="uninstall.html" onfocus='this.blur()' class="Mlink">卸载</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+
+<td>
+<font color="#aaaaaa">|</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	<a href="tips.html" onfocus='this.blur()' class="Mlink">故障排除</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table border="0" cellspacing="0" cellpadding="10" width="600"> 
+	<tr> 
+		<td> <br>
+		
+			<h2><a name="Install"><img src="icon01.gif" border="0">	安装 </a></h2>
+			
+	
+			<!-- <h4><a name="Install03"><img src="icon04.gif" border="0">	汲摹 鉴辑</a></h4> -->
+
+			<font style="line-height:220%">
+			<ol>
+				<li>将安装 CD 插入 CD-ROM 驱动器中。 </li>
+				<li>单击 MagicTune 安装文件。</li>
+				<li>选择安装语言，单击下一步。<br>
+					<img src="setup_01.gif" border="0" alt="Langguage"></li>
+				<!-- <li>“Preparing installation(准备安装)”对话框出现。<br>
+					<img src="setup_02.gif" border="0" alt="Preparing installation"></li> -->
+				<li>当 InstallShield 向导窗口出现时，单击下一步。  <br>
+					<img src="setup_03.gif" border="0" alt="InstallShield Wizard"></li>
+				<li>选择我接受许可协议中的条款，从而接受使用条款。 <br>
+					<img src="setup_04.gif" border="0" alt="license agreement"></li>
+				<li>选择一个文件夹来安装 MagicTune 程序。<br>
+					<img src="setup_06.gif" border="0" alt="folder to install"></li>
+				<li>单击安装。<br>
+					<img src="setup_05.gif" border="0" alt="install"></li>
+				<li>安装状态窗口出现。<br>
+					<img src="setup_07.gif" border="0" alt="Installation Status"></li>
+				<li>单击“Finish(完成)”。<br>
+					<img src="setup_08.gif" border="0" alt="Finish"></li>
+				<li>安装完成时，MagicTune 2.5 可执行文件图标显示在桌面上。 <br>
+					<img src="setup_09icon.gif" border="0" alt="icon"> 双击图标来启动程序。<br></li>
+
+
+
+				<CENTER>
+					<table width="550">
+		         <tr>
+		           <Td width="550" colspan="2">
+                <p align="center"><img src="osd_t2.gif" border="0"></Td>
+				   </tr>
+				   <Td width="80">
+				 
+            <p align="center">  <img src="memo01.gif" border="0"></Td>
+				   <Td width="470">
+				  <FONT COLOR="#003399">随着具体计算机系统或显示器规格的不同，MagicTune 执行图标可能不出现。这样的话，请按 F5 键。														
+				</B></FONT></Td>
+					</tr>
+					<tr>
+		           <Td width="550" colspan="2">				   
+            <p align="center"><img src="osd_t2.gif" border="0"></Td></tr>
+				   </table></CENTER>
+
+
+
+
+				<li>如果安装成功，将出现以下窗口。  <br>
+					<img src="setup_10.gif" border="0" alt="MagicTune 2.5"></li>
+				<li>以下错误消息表明系统正在使用的视频卡不被 MagicTune  支持。 <br>
+					<img src="setup_09error.gif" border="0" alt="error message"></li>
+			</ol>
+			</font>
+		
+
+
+			<table>
+				<tr>
+				<td><BR><BR>
+			<img src="line01.gif" align="right">
+			</td>
+			</tr>
+			</table>
+
+
+
+				
+			<h4><a name="Install01"><img src="icon03.gif" border="0">	 安装问题 </a></h4>
+			
+			<p>MagicTune 2.5 安装可能会受到视频卡、主板和网络环境等因素的影响。
+  如果在安装过程中出现问题，请参见“<a href="tips.html" onfocus='this.blur()'>故障排除</a>”。<br>
+
+			<h4><a name="Install02"><img src="icon02.gif" border="0">	 系统要求</a></h4>
+			
+			<p><b>Operating Systems</b><br>
+
+			<ul>
+				<li>Windows 98 SE</li>
+				<li>Windows Me</li>
+				<li>Windows NT</li>
+				<li>Windows 2000</li>
+				<li>Windows XP Home Edition</li>
+				<li>Windows XP Professional</li>
+			</ul></p>
+
+			<p><b>硬件</b><br>
+
+			<ul>
+				<li>32MB 以上内存</li>
+				<li>25MB 以上硬盘空间</li>
+		 
+			</ul></p>
+
+	
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<p>*如需了解更多信息，请访问 MagicTune <a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0>网站。</a></p>
+
+		</td>
+	</tr>
+</table>
+
+<table border="0" cellspacing="0" cellpadding="10" width="600"> 
+	<tr> 
+		<td> <!-- <br>
+
+			<p><font size="1">荤剧篮 抗绊 绝捞 函版瞪 荐 乐嚼聪促. 
+			<BR>MagicTune篮 Samsung, Inc.狼 惑钎捞哥  Windows㈢绰 Microsoft㈢ Corp.狼 殿废 惑钎涝聪促. 
+			<BR>促弗 惑钎绰 秦寸 雀荤狼 家蜡涝聪促.</font></p> -->
+
+			<p><a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0><img src="base.gif" border="0"> 
+		</td>
+	</tr>
+</table>
+
+
+</body>
+</html>

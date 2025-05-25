@@ -1,0 +1,219 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<title>MagicTune Help - Overview</title>
+<style type="text/css">
+	<!--
+	a:link {color: #0000ff; font-size: 12pt; text-decoration:none}
+	a:visited {color: #0000ff; font-size: 12pt; text-decoration:none}
+	a:hover {color: #0000ff; font-size: 12pt; text-decoration:underline}
+	a:active {color: #0000ff; font-size: 12pt; text-decoration:underline}
+
+	a.Mlink:link {color: #aaaaaa; font-size: 12pt; text-decoration:none}
+	a.Mlink:visited {color: #aaaaaa; font-size: 12pt; text-decoration:none}
+	a.Mlink:hover {color: #aaaaaa; font-size: 12pt; text-decoration:underline}
+	a.Mlink:active {color: #aaaaaa; font-size: 12pt; text-decoration:underline}
+
+	body, p, td, left, TABLE {font-family: Arial, Helvetica, sans-serif; font-size: 11pt; line-height: 140%; }
+
+	BODY {OVERFLOW-X: hidden; OVERFLOW: scroll}
+	.popmsgper {VISIBILITY: hidden; POSITION: absolute}
+	a.Hlink:link {color: #2F90F3; font-size: 12pt; text-decoration:none}
+	a.Hlink:visited {color: #2F90F3; font-size: 12pt; text-decoration:none}
+	a.Hlink:hover {color: #008000; font-size: 12pt; text-decoration:none}
+	a.Hlink:active {color: #008000; font-size: 12pt; text-decoration:none}
+	-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF" marginwidth="0" marginheight="0" oncontextmenu="return false" ondragstart="return false">
+
+<DIV class=popmsgper id=topdeck> </DIV>
+<SCRIPT language="JAVASCRIPT">
+<!--
+var nav = (document.layers);
+var iex = (document.all);
+var skn = (nav) ? document.topdeck : topdeck.style;
+
+if (nav) document.captureEvents(Event.MOUSEMOVE);
+
+document.onmousemove = mousepos;
+
+function popmsg(msg1,msg2){
+
+	var width = document.body.offsetWidth;
+
+	if (width > 1000)
+	{width=500}
+	else
+	{width="95%"}
+
+	var content ="<TABLE WIDTH="+width+" BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#0062b2><TR><TD><TABLE WIDTH=100% BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD><CENTER><FONT COLOR=#FFFFFF font-size: 9pt><B>Súg&oacute;</B></FONT></CENTER></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#FFFFFF><TR><TD><FONT COLOR=#000000 font-size: 9pt><b><left>"+msg1+"</left></b></FONT></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#FFFFFF><TR><TD><FONT COLOR=#000000 font-size: 9pt><left>"+msg2+"</left></FONT></TD></TR></TABLE></TD></TR></TABLE>";
+	
+	if (nav)
+	{
+		skn.document.write(content);
+		skn.document.close();
+		skn.visibility = "visible";
+	}
+	else if (iex)
+	{
+		document.all("topdeck").innerHTML = content;
+		skn.visibility = "visible";
+	}
+}
+
+function mousepos(e){
+	var x = (nav) ? e.pageX : event.x+document.body.scrollLeft;
+	var y = (nav) ? e.pageY : event.y+document.body.scrollTop;
+	skn.left = x - 60;
+	skn.top  = y+20;
+}
+
+function hiddenmsg(){
+	skn.visibility = "hidden";
+}
+
+//-->
+</SCRIPT>
+
+<table border="0" cellspacing="0" cellpadding="0" width="600"> 
+	<tr> 
+		<td> 
+			<p><a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0><img border="0" width="600" height="152" src="eng_top01.gif"></a></p>
+		</td>
+	</tr>
+</table>
+ 
+
+
+
+
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" width="600" height="40"> 
+<tr> 
+  <td>
+ &nbsp;&nbsp;<font color="#ffffff"><B>&Aacute;ttekint&eacute;s</B></font>
+ &nbsp;&nbsp;
+ </td>
+
+<td>	
+<font color="#aaaaaa">|</font>
+&nbsp;&nbsp;<a href="install.html" onfocus='this.blur()' class="Mlink">Telepítés</a> 
+&nbsp;&nbsp;	
+</td>
+
+<td>	
+<font color="#aaaaaa">|</font>
+&nbsp;&nbsp;<a href="modes.html" onfocus='this.blur()' class="Mlink">OSD mód</a>
+&nbsp;&nbsp;
+</td>
+ 
+
+<td>
+<font color="#aaaaaa">|</font>
+&nbsp;&nbsp;<a href="uninstall.html" onfocus='this.blur()' class="Mlink">A telepítés eltávolítása</a>
+&nbsp;&nbsp;
+</td>
+
+<td>
+<font color="#aaaaaa">|</font>
+&nbsp;&nbsp;<a href="tips.html" onfocus='this.blur()' class="Mlink">Hibaelhárítás</a>
+&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table border="0" cellspacing="0" cellpadding="10" width="600"> 
+	<tr> 
+		<td> <br>
+		
+			<h2><img src="../eng/icon01.gif" border="0">	&Aacute;ttekint&eacute;s</h2><BR><BR><BR>
+			
+			<h3><a name="Overview01"><img src="../eng/icon04.gif" border="0">	Mi az a MagicTune&#153; </a></h3>
+			
+			<p>A monitor teljes&iacute;tm&eacute;ny&eacute;t sz&aacute;mos k&ouml;r&uuml;lm&eacute;ny befoly&aacute;solhatja (grafikus k&aacute;rtya, sz&aacute;m&iacute;t&oacute;g&eacute;p, megvil&aacute;g&iacute;t&aacute;s, egy&eacute;b k&ouml;rnyezeti t&eacute;nyezők). A legjobb k&eacute;pminős&eacute;g &eacute;rdek&eacute;ben a monitor be&aacute;ll&iacute;t&aacute;sait saj&aacute;t egyedi ig&eacute;nyeihez kell igaz&iacute;tania. A hangol&aacute;shoz haszn&aacute;lhat&oacute; k&eacute;zi vez&eacute;rlőelemekkel azonban ez gyakran csak igen k&ouml;r&uuml;lm&eacute;nyesen val&oacute;s&iacute;that&oacute; meg. A megfelelő be&aacute;ll&iacute;t&aacute;shoz (hangol&aacute;shoz) egy olyan egyszerűen haszn&aacute;lhat&oacute; programra van sz&uuml;ks&eacute;ge, ami l&eacute;p&eacute;senk&eacute;nt v&eacute;gigvezeti a legjobb k&eacute;pminős&eacute;get biztos&iacute;t&oacute; be&aacute;ll&iacute;t&aacute;si folyamaton. <BR><BR>
+A legt&ouml;bb esetben m&eacute;g a f&eacute;nyerő vagy a kontraszt egyszerű be&aacute;ll&iacute;t&aacute;s&aacute;hoz is nehezen &eacute;rthető t&ouml;bbszintű k&eacute;pernyőmen&uuml;k&ouml;n (OSD) kell v&eacute;gighaladnia a felhaszn&aacute;l&oacute;nak. Ahhoz pedig, hogy a monitort helyesen &aacute;ll&iacute;tsa be, &aacute;ltal&aacute;ban nem &aacute;ll rendelkez&eacute;sre semmilyen visszajelz&eacute;s. A MagicTune&#153; olyan seg&eacute;dprogram, ami k&ouml;nnyen &eacute;rthető utas&iacute;t&aacute;sokkal &eacute;s monitorbe&aacute;ll&iacute;t&aacute;sonk&eacute;nt elt&eacute;rő k&eacute;pernyőmint&aacute;kkal vezeti v&eacute;gig a be&aacute;ll&iacute;t&aacute;si folyamaton. Az egyes felhaszn&aacute;l&oacute;k megjelen&iacute;t&eacute;si be&aacute;ll&iacute;t&aacute;sai elmenthetők, &iacute;gy egy t&ouml;bbfelhaszn&aacute;l&oacute;s k&ouml;rnyezetben egyszerűen elő lehet h&iacute;vni a megfelelő megjelen&iacute;t&eacute;si tulajdons&aacute;gokat, &eacute;s egy adott felhaszn&aacute;l&oacute; a k&ouml;rnyezettől &eacute;s a megvil&aacute;g&iacute;t&aacute;st&oacute;l f&uuml;ggően haszn&aacute;lhat k&uuml;l&ouml;nb&ouml;ző be&aacute;ll&iacute;t&aacute;sokat is.</p>
+			<BR><BR>
+
+
+
+			<table>
+				<tr>
+				</td>
+			<img src="../eng/line01.gif" align="right">
+			</td>
+			</tr>
+			</table>
+
+
+
+
+			<h3><a name="Overview02"><img src="../eng/icon04.gif" border="0">	Alapveto funkciók</a></h3>
+			
+			<p> 	
+			
+			
+			A MagicTune&#153;seg&eacute;dprogram a  <a onmouseover="popmsg('DDC/CI (Display Data Channel  Command Interface – Kijelzo adatcsatornájának parancsinterfésze))','A szabvány különbözo összetettségi szintu I2C alapú  protokollokat foglal magában, amelyek a DDC csatornán keresztül kommunikálva  látják el a monitor és járulékos eszközeinek vezérlését. A végfelhasználók Plug-n-Play  igényeire válaszul a VESA kifejlesztette a különbözo kommunikációs szinteket  felölelo DDC szabványát. A DDC2Bi, DDC2B+ és DDC2AB szintek kétirányú  kommunikációs kapcsolatot biztosítanak a számítógép grafikus folyamatai és a  kijelzo között.')" onmouseout=hiddenmsg() href="#" onClick="return false;" style="cursor:help" onfocus='this.blur()' class="Hlink">Display Data Channel Command Interface (DDC/CI)</a> protokoll seg&iacute;ts&eacute;g&eacute;vel teszi lehetőv&eacute; a monitor be&aacute;ll&iacute;t&aacute;s&aacute;t &eacute;s a sz&iacute;nek hangol&aacute;s&aacute;t. A szoftver a monitor &ouml;sszes be&aacute;ll&iacute;t&aacute;s&aacute;t kezeli, &iacute;gy nincs sz&uuml;ks&eacute;g k&eacute;pernyőn megjelenő (OSD) men&uuml;k haszn&aacute;lat&aacute;ra.&nbsp;
+		
+		 A MagicTune Windows  98SE, Me, 2000, NT, XP Home és XP Professional operációs rendszereken  használható.</p>
+      <p><!-- A háttérben futó MagicTune
+  a Tálcáról, a Start menübol vagy az asztalra történo jobb kattintással
+  nyitható meg.  -->A MagicTune
+  használatával a monitor hangolása gyorsan és pontosan elvégezheto, a
+  legmegfelelobb monitorkonfigurációk pedig egyszeruen elmenthetok, és a
+  késobbiekben visszatölthetok. </p>
+			<BR><BR>
+
+
+
+			<table>
+				<tr>
+				</td>
+			<img src="../eng/line01.gif" align="right">
+			</td>
+			</tr>
+			</table>
+
+
+
+			
+			<h3><a name="Overview03"><img src="../eng/icon04.gif" border="0">	 OSD mód</a></h3>
+			<p>OSD módban a monitor beállításainak módosítását egyszeruen, elore
+  meghatározott lépések követése nélkül elvégezheti. A beállítandó menüelemet könnyedén
+  elérheti. </p><BR><BR>
+
+		</td>
+	</tr>
+</table>
+
+<table border="0" cellspacing="0" cellpadding="10" width="600"> 
+	<tr> 
+		<td> <!-- <br>
+
+			<p><font size="1">»çľçŔş żą°í ľřŔĚ şŻ°ćµÉ Ľö ŔÖ˝Ŕ´Ď´Ů. 
+			<BR>MagicTuneŔş Samsung, Inc.ŔÇ »óÇĄŔĚ¸ç  Windows˘ç´Â Microsoft˘ç Corp.ŔÇ µî·Ď »óÇĄŔÔ´Ď´Ů. 
+			<BR>´Ů¸Ą »óÇĄ´Â ÇŘ´ç Č¸»çŔÇ ĽŇŔŻŔÔ´Ď´Ů.</font></p> -->
+
+			<p><a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0><img src="base.gif" border="0"> 
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>

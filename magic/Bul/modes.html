@@ -1,0 +1,601 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=Windows-1251">
+<title>MagicTune Help - OSD Mode</title>
+<style type="text/css">
+	<!--
+	a:link {color: #0000ff; font-size: 12pt; text-decoration:none}
+	a:visited {color: #0000ff; font-size: 12pt; text-decoration:none}
+	a:hover {color: #0000ff; font-size: 12pt; text-decoration:underline}
+	a:active {color: #0000ff; font-size: 12pt; text-decoration:underline}
+
+	a.Mlink:link {color: #aaaaaa; font-size: 12pt; text-decoration:none}
+	a.Mlink:visited {color: #aaaaaa; font-size: 12pt; text-decoration:none}
+	a.Mlink:hover {color: #aaaaaa; font-size: 12pt; text-decoration:underline}
+	a.Mlink:active {color: #aaaaaa; font-size: 12pt; text-decoration:underline}
+
+	body, p, td, left, TABLE {font-family: Arial, Helvetica, sans-serif; font-size: 11pt; line-height: 140%; }
+
+	BODY {OVERFLOW-X: hidden; OVERFLOW: scroll}
+	.popmsgper {VISIBILITY: hidden; POSITION: absolute}
+	a.Hlink:link {color: #2F90F3; font-size: 12pt; text-decoration:none}
+	a.Hlink:visited {color: #2F90F3; font-size: 12pt; text-decoration:none}
+	a.Hlink:hover {color: #008000; font-size: 12pt; text-decoration:none}
+	a.Hlink:active {color: #008000; font-size: 12pt; text-decoration:none}
+	-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF" marginwidth="0" marginheight="0"  oncontextmenu="return false" ondragstart="return false" >
+
+<DIV class=popmsgper id=topdeck> </DIV>
+<SCRIPT language="JAVASCRIPT">
+<!--
+var nav = (document.layers);
+var iex = (document.all);
+var skn = (nav) ? document.topdeck : topdeck.style;
+
+if (nav) document.captureEvents(Event.MOUSEMOVE);
+
+document.onmousemove = mousepos;
+
+function popmsg(msg1,msg2){
+
+	var width = document.body.offsetWidth;
+
+	if (width > 1000)
+	{width=500}
+	else
+	{width="95%"}
+
+var content ="<TABLE WIDTH="+width+" BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#0062b2><TR><TD><TABLE WIDTH=100% BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD><CENTER><FONT COLOR=#FFFFFF font-size: 9pt><B>µµїтё»</B></FONT></CENTER></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#FFFFFF><TR><TD><FONT COLOR=#000000 font-size: 9pt><b><left>"+msg1+"</left></b></FONT></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#FFFFFF><TR><TD><FONT COLOR=#000000 font-size: 9pt><left>"+msg2+"</left></FONT></TD></TR></TABLE></TD></TR></TABLE>";
+	
+	if (nav)
+	{
+		skn.document.write(content);
+		skn.document.close();
+		skn.visibility = "visible";
+	}
+	else if (iex)
+	{
+		document.all("topdeck").innerHTML = content;
+		skn.visibility = "visible";
+	}
+}
+
+function mousepos(e){
+	var x = (nav) ? e.pageX : event.x+document.body.scrollLeft;
+	var y = (nav) ? e.pageY : event.y+document.body.scrollTop;
+	skn.left = x - 60;
+	skn.top  = y+20;
+}
+
+function hiddenmsg(){
+	skn.visibility = "hidden";
+}
+
+//-->
+</SCRIPT>
+
+<script language="JavaScript" type="text/JavaScript" src='osd.js'>
+</script>
+		
+<table border="0" cellspacing="0" cellpadding="0" width="600" onLoad="MM_preloadImages('kor_osd01_01.gif','kor_osd01_02.gif','kor_osd01_03.gif','kor_osd01_04.gif','kor_osd02_01.gif','kor_osd02_02.gif','kor_osd02_03.gif','kor_osd03_01.gif','kor_osd03_02.gif','kor_osd03_03.gif','kor_osd03_04.gif','kor_osd03_05.gif','kor_osd03_06.gif','kor_osd03_07.gif','kor_osd03_08.gif','kor_osd03_09.gif','kor_osd03_10.gif','kor_osd03_11.gif','kor_osd03_12.gif','kor_osd03_13.gif','kor_osd03_03.gif','go_on.gif','stop_off.gif')"> 
+	<tr> 
+		<td> 
+			<p><a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0><img border="0" width="600" height="152" src="eng_top01.gif"></a></p>
+		</td>
+	</tr>
+</table>
+
+ 
+
+
+
+
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" width="600" height="40"> 
+<tr> 
+  <td>  &nbsp;&nbsp;&nbsp;
+<a href="overview.html" onfocus='this.blur()' class="Mlink">Преглед</B></font></a>
+ </td>
+
+<td><font color="#aaaaaa">|</font>
+ <a href="install.html" onfocus='this.blur()' class="Mlink">Инсталация</a></font>
+  </td>
+
+  <td> <font color="#aaaaaa">|</font> 	
+  <font color="#ffffff"><B>Режим OSD</b> 
+
+  </td>
+
+
+<td> <font color="#aaaaaa">|&nbsp;</font> 
+<a href="uninstall.html" onfocus='this.blur()' class="Mlink">Деинсталиране</a><font color="#aaaaaa">&nbsp;|</font> 
+</td>
+
+<td> 
+<a href="tips.html" onfocus='this.blur()' class="Mlink">Отстраняване на<BR>
+  технически проблеми</a>
+  </font></td></tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table width="600" border="0" cellspacing="0" cellpadding="10">
+	<tr>
+		<td>	<CENTER>
+		<table width="550">
+		         <tr>
+		           <Td width="550" colspan="2">
+                <p align="center"><img src="../eng/osd_t2.gif" border="0"></Td>
+				   </tr>
+				   <Td width="80">
+				 
+            <p align="center">  <img src="../eng/memo01.gif" border="0"></Td>
+				   <Td width="470">
+				  <FONT COLOR="#003399">MagicTune прави възможно постигането на прецизна и
+  бърза настройка на дисплея, като същевременно предоставя възможност за лесно
+  съхраняване и използване на потребителски настройки на монитора, които
+  най-добре отговарят на Вашите нужди.<BR>
+																	<B><ul><li>В зависимост от спецификациите на конкретния монитор видът на екранните 
+менюта може да се различава от описания в ръководството.
+</li>
+																	</ul>
+</B></FONT></Td>
+					</tr>
+					<tr>
+		           <Td width="550" colspan="2">
+				   
+            <p align="center"><img src="../eng/osd_t2.gif" border="0"></Td></tr>
+				   </table></CENTER>
+
+<br>
+			<h2><a name="OsdMode"><img src="../eng/icon01.gif" border="0">	Режим OSD (Екранно меню)</a></h2>
+			
+			<p align="center"><img src="../eng/kor_osd01.gif"></p>
+
+			<p>Режимът OSD улеснява регулирането на настройките на всеки монитор.При избор на всеки един
+  раздел, разположен в горната част на прозореца на контролния панел, се
+  показва общо описание на опциите от подменюто, служещи за регулиране на
+  настройки.При избор на всеки един
+  раздел се показва списък от менюта.Режимът
+  OSD позволява лесен и удобен достъп до всички раздели и опции от подменюта за
+  бързо регулиране на настройките на монитора.
+</p> 
+			<br>
+
+			<h4><a name="OsdMode01"><img src="../eng/icon04.gif" border="0">  Описание на бутоните</a></h4>
+			
+			<table border="0" width="600" style="border-top-width:1; border-top-color:rgb(51,51,51); border-top-style:none;" cellpadding="2" cellspacing="0" align="center">
+				<tr>
+					<td width="110" style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>OK </b></p>
+					</td>
+					<td style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>Прилага
+  направените промени и затваря MagicTune.<BR><BR><!-- <a onmouseover="popmsg('ЅГЅєЕЫ  Ж®·№АМ','ЅГЅєЕЫ Ж®·№АМґВ АЫѕчЗҐЅГБЩїЎ ЅГ°иїН ёоёо ЗБ·О±Ч·ҐµйАЗ ѕЖАМДЬА» іЄЕёіїАё·ОЅб ЗБ·О±Ч·ҐАМ °Е±вїЎ АЦґЩґВ °НА» »зїлАЪ°Ў БцјУАыАё·О ѕЛѕЖВчё± јц АЦµµ·П ЗП°н, ±ЧБЯ ЗПіЄё¦ Ѕ±°Ф Е¬ёЇЗТ јц АЦµµ·П ЗП±в А§ЗС °НАФґПґЩ. &lt;br&gt;&lt;br&gt;ЅГЅєЕЫ Ж®·№АМґВ А©µµїм95/98/NTїЎј­ АЫѕчЗҐЅГБЩАЗ ЗСВК іЎїЎ(ґл°і їмГш ЗПґЬїЎ) А§ДЎЗШ АЦґВ єОєРА» ё»ЗХґПґЩ.')" onmouseout=hiddenmsg() href="#" onClick="return false;" style="cursor:help" onfocus='this.blur()' class="Hlink">ЅГЅєЕЫ Ж®·№АМ</a>їЎј­ґВ ї©АьИч MagicTuneАМ ЅЗЗаµЗ°н АЦЅАґПґЩ.<br><br> --></p> 
+					</td>
+				</tr>
+				<tr>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>Reset (Начални стойности) </b></p>
+					</td>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>Сменя
+  показаните в активния прозорец настройки на монитора с препоръчваните от
+  производителя стойности.  <br><br> </p>
+					</td>
+				</tr>
+				<tr>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>Cancel (Отмяна) </b></p>
+					</td>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>Затваря
+  MagicTune, без да прилага направените промени. Ако не сте извършили промени в прозореца за управление, натискането на
+  “Cancel” (Отмяна) не предизвиква никакви действия.
+<br><br> </p>
+					</td>
+				</tr>
+			</table>
+
+
+
+			<table>
+				<tr>
+				<td><BR><BR>
+			<img src="../eng/line01.gif" align="right">
+			</td>
+			</tr>
+			</table>
+
+
+
+			
+			<br><br><h4><a name="Linkosd01"><img src="../eng/icon04.gif" border="0">  Описание на раздел
+  “Картина”</a></h4>
+
+			Позволява на потребителя да нагласи настройките на монитора според
+  предпочитанията си.
+			
+			<p align="center"><img src="../eng/kor_osd01.gif" name="osd01"></p>
+			
+			<form name="Fosd01">
+			<table border="0" width="600" style="border-top-width:1; border-top-color:rgb(51,51,51); border-top-style:none;" cellpadding="2" cellspacing="0" align="center">
+				<tr>
+					<td style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<INPUT type="radio" name="selosd01" value="kor_osd01_01" id="osd01_01" style="cursor:hand" onfocus="this.blur();" checked onClick="selOSDvalue('../eng/kor_osd01_01','osd01')"><LABEL style="cursor:hand" class="base" for="osd01_01"><nobr>Brightness</nobr></LABEL>
+						<INPUT type="radio" name="selosd01" value="kor_osd01_02" id="osd01_02" value="222" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('../eng/kor_osd01_02','osd01')"><LABEL style="cursor:hand" class="base" for="osd01_02"><nobr>Contrast</nobr></LABEL>					 
+						<INPUT type="radio" name="selosd01" value="kor_osd01_03" id="osd01_03" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('../eng/kor_osd01_03','osd01')"><LABEL style="cursor:hand" class="base" for="osd01_03"><nobr>MagicBright</nobr></LABEL>
+					</td>
+					<td width="110" align=center style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:1; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:solid;">
+						<p><a href="#Linkosd01" onClick="Image_change('osd01','OnStart','3')"><img src="../eng/go_off.gif" name="osd01_go" border="0" alt="play"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Linkosd01" onClick="Image_change('osd01','Off')"><img src="../eng/stop_on.gif" name="osd01_stop" border="0" alt="stop"></a></p>
+					</td>
+				</tr>
+			</table>
+			</form>
+             
+			<table border="0" width="600" style="border-top-width:1; border-top-color:rgb(51,51,51); border-top-style:none;" cellpadding="2" cellspacing="0" align="center">
+				<tr>
+					<td width="110" style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>Brightness </b></p>
+					</td>
+					<td style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>Осветлява или затъмнява целия екран.Детайлите на изображения, които се намират в тъмните зони, могат да се
+  загубят, ако не се нагласи яркостта на оптималното ниво.Настройте яркостта до
+  достигане на най-добри условия за очите.
+<br><br></p>
+					</td>
+				</tr>
+				<tr>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>Contrast </b></p>
+					</td>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>Регулира разликата в осветеността на светлите и тъмните зони на екрана.Определя чистотата на изображенията.<br><br> </p>
+					</td>
+				</tr>
+
+
+				<tr>
+				<tr>
+					<td valign=middle style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>MagicBright&trade;</b></p>
+					</td>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>
+						MagicBright™ е нова функция, създаваща оптимална среда
+  за разглеждане на всяко едно конкретно изображение, което гледате на екрана. В момента
+  са налични четири различни режима: Текст, Интернет, Развлечения и Потребителски. Всеки
+  режим има предварително зададено ниво на яркост. Изборът на
+  всяка една от тези четири настройки става лесно – просто натиснете контролния
+  бутон на MagicBright™.
+<br> <BR>						<UL><LI>Above 19"
+
+</UL><ol>
+							<li>Text (Текст): За  работа с документации или друг вид работа с много текст. </li>
+							<li>Internet (Интернет):За работа с комбинирано съдържание, например текст и графика.</li>
+							<li>Game (Игри):За гледане на движещи се изображения, например игри.</li>
+							<li>Entertain (Забавления):За  гледане на филми, например на DVD или VCD.</li>
+							
+							
+						</ol>
+
+&nbsp;&nbsp;&nbsp; 
+	<UL><LI>Less 19" 	 
+</UL>
+						<ol>
+							<li>Text (Текст): За  работа с документации или друг вид работа с много текст. </li>
+							<li>Internet (Интернет):За работа с комбинирано съдържание, например текст и графика.</li>
+							<li>Entertain (Забавления):За  гледане на филми, например на DVD или VCD.</li>
+							<!-- <li>Custom (Потребителски):Въпреки  че нашите инженери са подбрали внимателно тези стойности, е възможно  зададените предварително настройки да не съвпадат с Вашите предпочитания.В такъв случай нагласете Brightness (яркостта) и Contrast (контраста) от OSD менюто (екранното меню). 
+</li> -->
+						</ol>
+						<BR><BR>							
+				</p>
+					</td>
+				</tr>
+			</table>
+			
+
+
+			<table>
+				<tr>
+				<td><BR><BR>
+			<img src="../eng/line01.gif" align="right">
+			</td>
+			</tr>
+			</table>
+
+
+
+						
+					<br><br><h4><a name="Linkosd02"><img src="../eng/icon04.gif" border="0">  Описание на раздел
+  “Цветове”</a></h4>
+
+			Описание на раздел
+  “Цветове”Наглася "топлината" на фона или на цветовете на изображение.
+
+			<p align="center"><img src="../eng/kor_osd02.gif" name="osd02"></p>
+			
+			<form name="Fosd02">
+			<table border="0" width="600" style="border-top-width:1; border-top-color:rgb(51,51,51); border-top-style:none;" cellpadding="2" cellspacing="0" align="center">
+				<tr>
+					<td style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<INPUT type="radio" name="selosd02" value="kor_osd02_01" id="osd02_01" style="cursor:hand" onfocus="this.blur();" checked onClick="selOSDvalue('../eng/kor_osd02_01','osd02')"><LABEL style="cursor:hand" class="base" for="osd02_01"><nobr>Color Tone</nobr></LABEL>
+						<INPUT type="radio" name="selosd02" value="kor_osd02_02" id="osd02_02" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('../eng/kor_osd02_02','osd02')"><LABEL style="cursor:hand" class="base" for="osd02_02"><nobr>Color Control</nobr></LABEL>
+						 
+					</td>
+
+					<td width="110" align=center style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:1; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:solid;">
+						<p><a href="#Linkosd02" onClick="Image_change('osd02','OnStart','2')"><img src="../eng/go_off.gif" name="osd02_go" border="0" alt="play"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Linkosd02" onClick="Image_change('osd02','Off')"><img src="../eng/stop_on.gif" name="osd02_stop" border="0" alt="stop"></a></p>
+					</td>
+				</tr>
+			</table>
+			</form>
+                        
+			<table border="0" width="600" style="border-top-width:1; border-top-color:rgb(51,51,51); border-top-style:none;" cellpadding="2" cellspacing="0" align="center">
+				<tr>
+					<td width="110" style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>Color Tone <BR>(Цветови тон)</b></p>
+					</td>
+					<td style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>Цветовият тон може да бъде променян.<br>
+						<ul>
+							<li>Warm  - Normal - Cool 
+							<li>Custom 
+						</ul></p>
+					</td>
+				</tr>
+				<tr>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>Color Control <BR>(Контрол на цветовете)</b></p>
+					</td>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>Наглася цветовете на изображенията, показвани на монитора.<BR><!-- И­ёйАЗ Аы»ц, ім»ц, Г»»цАЗ °ЄА» °ў°ў АУАЗґл·О Б¶Б¤ЗХґПґЩ. -->
+						Може да променяте цветовете и да ги нагласяте според Вашите нужди.
+						<ul>
+							<li>R- G - B </li>
+							<li>sRGB</li>
+						</ul></p>
+					</td>
+				</tr>
+		<!--			<tr>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>Calibration</b></p>
+					</td>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>The process through which the colors of your choice are optimized and maintained. 
+You will find MagicTune extremely useful if you are one of those who wish to view images with their full details accurately reproduced - including web images and the ones that are produced using the digital camera or the scanner.  
+<BR>
+
+						
+				 		<ul>
+							<li>Select [Factory Default] to disable the Calibration feature. 
+To enable Calibration, go to [Options] ' [Basic Settings] and select [Enable Calibration] in the Basic Settings menu. 
+ </li></ul>
+
+						
+						<BR>
+						</p>
+					</td>
+				</tr>-->
+			</table>
+
+		 	<br><br><h4><a name="Linkosd03"><img src="../eng/icon04.gif" border="0">  Описание на раздел  “Изображение”</a></h4>
+			
+			Регулира стойностите на Position (Позиция), Size (Размер) и Rotation (Ротация).
+
+			<p align="center"><img src="../eng/kor_osd03.gif" name="osd03"></p>
+
+			<form name="Fosd03">
+			<table border="0" width="600" style="border-top-width:1; border-top-color:rgb(51,51,51); border-top-style:none;" cellpadding="2" cellspacing="0" align="center">
+				<tr>
+					<td style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<B>Geometry 1</B><BR>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_01" id="osd03_01" style="cursor:hand" onfocus="this.blur();" checked onClick="selOSDvalue('../eng/kor_osd03_01','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_01"><nobr>Rotation</nobr></LABEL>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_02" id="osd03_02" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('../eng/kor_osd03_02','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_02"><nobr>Size</nobr></LABEL>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_03" id="osd03_03" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('../eng/kor_osd03_03','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_03"><nobr>Position</nobr></LABEL><BR><BR>
+
+						<B>Geometry 2</B><BR>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_04" id="osd03_04" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('../eng/kor_osd03_04','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_04"><nobr>Pincushion</nobr></LABEL>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_05" id="osd03_05" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('../eng/kor_osd03_05','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_05"><nobr>Pinbalance</nobr></LABEL>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_06" id="osd03_06" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('../eng/kor_osd03_06','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_06"><nobr>Trapezoid</nobr></LABEL>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_07" id="osd03_07" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('../eng/kor_osd03_07','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_07"><nobr>Parallelogram</nobr></LABEL><BR><BR>
+
+						<B>Other</B><BR>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_08" id="osd03_08" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('../eng/kor_osd03_08','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_08"><nobr>Moire</nobr></LABEL>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_09" id="osd03_09" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('../eng/kor_osd03_09','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_09"><nobr>Degauss</nobr></LABEL>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_10" id="osd03_10" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('../eng/kor_osd03_10','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_10"><nobr>Sidepin Corner Top</nobr></LABEL>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_11" id="osd03_11" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('../eng/kor_osd03_11','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_11"><nobr>Sidepin Corner Bottom</nobr></LABEL>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_12" id="osd03_12" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('../eng/kor_osd03_12','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_12"><nobr>Pinbalance Corner Top</nobr></LABEL>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_13" id="osd03_13" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('../eng/kor_osd03_13','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_13"><nobr>Pinbalance Corner Bottom</nobr></LABEL>
+					</td>
+					<td width="110" align=center style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:1; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:solid;">
+						<p><a href="#Linkosd03" onClick="Image_change('osd03','OnStart','13')"><img src="../eng/go_off.gif" name="osd03_go" border="0" alt="play"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Linkosd03" onClick="Image_change('osd03','Off')"><img src="../eng/stop_on.gif" name="osd03_stop" border="0" alt="stop"></a></p>
+					</td>
+				</tr>
+			</table>
+			</form>
+                        
+			<table border="0" width="600" style="border-top-width:1; border-top-color:rgb(51,51,51); border-top-style:none;" cellpadding="2" cellspacing="0" align="center">
+				<tr>
+					<td width="110" style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>Geometry 1(Геометрия 1)</b></p>
+					</td>
+					<td style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>Регулира стойностите на Position (Позиция), Size (Размер) и Rotation (Ротация).
+						<ul>
+							<li>Position (Позиция) </li>
+							<li>Size (Размер)</li>
+							<li>Rotation (Ротация)</li>
+						</ul></p>
+					</td>
+				</tr>
+				<tr>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>Geometry 2 (Геометрия 2)</b></p>
+					</td>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>Наглася настройките за Pincushion (Изкривяване тип "възглавница”),  Pinbalance (Дъгообразни изкривявания на вертикалните линии), Trapezoid  (Трапец) и Parallelogram (Паралелограм).
+						<ul>
+							<li>Pincushion (Изкривяване тип "възглавница")</li>
+							<li>Pinbalance (Дъгообразни изкривявания на вертикалните линии)</li>
+							<li>Trapezoid (Трапец)</li>
+							<li>Parallelogram (Паралелограм)</li>
+						</ul> </p>
+					</td>
+				</tr>
+				<tr>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>Other (Други)</b></p>
+					</td>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>Наглася настройките за Moire (моаре), Degauss (размагнитване), Sidepin
+  Corner (вдлъбване или изпъкване в горната
+  или долната страна на екрана) и Pinbalance Corner (успоредно изкривяване в
+  горната или долната страна на екрана).
+						<ul>
+							<li>Moire (Моаре)</li>
+							<li>Degauss (Размагнитване)</li>
+							<li>Sidepin  Corner Top (вдлъбване/изпъкване в горните ъгли) </li>
+							<li>Sidepin  Corner Bottom (вдлъбване/изпъкване в долните ъгли)</li>
+							<li>Pinbalance  Corner Top (успоредно   изкривяване в горните ъгли)</li>
+							<li>Pinbalance  Corner Bottom (успоредно изкривяване в долните ъгли)</li>
+						</ul> </p>
+					</td>
+				</tr>
+			</table> 
+
+
+
+			<table>
+				<tr>
+				<td><BR><BR>
+			<img src="../eng/line01.gif" align="right">
+			</td>
+			</tr>
+			</table>
+
+
+
+			
+			<br><br><h4><a name="Linkosd04"><img src="../eng/icon04.gif" border="0"> Описание на раздел
+  “Опции”</a></h4>
+
+			Може да конфигурирате MagicTune с помощта на следните опции.
+
+			<p align="center"><img src="../eng/kor_osd04.gif"></p>
+                        
+			<table border="0" width="600" style="border-top-width:1; border-top-color:rgb(51,51,51); border-top-style:none;" cellpadding="2" cellspacing="0" align="center">
+				<tr>
+					<td width="110" style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>Preferences<BR>
+  (Предпочитания)</b></p>
+					</td>
+					<td style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>Зарежда диалога  с предпочитания. Зададените предпочитания ще са със знак “V” в квадратчето.За да активирате или деактивирате което и да е предпочитание,  позиционирайте курсора над кутийката и натиснете бутона на мишката.
+						<ul>
+							<li>Активирайте менюто на
+  панела със задачи.<!-- <a onmouseover="popmsg('task tray menu','task tray menuґВ АЫѕчЗҐЅГБЩїЎ ЅГ°иїН ёоёо ЗБ·О±Ч·ҐµйАЗ ѕЖАМДЬА» іЄЕёіїАё·ОЅб ЗБ·О±Ч·ҐАМ °Е±вїЎ АЦґЩґВ °НА» »зїлАЪ°Ў БцјУАыАё·О ѕЛѕЖВчё± јц АЦµµ·П ЗП°н, ±ЧБЯ ЗПіЄё¦ Ѕ±°Ф Е¬ёЇЗТ јц АЦµµ·П ЗП±в А§ЗС °НАФґПґЩ. &lt;br&gt;&lt;br&gt;ЅГЅєЕЫ Ж®·№АМґВ А©µµїм95/98/NTїЎј­ АЫѕчЗҐЅГБЩАЗ ЗСВК іЎїЎ(ґл°і їмГш ЗПґЬїЎ) А§ДЎЗШ АЦґВ єОєРА» ё»ЗХґПґЩ.')" onmouseout=hiddenmsg() href="#" onClick="return false;" style="cursor:help" onfocus='this.blur()' class="Hlink"> task tray menu </a> --> <BR> -  
+- За достъп до менютата на MagicTune натиснете иконата на [менюто на
+  панела със задачи].<BR>
+&nbsp;&nbsp;Менютата не се показват, ако опцията [Enable System Tray] (Достъп от
+  системния панел) не е маркирана в [Options] (Опции) ‘ [Basic Settings]
+  (Основни настройки).
+<BR> 
+</li>
+							<li>Select Language(Изберете езика) - Избраният език се отнася само за екранното меню.  
+						</ul></p>
+					</td>
+				</tr>
+			</table>
+
+
+
+
+			<table>
+				<tr>
+				<td><BR><BR>
+			<img src="../eng/line01.gif" align="right">
+			</td>
+			</tr>
+			</table>
+
+
+
+			
+			<br><br><h4><a name="Linkosd05"><img src="../eng/icon04.gif" border="0"> Описание на раздел
+  “Поддръжка”</a></h4>
+			
+			 Показва идентификационните данни на продукта и версията на програмата и
+  позволява да използвате функцията Помощ.
+
+			<p align="center"><img src="../eng/kor_osd05.gif"></p>
+                        
+			<table border="0" width="600" style="border-top-width:1; border-top-color:rgb(51,51,51); border-top-style:none;" cellpadding="2" cellspacing="0" align="center">
+				<tr>
+					<td width="110" style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>Help (Помощ) </b></p>
+					</td>
+					<td style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>Посетете сайта на MagicTune или натиснете с бутона на мишката, за да
+  отворите помощните файлове (Ръководство за потребителя), ако Ви е необходимо
+  съдействие при инсталиране или използване на MagicTune.Ръководството за
+  потребителя се отваря в обикновен прозорец на браузера.
+
+<br><br></p>
+					</td>
+				</tr>
+				<tr>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>Asset ID (Идентификационни данни на продукта)</b></p>
+					</td>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>Отваря прозорец с информация за монитора, в който се показва  датата на производство на монитора.
+<br><br></p>
+					</td>
+				</tr>
+				<tr>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>Version (Версия)</b></p>
+					</td>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>Показва версията на
+  MagicTune.<br><br></p>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+<table border="0" cellspacing="0" cellpadding="10" width="600"> 
+	<tr> 
+		<td> <!-- <br>
+
+			<p><font size="1">»зѕзАє ї№°н ѕшАМ єЇ°жµЙ јц АЦЅАґПґЩ. 
+			<BR>MagicTuneАє Samsung, Inc.АЗ »уЗҐАМёз  WindowsўзґВ Microsoftўз Corp.АЗ µо·П »уЗҐАФґПґЩ. 
+			<BR>ґЩёҐ »уЗҐґВ ЗШґз Иё»зАЗ јТАЇАФґПґЩ.</font></p> -->
+
+			<p><a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0><img src="base.gif" border="0"> 
+		</td>
+	</tr>
+</table>
+
+
+</body>
+</html>
+

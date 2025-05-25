@@ -1,0 +1,225 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1257">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-13">
+<title>MagicTune Help - Overview</title>
+<style type="text/css">
+	<!--
+	a:link {color: #0000ff; font-size: 12pt; text-decoration:none}
+	a:visited {color: #0000ff; font-size: 12pt; text-decoration:none}
+	a:hover {color: #0000ff; font-size: 12pt; text-decoration:underline}
+	a:active {color: #0000ff; font-size: 12pt; text-decoration:underline}
+
+	a.Mlink:link {color: #aaaaaa; font-size: 12pt; text-decoration:none}
+	a.Mlink:visited {color: #aaaaaa; font-size: 12pt; text-decoration:none}
+	a.Mlink:hover {color: #aaaaaa; font-size: 12pt; text-decoration:underline}
+	a.Mlink:active {color: #aaaaaa; font-size: 12pt; text-decoration:underline}
+
+	body, p, td, left, TABLE {font-family: Arial, Helvetica, sans-serif; font-size: 11pt; line-height: 140%; }
+
+	BODY {OVERFLOW-X: hidden; OVERFLOW: scroll}
+	.popmsgper {VISIBILITY: hidden; POSITION: absolute}
+	a.Hlink:link {color: #2F90F3; font-size: 12pt; text-decoration:none}
+	a.Hlink:visited {color: #2F90F3; font-size: 12pt; text-decoration:none}
+	a.Hlink:hover {color: #008000; font-size: 12pt; text-decoration:none}
+	a.Hlink:active {color: #008000; font-size: 12pt; text-decoration:none}
+	-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF" marginwidth="0" marginheight="0" oncontextmenu="return false" ondragstart="return false">
+
+<DIV class=popmsgper id=topdeck> </DIV>
+<SCRIPT language="JAVASCRIPT">
+<!--
+var nav = (document.layers);
+var iex = (document.all);
+var skn = (nav) ? document.topdeck : topdeck.style;
+
+if (nav) document.captureEvents(Event.MOUSEMOVE);
+
+document.onmousemove = mousepos;
+
+function popmsg(msg1,msg2){
+
+	var width = document.body.offsetWidth;
+
+	if (width > 1000)
+	{width=500}
+	else
+	{width="95%"}
+
+	var content ="<TABLE WIDTH="+width+" BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#0062b2><TR><TD><TABLE WIDTH=100% BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD><CENTER><FONT COLOR=#FFFFFF font-size: 9pt><B>pagalba</B></FONT></CENTER></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#FFFFFF><TR><TD><FONT COLOR=#000000 font-size: 9pt><b><left>"+msg1+"</left></b></FONT></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#FFFFFF><TR><TD><FONT COLOR=#000000 font-size: 9pt><left>"+msg2+"</left></FONT></TD></TR></TABLE></TD></TR></TABLE>";
+	
+	if (nav)
+	{
+		skn.document.write(content);
+		skn.document.close();
+		skn.visibility = "visible";
+	}
+	else if (iex)
+	{
+		document.all("topdeck").innerHTML = content;
+		skn.visibility = "visible";
+	}
+}
+
+function mousepos(e){
+	var x = (nav) ? e.pageX : event.x+document.body.scrollLeft;
+	var y = (nav) ? e.pageY : event.y+document.body.scrollTop;
+	skn.left = x - 60;
+	skn.top  = y+20;
+}
+
+function hiddenmsg(){
+	skn.visibility = "hidden";
+}
+
+//-->
+</SCRIPT>
+
+<table border="0" cellspacing="0" cellpadding="0" width="600"> 
+	<tr> 
+		<td> 
+			<p><a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0><img border="0" width="600" height="152" src="eng_top01.gif"></a></p>
+		</td>
+	</tr>
+</table>
+ 
+
+
+
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" width="600" height="40"> 
+<tr> 
+  <td>&nbsp;&nbsp;&nbsp;
+ <font color="#ffffff"><B>Apžvalga</B></font>
+ </td>
+
+<td>&nbsp;<font color="#aaaaaa">|</font>&nbsp;
+<a href="install.html" onfocus='this.blur()' class="Mlink"><font color="#aaaaaa">Diegimas</a></font>
+  </td>
+
+  <td>&nbsp;<font color="#aaaaaa">|</font>&nbsp;	
+  <a href="modes.html" onfocus='this.blur()' class="Mlink">OSD režimas</a>&nbsp;
+  <font color="#aaaaaa">|</font>&nbsp;
+  </td>
+
+
+<td>
+<a href="uninstall.html" onfocus='this.blur()' class="Mlink">Programos<BR>pašalinimas</a>
+</td>
+
+<td>&nbsp;<font color="#aaaaaa">|</font>&nbsp;
+<a href="tips.html" onfocus='this.blur()' class="Mlink">Sutrikimų  pašalinimas</a>
+&nbsp;&nbsp;</font></td></tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table border="0" cellspacing="0" cellpadding="10" width="600"> 
+	<tr> 
+		<td> <br>
+		
+			<h2><img src="../eng/icon01.gif" border="0">	Apžvalga</h2><BR><BR><BR>
+			
+			<h3><a name="Overview01"><img src="../eng/icon04.gif" border="0">	kas yra MagicTune&#153; </a></h3>
+			
+			<p> Monitoriaus efektyvumas gali būti skirtingas, priklausomai nuo grafinės plokštės, valdančiojo 
+kompiuterio, apšvietimo sąlygų ir kitų aplinkos veiksnių. Kad išgautumėte geriausią vaizdą, 
+monitorių reikia sureguliuoti individualiai. Deja, rankinio valdymo priemonės vaizdui sureguliuoti 
+dažnai atrodo sudėtingos. Tinkamam sureguliavimui (suderinimui) reikia programos, kuria būtų 
+lengva naudotis, ir kuri nuosekliais veiksmais padėtų išgauti geriausią bendrą vaizdo kokybę.<BR><BR>
+Daugeliu atvejų net paprasčiausiems ryškumo arba kontrasto nustatymams 
+tenka naudotis sunkiai suprantamais daugelio lygių ekrano meniu (OSD). Negana to, nėra 
+grįžtamojo ryšio, padedančio tinkamai nustatyti monitoriaus valdymo priemones. MagicTune&#153;  – tai 
+taikomoji programa, kuria suderinimo procesas supaprastinamas lengvai suprantamais 
+nurodymais ir kontroliniais fono raštais, sudarytais pagal kiekvieną monitoriaus valdymo 
+priemonę. Kiekvieno vartotojo nustatymus galima išsaugoti, todėl lengva pasirinkti vaizdavimo 
+parametrus daugelio vartotojų aplinkoje arba sudaryti kelis paruoštuosius nustatymus pagal 
+peržiūros turinį ir aplinkos apšvietimą.</p>
+			<BR><BR>
+
+
+
+			<table>
+				<tr>
+				</td>
+			<img src="../eng/line01.gif" align="right">
+			</td>
+			</tr>
+			</table>
+
+
+
+
+			<h3><a name="Overview02"><img src="../eng/icon04.gif" border="0">	Pagrindinės funkcijos</a></h3>
+			
+			<p> 	
+			
+			
+			 MagicTune™– tai taikomoji monitoriaus reguliavimo ir spalvų derinimo programa, kurioje 
+naudojamas vaizdo duomenų kanalo komandų sąsajos <a onmouseover="popmsg('DDC/CI (Display Data  Channel Command Interface (vaizdo duomenų kanalo komandų sąsaja)','Standartas apibrėžia DDC kanalu veikiančius skirtingų  sudėtingumo lygių I2C pagrindo protokolus, kuriais kontroliuojamas monitorius  ir prijungti papildomi įrenginiai. Atsiliepdama į galutinių vartotojų „prijunk ir dirbk“ poreikius, VESA  apibrėžė DDC standartą, kuriame yra keli komunikacijos lygiai. DDC2Bi, DDC2B+ ir DDC2AB lygiuose  galimas dvikryptis ryšys tarp kompiuterio grafinės sistemos ir vaizdavimo  įrenginio.  ')" onmouseout=hiddenmsg() href="#" onClick="return false;" style="cursor:help" onfocus='this.blur()' class="Hlink">(Display Data Channel Command 
+Interface – DDC/CI)</a> protokolas. Visi vaizdo nustatymai valdomi programine įranga, kad 
+nereikėtų naudotis monitoriaus ekrano meniu (OSD).&nbsp; MagicTune suderinama su Windows 98SE, Me,
+  2000, NT, XP Home ir XP Professional.</p>
+      <p><!-- MagicTune veikia fone, ją galima
+  suaktyvinti iš sistemos dėklės, per pradžios meniu arba spragtelėjus
+  dešiniuoju pelės klavišu darbo lauke. --> MagicTune suteikia
+  galimybę greitai ir tiksliai suderinti vaizdo parametrus, lengvai išsaugoti
+  ir pritaikyti geriausiai jums tinkančias monitoriaus konfigūracijas. </p>
+			<BR><BR>
+
+
+
+			<table>
+				<tr>
+				</td>
+			<img src="../eng/line01.gif" align="right">
+			</td>
+			</tr>
+			</table>
+
+
+
+			
+			<h3><a name="Overview03"><img src="../eng/icon04.gif" border="0">	 OSD režimas</a></h3>
+			<p>OSD režimas suteikia
+  galimybę lengvai koreguoti monitoriaus nustatymus neatliekant iš anksto
+  nustatytos veiksmų sekos. Lengvai pasiekiami meniu
+  elementai, kuriuos norite nustatyti. 
+       
+		</td>
+	</tr>
+</table>
+
+<table border="0" cellspacing="0" cellpadding="10" width="600"> 
+	<tr> 
+		<td> <!-- <br>
+
+			<p><font size="1">»ē¾ēĄŗ æ¹°ķ ¾ųĄĢ ŗÆ°ęµÉ ¼ö ĄÖ½Ą´Ļ´Ł. 
+			<BR>MagicTuneĄŗ Samsung, Inc.ĄĒ »óĒ¥ĄĢøē  Windows¢ē´Ā Microsoft¢ē Corp.ĄĒ µī·Ļ »óĒ¥ĄŌ´Ļ´Ł. 
+			<BR>´Łø¥ »óĒ¥´Ā ĒŲ´ē Čø»ēĄĒ ¼ŅĄÆĄŌ´Ļ´Ł.</font></p> -->
+
+			<p><a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0><img src="base.gif" border="0"> 
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>

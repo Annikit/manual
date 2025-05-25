@@ -1,0 +1,589 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<title>MagicTune Help - OSD Mode</title>
+<style type="text/css">
+	<!--
+	a:link {color: #0000ff; font-size: 12pt; text-decoration:none}
+	a:visited {color: #0000ff; font-size: 12pt; text-decoration:none}
+	a:hover {color: #0000ff; font-size: 12pt; text-decoration:underline}
+	a:active {color: #0000ff; font-size: 12pt; text-decoration:underline}
+
+	a.Mlink:link {color: #aaaaaa; font-size: 12pt; text-decoration:none}
+	a.Mlink:visited {color: #aaaaaa; font-size: 12pt; text-decoration:none}
+	a.Mlink:hover {color: #aaaaaa; font-size: 12pt; text-decoration:underline}
+	a.Mlink:active {color: #aaaaaa; font-size: 12pt; text-decoration:underline}
+
+	body, p, td, left, TABLE {font-family: Arial, Helvetica, sans-serif; font-size: 11pt; line-height: 140%; }
+
+	BODY {OVERFLOW-X: hidden; OVERFLOW: scroll}
+	.popmsgper {VISIBILITY: hidden; POSITION: absolute}
+	a.Hlink:link {color: #2F90F3; font-size: 12pt; text-decoration:none}
+	a.Hlink:visited {color: #2F90F3; font-size: 12pt; text-decoration:none}
+	a.Hlink:hover {color: #008000; font-size: 12pt; text-decoration:none}
+	a.Hlink:active {color: #008000; font-size: 12pt; text-decoration:none}
+	-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF" marginwidth="0" marginheight="0"  oncontextmenu="return false" ondragstart="return false" >
+
+<DIV class=popmsgper id=topdeck> </DIV>
+<SCRIPT language="JAVASCRIPT">
+<!--
+var nav = (document.layers);
+var iex = (document.all);
+var skn = (nav) ? document.topdeck : topdeck.style;
+
+if (nav) document.captureEvents(Event.MOUSEMOVE);
+
+document.onmousemove = mousepos;
+
+function popmsg(msg1,msg2){
+
+	var width = document.body.offsetWidth;
+
+	if (width > 1000)
+	{width=500}
+	else
+	{width="95%"}
+
+var content ="<TABLE WIDTH="+width+" BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#0062b2><TR><TD><TABLE WIDTH=100% BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD><CENTER><FONT COLOR=#FFFFFF font-size: 9pt><B>µµżň¸»</B></FONT></CENTER></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#FFFFFF><TR><TD><FONT COLOR=#000000 font-size: 9pt><b><left>"+msg1+"</left></b></FONT></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#FFFFFF><TR><TD><FONT COLOR=#000000 font-size: 9pt><left>"+msg2+"</left></FONT></TD></TR></TABLE></TD></TR></TABLE>";
+	
+	if (nav)
+	{
+		skn.document.write(content);
+		skn.document.close();
+		skn.visibility = "visible";
+	}
+	else if (iex)
+	{
+		document.all("topdeck").innerHTML = content;
+		skn.visibility = "visible";
+	}
+}
+
+function mousepos(e){
+	var x = (nav) ? e.pageX : event.x+document.body.scrollLeft;
+	var y = (nav) ? e.pageY : event.y+document.body.scrollTop;
+	skn.left = x - 60;
+	skn.top  = y+20;
+}
+
+function hiddenmsg(){
+	skn.visibility = "hidden";
+}
+
+//-->
+</SCRIPT>
+
+<script language="JavaScript" type="text/JavaScript" src='osd.js'>
+</script>
+		
+<table border="0" cellspacing="0" cellpadding="0" width="600" onLoad="MM_preloadImages('kor_osd01_01.gif','kor_osd01_02.gif','kor_osd01_03.gif','kor_osd01_04.gif','kor_osd02_01.gif','kor_osd02_02.gif','kor_osd02_03.gif','kor_osd03_01.gif','kor_osd03_02.gif','kor_osd03_03.gif','kor_osd03_04.gif','kor_osd03_05.gif','kor_osd03_06.gif','kor_osd03_07.gif','kor_osd03_08.gif','kor_osd03_09.gif','kor_osd03_10.gif','kor_osd03_11.gif','kor_osd03_12.gif','kor_osd03_13.gif','kor_osd03_03.gif','go_on.gif','stop_off.gif')"> 
+	<tr> 
+		<td> 
+			<p><a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0><img border="0" width="600" height="152" src="eng_top01.gif"></a></p>
+		</td>
+	</tr>
+</table>
+
+ 
+
+
+
+
+
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" width="600" height="40"> 
+<tr> 
+  <td>&nbsp;&nbsp;&nbsp;
+ <a href="overview.html" onfocus='this.blur()' class="Mlink">Prehľad</a>
+ &nbsp;&nbsp; </td>
+
+<td><font color="#aaaaaa">|</font>&nbsp;&nbsp;
+<a href="install.html" onfocus='this.blur()' class="Mlink"><font color="#aaaaaa">Inštalácia</a></font>
+&nbsp;&nbsp;  </td>
+
+ <td><font color="#aaaaaa">|</font>	&nbsp;&nbsp;
+<font color="#ffffff"><B> Režim OSD</b></font>
+&nbsp;&nbsp;  
+  </td>
+
+<td>&nbsp;&nbsp;<font color="#aaaaaa">|</font>&nbsp;&nbsp;
+<a href="uninstall.html" onfocus='this.blur()' class="Mlink">Odinštalovanie</a>
+&nbsp;&nbsp;</td>
+
+<td><font color="#aaaaaa">|</font>&nbsp;&nbsp;
+<a href="tips.html" onfocus='this.blur()' class="Mlink">Riešenie problémov</a>
+&nbsp;&nbsp;</font></td></tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table width="600" border="0" cellspacing="0" cellpadding="10">
+	<tr>
+		<td>		<CENTER>
+		<table width="550">
+		         <tr>
+		           <Td width="550" colspan="2">
+                <p align="center"><img src="../eng/osd_t2.gif" border="0"></Td>
+				   </tr>
+				   <Td width="80">
+				 
+            <p align="center">  <img src="../eng/memo01.gif" border="0"></Td>
+				   <Td width="470">
+				  <FONT COLOR="#003399">MagicTune umožňuje rýchle  a presné ladenie zobrazenia, s možnosťou ľahko ukladať a používať  konfigurácie monitora, ktoré vám najlepšie vyhovujú. <BR>
+																	<B><ul><li>Režim OSD sa nemusí zhodovať s vysvetlením v príručke, keďže závisí od technických parametrov jednotlivých monitorov.</li>
+																	 </ul>
+</B></FONT></Td>
+					</tr>
+					<tr>
+		           <Td width="550" colspan="2">
+				   
+            <p align="center"><img src="../eng/osd_t2.gif" border="0"></Td></tr>
+				   </table></CENTER><br>
+			<h2><a name="OsdMode"><img src="../eng/icon01.gif" border="0">	Režim OSD</a></h2>
+			
+			<p align="center"><img src="../eng/kor_osd01.gif"></p>
+
+			<p>Režim OSD značne zjednodušuje úpravu nastavení na
+  monitoroch. Pri výbere jednotlivých kariet sa v hornej  časti ovládacieho okna zobrazuje všeobecný popis nastaviteľných položiek
+  nižšieho menu. Pri výbere jednotlivých kariet sa zobrazuje zoznam  menu. Režim OSD  umožňuje ľahký a pohodlný prístup ku všetkým kartám a položkám nižších menu
+  potrebným na rýchlu úpravu nastavení monitora.
+</p> 
+			<br>
+
+			<h4><a name="OsdMode01"><img src="../eng/icon04.gif" border="0">  Funkcie  tlačidiel karty</a></h4>
+			
+			<table border="0" width="600" style="border-top-width:1; border-top-color:rgb(51,51,51); border-top-style:none;" cellpadding="2" cellspacing="0" align="center">
+				<tr>
+					<td width="110" style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>OK </b></p>
+					</td>
+					<td style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>Umožňuje  použitie všetkých zmien a opustenie MagicTune.<BR><BR><!-- <a onmouseover="popmsg('˝Ă˝şĹŰ  Ć®·ąŔĚ','˝Ă˝şĹŰ Ć®·ąŔĚ´Â ŔŰľ÷ÇĄ˝ĂÁŮżˇ ˝Ă°čżÍ ¸î¸î ÇÁ·Î±×·ĄµéŔÇ ľĆŔĚÄÜŔ» łŞĹ¸łżŔ¸·Î˝á ÇÁ·Î±×·ĄŔĚ °Ĺ±âżˇ ŔÖ´Ů´Â °ÍŔ» »çżëŔÚ°ˇ ÁöĽÓŔűŔ¸·Î ľËľĆÂ÷¸± Ľö ŔÖµµ·Ď ÇĎ°í, ±×Áß ÇĎłŞ¸¦ ˝±°Ô Ĺ¬¸ŻÇŇ Ľö ŔÖµµ·Ď ÇĎ±â Ŕ§ÇŃ °ÍŔÔ´Ď´Ů. &lt;br&gt;&lt;br&gt;˝Ă˝şĹŰ Ć®·ąŔĚ´Â Ŕ©µµżě95/98/NTżˇĽ­ ŔŰľ÷ÇĄ˝ĂÁŮŔÇ ÇŃÂĘ łˇżˇ(´ë°ł żěĂř ÇĎ´Üżˇ) Ŕ§ÄˇÇŘ ŔÖ´Â şÎşĐŔ» ¸»ÇŐ´Ď´Ů.')" onmouseout=hiddenmsg() href="#" onClick="return false;" style="cursor:help" onfocus='this.blur()' class="Hlink">˝Ă˝şĹŰ Ć®·ąŔĚ</a>żˇĽ­´Â ż©ŔüČ÷ MagicTuneŔĚ ˝ÇÇŕµÇ°í ŔÖ˝Ŕ´Ď´Ů.<br><br> --></p> 
+					</td>
+				</tr>
+				<tr>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>Reset </b></p>
+					</td>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>Umožňuje  obnovenie nastavených hodnôt monitora zobrazených v aktívnom ovládacom okne  na hodnoty odporúčané výrobcom.<br><br> </p>
+					</td>
+				</tr>
+				<tr>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>Cancel
+  (Zrušiť) </b></p>
+					</td>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>Umožňuje opustenie programu MagicTune bez uplatnenia vykonaných zmien.<BR>
+ Ak ste v  ovládacom okne nevykonali žiadne zmeny, kliknutie na tlačidlo „Zrušiť“ nemá  nijaký účinok. 
+<br><br> </p>
+					</td>
+				</tr>
+			</table>
+
+
+
+			<table>
+				<tr>
+				<td><BR><BR>
+			<img src="../eng/line01.gif" align="right">
+			</td>
+			</tr>
+			</table>
+
+
+
+			
+			<br><br><h4><a name="Linkosd01"><img src="../eng/icon04.gif" border="0">  Funkcie karty  Picture (Obraz)</a></h4>
+
+			Umožňuje  používateľovi upraviť nastavenia obrazovky na želané hodnoty.
+			
+			<p align="center"><img src="../eng/kor_osd01.gif" name="osd01"></p>
+			
+			<form name="Fosd01">
+			<table border="0" width="600" style="border-top-width:1; border-top-color:rgb(51,51,51); border-top-style:none;" cellpadding="2" cellspacing="0" align="center">
+				<tr>
+					<td style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<INPUT type="radio" name="selosd01" value="kor_osd01_01" id="osd01_01" style="cursor:hand" onfocus="this.blur();" checked onClick="selOSDvalue('../eng/kor_osd01_01','osd01')"><LABEL style="cursor:hand" class="base" for="osd01_01"><nobr>Brightness</nobr></LABEL>
+						<INPUT type="radio" name="selosd01" value="kor_osd01_02" id="osd01_02" value="222" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('../eng/kor_osd01_02','osd01')"><LABEL style="cursor:hand" class="base" for="osd01_02"><nobr>Contrast</nobr></LABEL>
+						<INPUT type="radio" name="selosd01" value="kor_osd01_03" id="osd01_03" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('../eng/kor_osd01_03','osd01')"><LABEL style="cursor:hand" class="base" for="osd01_03"><nobr>MagicBright</nobr></LABEL>
+					</td>
+					<td width="110" align=center style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:1; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:solid;">
+						<p><a href="#Linkosd01" onClick="Image_change('osd01','OnStart','3')"><img src="../eng/go_off.gif" name="osd01_go" border="0" alt="play"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Linkosd01" onClick="Image_change('osd01','Off')"><img src="../eng/stop_on.gif" name="osd01_stop" border="0" alt="stop"></a></p>
+					</td>
+				</tr>
+			</table>
+			</form>
+             
+			<table border="0" width="600" style="border-top-width:1; border-top-color:rgb(51,51,51); border-top-style:none;" cellpadding="2" cellspacing="0" align="center">
+				<tr>
+					<td width="110" style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>Brightness </b></p>
+					</td>
+					<td style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>Umožňuje stmavnutie alebo zjasnenie celej obrazovky. V prípade, že jas nie nastavený na náležitú úroveň,  môžu sa detaily obrázkov v tmavých oblastiach strácať. Umožňuje  prispôsobenie jasu tak, aby boli zabezpečené najlepšie podmienky na  pozeranie.
+<br><br></p>
+					</td>
+				</tr>
+				<tr>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>Contrast </b></p>
+					</td>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>Umožňuje úpravu rozdielu v jase medzi jasnými a  tmavými oblasťami na obrazovke.
+  Určuje ostrosť  obrazu.<br><br> </p>
+					</td>
+				</tr>
+
+
+<tr>
+                            </tr>
+				<tr>
+					<td valign=middle style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>MagicBright&trade;</b></p>
+					</td>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>
+						MagicBright™ je nová funkcia, ktorá poskytuje
+  optimálne prostredie pre pozeranie v závislosti od obsahu obrazu, ktorý
+  sledujete. V súčasnosti sú k dispozícii štyri rôzne
+  režimy: Text, Internet, Zábava a Vlastný. Každý
+  režim má vlastnú prednastavenú hodnotu jasu. Ľahko si môžete zvoliť jedno zo
+  štyroch nastavení jednoduchým stlačením ovládacieho tlačidla
+  MagicBright™.
+<br> 
+
+						 						
+						<UL><LI>Above 19"
+
+</UL><ol>
+							<li>Text: Pre dokumenty  alebo práce obsahujúce náročný text. </li>
+							<li>Internet: Pre prácu so  zmiešaným zobrazením, ako je napr. text a grafika.</li>
+							<li>Game (Hra):Pre sledovanie  pohyblivého obrazu, ako sú napr. hry.</li>
+							<li>Entertain  (Zábava):Na sledovanie  filmov, ako sú napr. DVD alebo VCD.</li>
+							
+
+			
+							
+						</ol>
+						<UL><LI>Above 19"
+
+</UL>
+						<ol>
+							<li>Text: Pre dokumenty  alebo práce obsahujúce náročný text. </li>
+							<li>Internet: Pre prácu so  zmiešaným zobrazením, ako je napr. text a grafika.</li>
+							<li>Entertain  (Zábava):Na sledovanie  filmov, ako sú napr. DVD alebo VCD.</li>
+							<!-- <li>Custom: Custom  (Vlastné): Napriek tomu, že
+  naši technici starostlivo vyberali prednastavené hodnoty, nemusia podľa vášho
+  vkusu na pohľad pôsobiť príjemne.Ak je tomu tak,
+  prostredníctvom menu OSD upravte Brightness (Jas) a Contrast (Kontrast).
+</li> -->
+						</ol>
+				</p>
+					</td>
+				</tr>
+			</table>
+			
+
+
+			<table>
+				<tr>
+				<td><BR><BR>
+			<img src="../eng/line01.gif" align="right">
+			</td>
+			</tr>
+			</table>
+
+
+
+						
+				<br><br><h4><a name="Linkosd02"><img src="../eng/icon04.gif" border="0">  Funkcie karty  Color (Farba)</a></h4>
+
+			Umožňuje úpravu  „teploty“ farby pozadia monitora alebo obrazu.
+			<p align="center"><img src="../eng/kor_osd02.gif" name="osd02"></p>
+			
+			<form name="Fosd02">
+			<table border="0" width="600" style="border-top-width:1; border-top-color:rgb(51,51,51); border-top-style:none;" cellpadding="2" cellspacing="0" align="center">
+				<tr>
+					<td style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<INPUT type="radio" name="selosd02" value="kor_osd02_01" id="osd02_01" style="cursor:hand" onfocus="this.blur();" checked onClick="selOSDvalue('../eng/kor_osd02_01','osd02')"><LABEL style="cursor:hand" class="base" for="osd02_01"><nobr>Color Tone</nobr></LABEL>
+						<INPUT type="radio" name="selosd02" value="kor_osd02_02" id="osd02_02" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('../eng/kor_osd02_02','osd02')"><LABEL style="cursor:hand" class="base" for="osd02_02"><nobr>Color Control</nobr></LABEL>
+						 
+					</td>
+
+					<td width="110" align=center style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:1; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:solid;">
+						<p><a href="#Linkosd02" onClick="Image_change('osd02','OnStart','2')"><img src="../eng/go_off.gif" name="osd02_go" border="0" alt="play"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Linkosd02" onClick="Image_change('osd02','Off')"><img src="../eng/stop_on.gif" name="osd02_stop" border="0" alt="stop"></a></p>
+					</td>
+				</tr>
+			</table>
+			</form>
+                        
+			<table border="0" width="600" style="border-top-width:1; border-top-color:rgb(51,51,51); border-top-style:none;" cellpadding="2" cellspacing="0" align="center">
+				<tr>
+					<td width="110" style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>Color Tone (Farebnýodtieňa )</b></p>
+					</td>
+					<td style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>Umožňuje zmenu  odtieňa farby.<br>
+						<ul>
+							<li>Warm  - Normal - Cool 
+							<li>Custom 
+						</ul></p>
+					</td>
+				</tr>
+				<tr>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>Color Control<BR>(Farebný
+  odtie)</b></p>
+					</td>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>Umožňuje úpravu farieb obrazu monitora. <BR>Farby monitora  si môžete zmeniť podľa svojho želania.
+						<ul>
+							<li>R- G - B </li>
+							<li>sRGB</li>
+						</ul></p>
+					</td>
+				</tr>
+		<!--			<tr>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>Calibration</b></p>
+					</td>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>The process through which the colors of your choice are optimized and maintained. 
+You will find MagicTune extremely useful if you are one of those who wish to view images with their full details accurately reproduced - including web images and the ones that are produced using the digital camera or the scanner.  
+<BR>
+
+						
+				 		<ul>
+							<li>Select [Factory Default] to disable the Calibration feature. 
+To enable Calibration, go to [Options] ' [Basic Settings] and select [Enable Calibration] in the Basic Settings menu. 
+ </li></ul>
+
+						
+						<BR>
+						</p>
+					</td>
+				</tr>-->
+			</table>
+
+
+			<table>
+				<tr>
+				<td><BR><BR>
+			<img src="../eng/line01.gif" align="right">
+			</td>
+			</tr>
+			</table>
+
+			<br><br><h4><a name="Linkosd03"><img src="../eng/icon04.gif" border="0"> Funkcie karty   Image (Zobrazenie)</a></h4>
+			
+			Umožňuje úpravu
+  hodnôt pre Position (Umiestnenie), Size (Veľkosť) a Rotation
+  (Rotácia).
+
+			<p align="center"><img src="../eng/kor_osd03.gif" name="osd03"></p>
+
+			<form name="Fosd03">
+			<table border="0" width="600" style="border-top-width:1; border-top-color:rgb(51,51,51); border-top-style:none;" cellpadding="2" cellspacing="0" align="center">
+				<tr>
+					<td style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<B>Geometry 1</B><BR>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_01" id="osd03_01" style="cursor:hand" onfocus="this.blur();" checked onClick="selOSDvalue('../eng/kor_osd03_01','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_01"><nobr>Rotation</nobr></LABEL>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_02" id="osd03_02" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('../eng/kor_osd03_02','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_02"><nobr>Size</nobr></LABEL>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_03" id="osd03_03" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('../eng/kor_osd03_03','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_03"><nobr>Position</nobr></LABEL><BR><BR>
+
+						<B>Geometry 2</B><BR>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_04" id="osd03_04" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('../eng/kor_osd03_04','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_04"><nobr>Pincushion</nobr></LABEL>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_05" id="osd03_05" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('../eng/kor_osd03_05','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_05"><nobr>Pinbalance</nobr></LABEL>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_06" id="osd03_06" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('../eng/kor_osd03_06','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_06"><nobr>Trapezoid</nobr></LABEL>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_07" id="osd03_07" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('../eng/kor_osd03_07','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_07"><nobr>Parallelogram</nobr></LABEL><BR><BR>
+
+						<B>Other</B><BR>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_08" id="osd03_08" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('../eng/kor_osd03_08','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_08"><nobr>Moire</nobr></LABEL>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_09" id="osd03_09" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('../eng/kor_osd03_09','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_09"><nobr>Degauss</nobr></LABEL>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_10" id="osd03_10" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('../eng/kor_osd03_10','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_10"><nobr>Sidepin Corner Top</nobr></LABEL>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_11" id="osd03_11" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('../eng/kor_osd03_11','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_11"><nobr>Sidepin Corner Bottom</nobr></LABEL>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_12" id="osd03_12" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('../eng/kor_osd03_12','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_12"><nobr>Pinbalance Corner Top</nobr></LABEL>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_13" id="osd03_13" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('../eng/kor_osd03_13','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_13"><nobr>Pinbalance Corner Bottom</nobr></LABEL>
+					</td>
+					<td width="110" align=center style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:1; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:solid;">
+						<p><a href="#Linkosd03" onClick="Image_change('osd03','OnStart','13')"><img src="../eng/go_off.gif" name="osd03_go" border="0" alt="play"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Linkosd03" onClick="Image_change('osd03','Off')"><img src="../eng/stop_on.gif" name="osd03_stop" border="0" alt="stop"></a></p>
+					</td>
+				</tr>
+			</table>
+			</form>
+                        
+			<table border="0" width="600" style="border-top-width:1; border-top-color:rgb(51,51,51); border-top-style:none;" cellpadding="2" cellspacing="0" align="center">
+				<tr>
+					<td width="110" style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>Geometry 1 (Geometria  1)</b></p>
+					</td>
+					<td style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>Umožňuje úpravu  hodnôt pre Position (Umiestnenie), Size (Veľkosť) a Rotation  (Rotácia).
+						<ul>
+							<li>Position (Umiestnenie) </li>
+							<li>Size (Veľkosť)</li>
+							<li>Rotation (Rotácia)</li>
+						</ul></p>
+					</td>
+				</tr>
+				<tr>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>Geometry 2 (Geometria  2)</b></p>
+					</td>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>Umožňuje úpravu
+  hodnôt pre Pincushion (Poduška), Pinbalance (Rovnováha bodov), Trapezoid (Lichobežník) a Parallelogram
+  (Rovnobežník).
+						<ul>
+							<li>Pincushion (Poduška)</li>
+							<li>Pinbalance (Rovnováha  bodov)</li>
+							<li>Trapezoid (Lichobežník)</li>
+							<li>Parallelogram  (Rovnobežník)</li>
+						</ul> </p>
+					</td>
+				</tr>
+				<tr>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>Other(Ostatn)é</b></p>
+					</td>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>Umožňuje úpravu  hodnôt pre Moire (Moaré), Degauss (Odmagnetizovanie), Sidepin Corner (Skreslenie v rohoch) a Pinbalance  Corner (Nesymetrické skreslenie v rohoch).
+						<ul>
+							<li>Moire (Moaré)</li>
+							<li>Degauss  (Odmagnetizovanie)</li>
+							<li>Sidepin Corner Top  (Skreslenie v horných rohoch)</li>
+							<li>Sidepin Corner Bottom  (Skreslenie v dolných rohoch)</li>
+							<li>Pinbalance Corner Top  (Nesymetrické skreslenie v horných rohoch)</li>
+							<li>Pinbalance Corner  Bottom (Nesymetrické skreslenie v dolných rohoch)</li>
+						</ul> </p>
+					</td>
+				</tr>
+			</table> 
+
+
+
+			<table>
+				<tr>
+				<td><BR><BR>
+			<img src="../eng/line01.gif" align="right">
+			</td>
+			</tr>
+			</table>
+
+
+
+			
+			<br><br><h4><a name="Linkosd04"><img src="../eng/icon04.gif" border="0"> Funkcie karty  Option (Možnosti)</a></h4>
+
+			Program MagicTune môžete nastaviť s použitím nasledovných  možností.
+
+			<p align="center"><img src="../eng/kor_osd04.gif"></p>
+                        
+			<table border="0" width="600" style="border-top-width:1; border-top-color:rgb(51,51,51); border-top-style:none;" cellpadding="2" cellspacing="0" align="center">
+				<tr>
+					<td width="110" style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>Predvoľby</b></p>
+					</td>
+					<td style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>Načíta dialógové okno s predvoľbami.Používané predvoľby sú v príslušnom štvorčeku  označené odfajknutím.Výber alebo zrušenie predvoľby uskutočňujete  umiestnením kurzora nad príslušný štvorček a následným kliknutím.
+						<ul>
+							<li>Menu Enable task tray (Zapnutie panela úloh). <BR>  
+– K menu programu MagicTune  sa dostanete kliknutím na ikonu v [menu panela úloh].Menu sa
+  nezobrazujú, ak nie je zvolená možnosť [Enable System Tray] (Zpanutie
+  systémového panela) v [Options] (Možnosti)' [Basic Settings] (Základné
+  nastavenia). 
+<BR> 
+</li>
+							<li>Select Language (Výber jazyka) – Zvolený jazyk  ovplyvňuje len jazyk OSD.
+						</ul></p>
+					</td>
+				</tr>
+			</table>
+
+
+
+
+			<table>
+				<tr>
+				<td><BR><BR>
+			<img src="../eng/line01.gif" align="right">
+			</td>
+			</tr>
+			</table>
+
+
+
+			
+			<br><br><h4><a name="Linkosd05"><img src="../eng/icon04.gif" border="0"> Funkcie karty  Support (Podpora)</a></h4>
+			
+			 Ukazuje Asset ID  a číslo verzie programu a umožňuje použitie funkcie Help (Pomocník).
+
+			<p align="center"><img src="../eng/kor_osd05.gif"></p>
+                        
+			<table border="0" width="600" style="border-top-width:1; border-top-color:rgb(51,51,51); border-top-style:none;" cellpadding="2" cellspacing="0" align="center">
+				<tr>
+					<td width="110" style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>Help  (Pomocník)  </b></p>
+					</td>
+					<td style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>V prípade, že potrebujete pomoc pri inštalácii alebo  obsluhe programu MagicTune, navštívte jeho  internetovú stránku alebo kliknite na súbory
+  Pomocníka (používateľská príručka).Používateľská  príručka sa otvára v základnom okne prehliadača.
+
+<br><br></p>
+					</td>
+				</tr>
+				<tr>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>Asset  ID (Asset ID)</b></p>
+					</td>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>Otvára  informatívne okno, kde je uvedený dátum výroby monitora.
+<br><br></p>
+					</td>
+				</tr>
+				<tr>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>Version  (Verzia)</b></p>
+					</td>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>Zobrazuje číslo  verzie programu MagicTune.<br><br></p>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+<table border="0" cellspacing="0" cellpadding="10" width="600"> 
+	<tr> 
+		<td> <!-- <br>
+
+			<p><font size="1">»çľçŔş żą°í ľřŔĚ şŻ°ćµÉ Ľö ŔÖ˝Ŕ´Ď´Ů. 
+			<BR>MagicTuneŔş Samsung, Inc.ŔÇ »óÇĄŔĚ¸ç  Windows˘ç´Â Microsoft˘ç Corp.ŔÇ µî·Ď »óÇĄŔÔ´Ď´Ů. 
+			<BR>´Ů¸Ą »óÇĄ´Â ÇŘ´ç Č¸»çŔÇ ĽŇŔŻŔÔ´Ď´Ů.</font></p> -->
+
+			<p><a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0><img src="base.gif" border="0"> 
+		</td>
+	</tr>
+</table>
+
+
+</body>
+</html>
+

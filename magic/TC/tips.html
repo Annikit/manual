@@ -1,0 +1,166 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=big5">
+<title>MagicTune Help - Troubleshooting</title>
+<style type="text/css">
+	<!--
+	a:link {color: #0000ff; font-size: 12pt; text-decoration:none}
+	a:visited {color: #0000ff; font-size: 12pt; text-decoration:none}
+	a:hover {color: #0000ff; font-size: 12pt; text-decoration:underline}
+	a:active {color: #0000ff; font-size: 12pt; text-decoration:underline}
+
+	a.Mlink:link {color: #aaaaaa; font-size: 12pt; text-decoration:none}
+	a.Mlink:visited {color: #aaaaaa; font-size: 12pt; text-decoration:none}
+	a.Mlink:hover {color: #aaaaaa; font-size: 12pt; text-decoration:underline}
+	a.Mlink:active {color: #aaaaaa; font-size: 12pt; text-decoration:underline}
+
+	body, p, td, left, TABLE {font-family: Arial, Helvetica, sans-serif; font-size: 11pt; line-height: 140%; }
+
+	BODY {OVERFLOW-X: hidden; OVERFLOW: scroll}
+	.popmsgper {VISIBILITY: hidden; POSITION: absolute}
+	a.Hlink:link {color: #2F90F3; font-size: 12pt; text-decoration:none}
+	a.Hlink:visited {color: #2F90F3; font-size: 12pt; text-decoration:none}
+	a.Hlink:hover {color: #008000; font-size: 12pt; text-decoration:none}
+	a.Hlink:active {color: #008000; font-size: 12pt; text-decoration:none}
+	-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF" marginwidth="0" marginheight="0" oncontextmenu="return false" ondragstart="return false">
+
+<DIV class=popmsgper id=topdeck> </DIV>
+<SCRIPT language="JAVASCRIPT">
+<!--
+var nav = (document.layers);
+var iex = (document.all);
+var skn = (nav) ? document.topdeck : topdeck.style;
+
+if (nav) document.captureEvents(Event.MOUSEMOVE);
+
+document.onmousemove = mousepos;
+
+function popmsg(msg1,msg2){
+
+	var width = document.body.offsetWidth;
+
+	if (width > 1000)
+	{width=500}
+	else
+	{width="95%"}
+
+	var content ="<TABLE WIDTH="+width+" BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#0E1F83><TR><TD><TABLE WIDTH=100% BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD><CENTER><FONT COLOR=#FFFFFF SIZE=2><B>HELP</B></FONT></CENTER></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#FFFFFF><TR><TD><FONT COLOR=#000000 font-size: 9pt><b><left>"+msg1+"</left></b></FONT></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#FFFFFF><TR><TD><FONT COLOR=#000000 font-size: 9pt><left>"+msg2+"</left></FONT></TD></TR></TABLE></TD></TR></TABLE>";
+	
+	if (nav)
+	{
+		skn.document.write(content);
+		skn.document.close();
+		skn.visibility = "visible";
+	}
+	else if (iex)
+	{
+		document.all("topdeck").innerHTML = content;
+		skn.visibility = "visible";
+	}
+}
+
+function mousepos(e){
+	var x = (nav) ? e.pageX : event.x+document.body.scrollLeft;
+	var y = (nav) ? e.pageY : event.y+document.body.scrollTop;
+	skn.left = x - 60;
+	skn.top  = y+20;
+}
+
+function hiddenmsg(){
+	skn.visibility = "hidden";
+}
+
+//-->
+</SCRIPT>
+		
+<table border="0" cellspacing="0" cellpadding="0" width="600"> 
+	<tr> 
+		<td> 
+			<p><a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0><img border="0" width="600" height="152" src="eng_top01.gif"></a></p>
+		</td>
+	</tr>
+</table>
+
+ 
+
+
+
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" width="600" height="40"> 
+<tr> 
+  <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <a href="overview.html" onfocus='this.blur()' class="Mlink">簡介</a></font>
+ </td>
+
+<td>&nbsp;&nbsp;&nbsp;<font color="#aaaaaa">|</font>&nbsp;&nbsp;&nbsp;
+<a href="install.html" onfocus='this.blur()' class="Mlink">安裝</B></font>
+  </td>
+
+  <td>&nbsp;&nbsp;&nbsp;<font color="#aaaaaa">|</font>&nbsp;&nbsp;&nbsp;	&nbsp;&nbsp;&nbsp;
+  <a href="modes.html" onfocus='this.blur()' class="Mlink">OSD 模式</a>
+  </td>
+
+
+<td>&nbsp;&nbsp;&nbsp;<font color="#aaaaaa">|</font>&nbsp;&nbsp;&nbsp;
+<a href="uninstall.html" onfocus='this.blur()' class="Mlink">解除安裝</a>
+</td>
+
+<td>&nbsp;&nbsp;&nbsp;<font color="#aaaaaa">|</font>&nbsp;&nbsp;&nbsp;
+<font color="#ffffff"><B>故障排除</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></td></tr>
+</table>
+
+
+
+
+
+
+<table width="600" border="0" cellspacing="0" cellpadding="10">
+	<tr>
+		<td><br>
+			<h2><a name="Tips"><img src="../eng/icon01.gif" border="0">	故障排除</a></h2>
+
+
+
+			<p>在MagicTune運作時更換顯示器或更新圖形卡驅動程式，MagicTune可能會無法作業。若狀況如此，請重新啟動系統。 </p>
+
+ <!-- 億煎遴 僥掘 衛濛 -->
+ <BR><img src="../eng/icon04.gif" border="0"> <B>當 MagicTune 運作不佳時作確認。</B>
+ <bR><BR>* 電腦（VGA）支援 即插即用的 Window 操作系統上可以發現 MagicTune 功能。<BR><BR>
+	 <table width="550" border="1" cellpadding="5" cellspacing="0" bordercolor="#999999" align="center">
+	   <tr>
+		 <td width="548"><B>* 檢查電腦是否具有 MagicTune 功能時，請遵照下列步驟<BR>&nbsp;&nbsp;（Windows 為 XP 版）： </B>
+		 <br><br>控制台 -> 效能及維護 -> 系統 -> 硬體 -> 裝置管理員 -> 監視器 -> 刪除「即插即用監視器」後，可利用搜尋新硬體方式來找出「即插即用監視器」。 </td>
+	   </tr>
+	 </table>
+  <BR><BR>
+
+ <!-- 億煎遴 僥掘 部 -->
+
+
+<p>請造訪MagicTune<a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0>網站</a> 以取得MagicTune的技術支援、FAQs（常見問題與解答）和升級軟體。</p>
+
+		</td>
+	</tr>
+</table>
+
+<table border="0" cellspacing="0" cellpadding="10" width="600"> 
+	<tr> 
+		<td><img src="../eng/kor_osd05.gif"></p><BR><BR><BR>  <!-- <br>
+
+			<p><font size="1">餌曄擎 蕨堅 橈檜 滲唳腆 熱 氈蝗棲棻. 
+			<BR>MagicTune擎 Samsung, Inc.曖 鼻ル檜貊  WindowsＹ朝 MicrosoftＹ Corp.曖 蛔煙 鼻ル殮棲棻. 
+			<BR>棻艇 鼻ル朝 п渡 �蜓蝩� 模嶸殮棲棻.</font></p> -->
+
+			<p><a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0><img src="base.gif" border="0"> 
+		</td>
+	</tr>
+</table>
+
+
+</body>
+</html>
+

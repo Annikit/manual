@@ -1,0 +1,657 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Manuale per l'utente del Monitor SAMSUNG SyncMaster</title>
+<STYLE type=text/css>
+a:link {color: #0000FF; font-size: 10pt; text-decoration:none; font-family: Arial}
+a:visited {color: #0000FF; font-size: 10pt; text-decoration:none; font-family: Arial}
+a:hover {color: #ff0000; font-size: 10pt; text-decoration:none; font-family: Arial}
+a:active {color: #ff0000; font-size: 10pt; text-decoration:none; font-family: Arial}
+
+body {font-size: 12pt; font-family: Arial}
+td {font-size: 12pt; font-family: Arial}
+p {font-size: 12pt; font-family: Arial}
+b {font-size: 12pt; font-family: Arial}
+ol {font-size: 12pt; font-family: Arial}
+blockquote {font-size: 12pt; font-family: Arial}
+h3 {font-size: 12pt; color: #ffffff;  font-family: Arial}
+ol {font-size: 12pt; font-family: Arial}
+blockquote {font-size: 12pt; font-family: Arial}
+#lang {font-size: 10pt; font-family: Arial} 
+#lang1 {font-size: 10pt; font-family: Arial}  
+#color1 {font-size: 12pt; color: #0000ff; font-family: Arial} 
+#select1{position: absolute; color: #003366; left: 14; top: 420; z-index: 0;}
+#size1{font-size: 15pt; color: #ff0000; font-family: Arial}
+#size2{font-size: 15pt; color: #8000FF; font-family: Arial}
+#size3{font-size: 11pt; color: #166f2b; font-family: Times New Roman}
+#size4{font-size: 11pt; color: #000000; font-family: Times New Roman}
+#size5{font-size: 13pt; color: #ffffff; font-family: Arial}
+
+</STYLE>
+<script language="JavaScript" src = "../java.js">
+</script>
+<script language="JavaScript">
+<!-- Hide the script from old browsers --
+function openwin(str)
+{
+		var thereman = screen.availWidth;
+		var hereman = screen.availHeight;
+		window.open(str, '1004', 'toolbar=no,resizable=no,scrollbars=no,width=915,height=700,left=' + 30 + ',top=' + 30)
+}
+//-->
+</script>
+</head>
+
+<BODY aLink=red bgColor="D7D7D7" link=blue text=black vLink=purple topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" background="../../img/m_img/bg.gif">
+<div style="position:absolute; left:380px; top:10px; z-index:11; visibility: show">
+<table>
+<tr>
+	<td align="center">
+	<form name="lang">
+	<img src="../../img/select/it/sel_lang.gif" width=129 height=21 alt="" border="0"><br>
+	<select name="select1" size="1" onChange="gogo(this.form)">
+    	<option value="../../en/setup/se_drib10.htm">Inglese</option>
+		<option value="../../ge/setup/se_drib10.htm">Tedesco</option>
+		<option value="../../fr/setup/se_drib10.htm">Francese</option>
+		<option value="se_drib10.htm" selected>Italiano</option>
+		<option value="../../sw/setup/se_drib10.htm">Svedese</option>		
+		<option value="../../po/setup/se_drib10.htm">Portoghese</option>
+		<option value="../../sp/setup/se_drib10.htm">Spagnolo</option>
+		<option value="../../ru/setup/se_drib10.htm">Russo</option>
+		<option value="../../pol/setup/se_drib10.htm">Polacco</option>
+		<option value="../../hun/setup/se_drib10.htm">Ungherese</option>		
+		<option value="../../nor/setup/se_drib10.htm">Norvegese</option>
+		<option value="../../dan/setup/se_drib10.htm">Danese</option>
+		<option value="../../fin/setup/se_drib10.htm">Finlandese</option>
+		<option value="../../dut/setup/se_drib10.htm">Olandese</option>
+		<option value="../../est/setup/se_drib10.htm">Estone</option>
+		<option value="../../gre/setup/se_drib10.htm">Greco</option>
+		<option value="../../lat/setup/se_drib10.htm">Lettone</option>
+		<option value="../../lit/setup/se_drib10.htm">Lituano</option><!--
+		<option value="../../ko/setup/se_drib.htm">Coreano</option>-->
+		<option value="../../sc/setup/se_drib10.htm">Cinese semplificato</option>
+		<option value="../../tc/setup/se_drib10.htm">Cinese tradizionale</option>
+		<option value="../../VIE/setup/se_drib10.htm">Vietnamita</option>
+		<option value="../../tur/setup/se_drib10.htm">Turco</option>
+		<option value="../../cze/setup/se_drib10.htm">Ceco</option>
+		<option value="../../rom/setup/se_drib10.htm">Rumeno</option>
+		<option value="../../cro/setup/se_drib10.htm">Croato</option>
+		<option value="../../bul/setup/se_drib10.htm">Bulgaro</option>
+		<option value="../../slk/setup/se_drib10.htm">Slovacco</option>
+		<option value="../../sln/setup/se_drib10.htm">Sloveno</option>
+	</select>
+	</form></td>
+ 	<td align="center">
+	<form name="model">
+	<img src="../../img/select/it/sel_mode.gif" height=21 alt="" border="0" align="center"><br>
+	<select name="select1" size="1" onChange="gogo(this.form)">
+		<option value="se_drib.htm">SyncMaster 591S</option>
+		<option value="se_drib2.htm">SyncMaster 793S</option>
+		<option value="se_drib9.htm">SyncMaster 591V</option>
+		<option value="se_drib10.htm" selected>SyncMaster 793V</option>
+		<option value="se_drib11.htm">SyncMaster 783DF</option>
+		<option value="se_drib3.htm">SyncMaster 793DF</option>
+		<option value="se_drib4.htm">SyncMaster 795DF</option>
+		<option value="se_drib5.htm">SyncMaster 797DF</option>
+		<option value="se_drib6.htm">SyncMaster 997DF</option>
+		<option value="se_drib7.htm">SyncMaster 793MB</option>
+		<option value="se_drib8.htm">SyncMaster 795MB</option>
+	</select>
+	</form></td>
+</tr>
+</table>
+</div>
+<DIV STYLE="position:absolute; left:25px; top:114px; width:282px; visibility: show; z-index:1">
+<table width="144" border="0" cellspacing="0" cellpadding="0">
+<tr> 
+	<td><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=4,0,2,0" width="95" height="72">
+		<param name=movie value="../../img/m_img/monitor.swf">
+		<param name=quality value=high>
+		<embed src="../../img/m_img/monitor.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="95" height="72">
+		</embed> 
+		</object></td>
+</tr>
+</table>
+</div>
+	
+<DIV ID="menu2" STYLE="position:absolute; left:65px; top:94px; width:352px; visibility: hidden; z-index:1">
+<table align="center" valign="top" width="352" height="19" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" >
+<tr onMouseOut="MM_showHideLayers('comselect','','show','menu2','','hide')" onMouseOver="MM_showHideLayers('comselect','','hide','menu2','','show')"><td>
+	<table align="center" valign="top" width="350" height="15" border="0" cellspacing="0" cellpadding="0" bgcolor="#D7D7D7">
+    <tr><td align="center" valign="middle">
+		<a href="../safty/index10.htm">Convenzioni</a> | 
+		<a href="../safty/s_power10.htm">Alimentazione</a> | 
+		<a href="../safty/s_setup10.htm">Installazione</a> | 
+		<a href="../safty/s_clean10.htm">Pulizia</a> | 
+		<a href="../safty/s_other10.htm">Altro</a>
+	</td></tr></table>
+</td></tr></table>
+</DIV>
+
+<DIV ID="menu3" STYLE="position:absolute; left:215px; top:94px; width:382px; visibility: hidden; z-index:1">
+<table align="center" valign="top" width="382" height="19" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" >
+<tr onMouseOut="MM_showHideLayers('comselect','','show','menu3','','hide')" onMouseOver="MM_showHideLayers('comselect','','hide','menu3','','show')"><td>
+	<table align="center" valign="top" width="380" height="15" border="0" cellspacing="0" cellpadding="0" bgcolor="#D7D7D7">
+    <tr><td align="center" valign="middle">
+		<a href="../product/index10.htm">Disimballaggio</a> | 
+		<a href="../product/p_front10.htm">Parte anteriore</a> | 
+		<a href="../product/p_rear10.htm">Parte posteriore</a> |
+		<a href="../product/p_bottom10.htm">Parte inferiore</a>
+	</td></tr></table>
+</td></tr></table>
+</DIV>
+
+<DIV ID="menu4" STYLE="position:absolute; left:325px; top:94px; width:542px; visibility: hidden; z-index:1">
+<table align="center" valign="top" width="542" height="19" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" >
+<tr onMouseOut="MM_showHideLayers('comselect','','show','menu4','','hide')" onMouseOver="MM_showHideLayers('comselect','','hide','menu4','','show')"><td>
+	<table align="center" valign="top" width="540" height="15" border="0" cellspacing="0" cellpadding="0" bgcolor="#D7D7D7">
+    <tr><td align="center" valign="middle">
+		<a href="../setup/index10.htm">Collegamento del monitor</a> | 
+		<a href="../setup/se_drive10.htm">Installazione del driver video</a> | 
+		<a href="../setup/se_tilt10.htm">Installazione della base orientable</a> 
+	</td></tr></table>
+</td></tr></table>
+</DIV>
+
+<DIV ID="menu6" STYLE="position:absolute; left:172px; top:94px; width:512px; visibility: hidden; z-index:1">
+<table align="center" valign="top" width="512" height="19" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" >
+<tr onMouseOut="MM_showHideLayers('comselect','','show','menu6','','hide')" onMouseOver="MM_showHideLayers('comselect','','hide','menu6','','show')"><td>
+	<table align="center" valign="top" width="510" height="15" border="0" cellspacing="0" cellpadding="0" bgcolor="#D7D7D7">
+    <tr><td align="center" valign="middle">
+		<a href="../trouble/index10.htm">Lista di controllo</a> | 
+		<a href="../trouble/t_specif10.htm">Domande & Risposte </a> | 
+		<a href="../trouble/t_monito10.htm">Controllo funzionamento con test automatico</a>
+	</td></tr></table>
+</td></tr></table>
+</DIV>
+
+<DIV ID="menu7" STYLE="position:absolute; left:523px; top:94px; width:282px; visibility: hidden; z-index:1">
+<table align="center" valign="top" width="282" height="19" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" >
+<tr onMouseOut="MM_showHideLayers('comselect','','show','menu7','','hide')" onMouseOver="MM_showHideLayers('comselect','','hide','menu7','','show')"><td>
+	<table align="center" valign="top" width="280" height="15" border="0" cellspacing="0" cellpadding="0" bgcolor="#D7D7D7">
+    <tr><td align="center" valign="middle">
+		<a href="../specs/index10.htm">generali</a> | 
+		<a href="../specs/sp_mode10.htm">Modi di Visualizzazione</a> | 
+		<a href="../specs/sp_dpms10.htm">PowerSaver</a>
+	</td></tr></table>
+</td></tr></table>
+</DIV>
+
+<DIV ID="menu8" STYLE="position:absolute; left:507px; top:94px; width:402px; visibility: hidden; z-index:1">
+<table align="center" valign="top" width="402" height="19" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" >
+<tr onMouseOut="MM_showHideLayers('comselect','','show','menu8','','hide')" onMouseOver="MM_showHideLayers('comselect','','hide','menu8','','show')"><td>
+	<table align="center" valign="top" width="400" height="15" border="0" cellspacing="0" cellpadding="0" bgcolor="#D7D7D7">
+    <tr><td align="center" valign="middle">
+		<a href="../otc/index10.htm">Assistenza tecnica</a> | 
+		<a href="../otc/o_terms10.htm">Termini</a> | 
+		<a href="../otc/o_regs10.htm">Regulatory</a> | 
+		<a href="../otc/o_natu10.htm">Natual Color</a> | 
+		<a href="../otc/o_auth10.htm">Autorità</a>
+	</td></tr></table>
+</td></tr></table>
+</DIV>
+
+<table width="910" border="0" cellspacing="0" cellpadding="0" height="73" bgcolor="D7D7D7">
+  <tr> 
+    <td width="668" height="73" bgcolor="#FFFFFF"> 
+      <table width="1" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td><img src="../../img/m_img/in-2.gif" width="148" height="44"></td>
+        </tr>
+        <tr> 
+          <td><!--<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=4,0,2,0" width="180" height="25">
+              <param name=movie value="../../img/m_img/t-1.swf">
+              <param name=quality value=high>
+              <embed src="../../img/m_img/t-1.swf" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="180" height="25">
+              </embed> 
+            </object>--></td>
+        </tr>
+      </table>
+    </td>
+    <td width="204" height="73" bgcolor="#FFFFFF" valign="bottom"> 
+      <div align="right"><img src="../../img/m_img/sync.gif" width="187" height="50"></div>
+    </td>
+    <td width="38" height="73"> 
+      <div align="right"><img src="../../img/m_img/top_right.gif" width="39" height="73"></div>
+    </td>
+  </tr>
+</table>
+      <table width="910" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+         <td><a href="../site/index10.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','../../img/m_img/it/topbar_total2_01.gif',1);MM_showHideLayers('comselect','','show','menu2','','hide');MM_showHideLayers('comselect','','show','menu3','','hide');MM_showHideLayers('comselect','','show','menu4','','hide');MM_showHideLayers('comselect','','show','menu5','','hide');MM_showHideLayers('comselect','','show','menu6','','hide');MM_showHideLayers('comselect','','show','menu7','','hide');MM_showHideLayers('comselect','','show','menu8','','hide');"><img name="Image4" border="0" src="../../img/m_img/it/topbar_total_01.gif" alt="Index"></a></td>
+         
+          <td><a href="../safty/index10.htm" onMouseOut="MM_swapImgRestore(); MM_showHideLayers('comselect','','show','menu2','','hide')" onMouseOver="MM_swapImage('Image5','','../../img/m_img/it/topbar_total2_02.gif',1);MM_showHideLayers('comselect','','show','menu2','','hide');MM_showHideLayers('comselect','','show','menu3','','hide');MM_showHideLayers('comselect','','show','menu4','','hide');MM_showHideLayers('comselect','','show','menu5','','hide');MM_showHideLayers('comselect','','show','menu6','','hide');MM_showHideLayers('comselect','','show','menu7','','hide');MM_showHideLayers('comselect','','hide','menu2','','show');"><img name="Image5" border="0" src="../../img/m_img/it/topbar_total_02.gif" alt="Safety Instructions"></a></td>
+
+          <td><a href="../product/index10.htm" onMouseOut="MM_swapImgRestore(); MM_showHideLayers('comselect','','show','menu3','','hide')" onMouseOver="MM_swapImage('Image6','','../../img/m_img/it/topbar_total2_03.gif',1);MM_showHideLayers('comselect','','show','menu2','','hide');MM_showHideLayers('comselect','','show','menu3','','hide');MM_showHideLayers('comselect','','show','menu4','','hide');MM_showHideLayers('comselect','','show','menu5','','hide');MM_showHideLayers('comselect','','show','menu6','','hide');MM_showHideLayers('comselect','','show','menu7','','hide');MM_showHideLayers('comselect','','hide','menu3','','show');"><img name="Image6" border="0" src="../../img/m_img/it/topbar_total_03.gif" alt="Introduction"></a></td>
+
+          <td><a href="../setup/index10.htm" onMouseOut="MM_swapImgRestore(); MM_showHideLayers('comselect','','show','menu4','','hide')" onMouseOver="MM_swapImage('Image7','','../../img/m_img/it/topbar_total2_04.gif',1);MM_showHideLayers('comselect','','show','menu2','','hide');MM_showHideLayers('comselect','','show','menu3','','hide');MM_showHideLayers('comselect','','show','menu4','','hide');MM_showHideLayers('comselect','','show','menu5','','hide');MM_showHideLayers('comselect','','show','menu6','','hide');MM_showHideLayers('comselect','','show','menu7','','hide');MM_showHideLayers('comselect','','hide','menu4','','show');"><img name="Image7" border="0" src="../../img/m_img/it/topbar_total2_04.gif" alt="Setup"></a></td>
+
+          <td><a href="../OSD/index10.htm"  onMouseOut="MM_swapImgRestore(); MM_showHideLayers('comselect','','show','menu5','','hide')" onMouseOver="MM_swapImage('Image8','','../../img/m_img/it/topbar_total2_05.gif',1);MM_showHideLayers('comselect','','show','menu2','','hide');MM_showHideLayers('comselect','','show','menu3','','hide');MM_showHideLayers('comselect','','show','menu4','','hide');MM_showHideLayers('comselect','','show','menu5','','hide');MM_showHideLayers('comselect','','show','menu6','','hide');MM_showHideLayers('comselect','','show','menu7','','hide');MM_showHideLayers('comselect','','hide','menu5','','show');"><img name="Image8" border="0" src="../../img/m_img/it/topbar_total_05.gif" alt="On-Screen Display"></a></td>
+
+          <td><a href="../trouble/index10.htm" onMouseOut="MM_swapImgRestore(); MM_showHideLayers('comselect','','show','menu6','','hide')" onMouseOver="MM_swapImage('Image9','','../../img/m_img/it/topbar_total2_06.gif',1);MM_showHideLayers('comselect','','show','menu2','','hide');MM_showHideLayers('comselect','','show','menu3','','hide');MM_showHideLayers('comselect','','show','menu4','','hide');MM_showHideLayers('comselect','','show','menu5','','hide');MM_showHideLayers('comselect','','show','menu6','','hide');MM_showHideLayers('comselect','','show','menu7','','hide');MM_showHideLayers('comselect','','hide','menu6','','show');"><img name="Image9" border="0" src="../../img/m_img/it/topbar_total_06.gif" alt="Troubleshooting"></a></td>
+
+          <td><a href="../specs/index10.htm" onMouseOut="MM_swapImgRestore(); MM_showHideLayers('comselect','','show','menu7','','hide')" onMouseOver="MM_swapImage('Image10','','../../img/m_img/it/topbar_total2_07.gif',1);MM_showHideLayers('comselect','','show','menu2','','hide');MM_showHideLayers('comselect','','show','menu3','','hide');MM_showHideLayers('comselect','','show','menu4','','hide');MM_showHideLayers('comselect','','show','menu5','','hide');MM_showHideLayers('comselect','','show','menu6','','hide');MM_showHideLayers('comselect','','show','menu7','','hide');MM_showHideLayers('comselect','','hide','menu7','','show');"><img name="Image10" border="0" src="../../img/m_img/it/topbar_total_07.gif" alt="Specifications"></a></td>
+
+          <td><a href="../otc/index10.htm" onMouseOut="MM_swapImgRestore(); MM_showHideLayers('comselect','','show','menu8','','hide')" onMouseOver="MM_swapImage('Image11','','../../img/m_img/it/topbar_total2_08.gif',1);MM_showHideLayers('comselect','','show','menu2','','hide');MM_showHideLayers('comselect','','show','menu3','','hide');MM_showHideLayers('comselect','','show','menu4','','hide');MM_showHideLayers('comselect','','show','menu5','','hide');MM_showHideLayers('comselect','','show','menu6','','hide');MM_showHideLayers('comselect','','show','menu7','','hide');MM_showHideLayers('comselect','','hide','menu8','','show');"><img name="Image11" border="0" src="../../img/m_img/it/topbar_total_08.gif" alt="Information"></a></td>
+        </tr>
+      </table>
+<table width="903" border="0" cellspacing="0" cellpadding="0" height="46">
+  <tr> 
+    <td height="10" bgcolor="#FFC850"><img src="../../img/m_img/topbu_1.gif" width="144" height="50"></td>
+    <td height="20" width="31"><img src="../../img/m_img/bg4_3.gif" width="31" height="50"></td>
+    <td height="20" width="729" background="../../img/m_img/topbu_23.gif"> 
+		<div align="right"><font id="size4">Italiano > Principale > Installazione > Installazione del driver del monitor</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div> 
+    </td>
+  </tr>
+</table>
+<table width="903" border="0" cellspacing="0" cellpadding="0" height="600">
+  <tr> 
+    <td height="494"> 
+      <table width="903" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="600" width="138" bgcolor="#FEE6AD" valign="top"> 
+            <table width="140" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td height="15" colspan="2"><div align="right"><img src="../../img/m_img/topbu_2.gif" width="144" height="68"></div></td>
+              </tr>
+              <tr valign="top"> 
+                <td height="25" colspan="2"><img src="../../img/m_img/it/setup.gif" width="144" height="22"></td>
+              </tr>
+              <tr>
+			    <td width="25" valign="top" align="left"><img src="../../img/m_img/arrow01.gif" align="absmiddle" name="ma01"></td> 
+               <td height="22" width="119" align="left"><a href="index10.htm" onMouseOut="document.ma01.src='../../img/m_img/arrow01.gif';" onMouseOver="document.ma01.src='../../img/m_img/arrow02.gif';">Collegamento del monitor</a></td>
+              </tr>
+              <tr>
+                <td height="1" bgcolor="#FFFFFF" colspan="2"></td>
+              </tr>
+              <tr>
+			    <td width="25" valign="top" align="left"><img src="../../img/m_img/arrow02.gif" align="absmiddle" name="ma02"></td> 
+                <td height="22" width="119" align="left"><font color="ff0000">Installazione del driver video</font></td>
+              </tr>
+              <tr> 
+                <td height="1" bgcolor="#FFFFFF" colspan="2"></td>
+              </tr>			  
+              <tr>
+			    <td width="25" valign="top" align="left"><img src="../../img/m_img/arrow01.gif" align="absmiddle" name="ma03"></td> 
+                <td height="22" width="119" align="left"><a href="se_tilt10.htm" onMouseOut="document.ma03.src='../../img/m_img/arrow01.gif';" onMouseOver="document.ma03.src='../../img/m_img/arrow02.gif';">Installazione della base orientable</a></td>
+              </tr>	
+              <tr> 
+                <td height="1" bgcolor="#FFFFFF" colspan="2"></td>
+              </tr>
+              <tr> 
+                <td height="40" colspan="2" align="center"> 
+                  <a href="../index10.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image30','','../../img/m_img/it/mainpage2.gif',1)"><img name="Image30" border="0" src="../../img/m_img/it/mainpage1.gif" width="132" height="21"></a>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td height="700" width="765" align="center" valign="top"> <br>
+		<table cellspacing="0" cellpadding="0" border="0" width="95%">
+		<tr>
+			<td align="left" valign="bottom"><br><A href="se_drive10.htm" onmouseout="document.ti1.src='../../img/setup/it/se_dri1a.gif'" onmouseover="document.ti1.src='../../img/setup/it/se_dri1b.gif'"><img src="../../img/setup/it/se_dri1a.gif" name="ti1" border="0"></a></td>
+			<td align="left" valign="bottom" width="80%"><br><A href="se_drib10.htm"><img src="../../img/setup/it/se_dri2b.gif" name="ti2" border="0"></a></td>
+		</tr>
+		<tr>
+			<td align="left" valign="bottom" colspan="2"><br>&nbsp;
+				<A href="#winxp">Windows XP</a>
+				&nbsp;|&nbsp;					
+				<A href="#win2000">Windows 2000</a>
+				&nbsp;|&nbsp;
+				<A href="#winme">Windows Me</a>
+				&nbsp;|&nbsp;
+				<A href="#winnt">Windows NT</a>
+				&nbsp;|&nbsp;
+				<A href="#linux">Linux</a></td>
+		</tr>
+		</table>
+					
+		<table cellspacing="6" cellpadding="2" border="0" width="695">
+		<tr>
+			<td align="left" valign="top"><hr></td>
+		</tr>
+		</table>
+			
+		<table cellspacing="6" cellpadding="2" border="0" width="95%">
+		<tr>
+			<td align="left" valign="top"><img src="../../img/setup/it/moment.gif" border="0"></td>
+			<td align="left" valign="top">
+			<b>Quando richiesto dal sistema operativo per il driver del monitor, inserire il CD in dotazione con questo monitor. L'installazione del driver differisce leggermente da un sistema operativo all'altro. Seguire le istruzioni a seconda di quanto risulti appropriato per il sistema operativo disponibile.
+             </b><br><br> Preparare un dischetto vuoto e scaricare il programma del driver dal sito web sottoindicato.<br>
+			</td>
+		</tr>
+		<tr>
+			<td align="left" valign="top" colspan="2">
+				<blockquote><table border="0">
+				<tr>
+					<td><li>Sito Web su Internet  : </td>
+					<td><a href="http://www.samsung.com/" target="_blank" id="color1">http://www.samsung.com/</a> (Tutto il mondo)</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><a href="http://www.samsungusa.com/monitor/" target="_blank" id="color1">http://www.samsungusa.com/monitor/</a> (USA)</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><a href="http://www.sec.co.kr/monitor/" target="_blank" id="color1">http://www.sec.co.kr/monitor/</a> (Korea)</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><a href="http://www.samsungmonitor.com.cn/" target="_blank" id="color1">http://www.samsungmonitor.com.cn/</a> (China)</td>
+				</tr>
+				</table></blockquote>
+			</td>
+		</tr>
+		</table>
+			
+		<table cellspacing="4" cellpadding="2" border="0" width="95%">
+              <tr> 
+                <td align="left" valign="top" colspan="2"> 
+                  <hr>
+                </td>
+              </tr>
+              <tr> 
+                <td align="left" valign="top" colspan="2"> 
+                  <table cellspacing="4" cellpadding="2" border="0" width="100%" dwcopytype="CopyTableRow">
+                    <tr> 
+                      <td align="left" valign="top" width="1%"><img src="../../img/setup/se_dra02.gif" border="0"></td>
+                      <td align="left" valign="middle"><a name="winxp"></a><b>Sistema Operativo Microsoft<sup>&reg;</sup> 
+                        Windows<sup>&reg;</sup> XP</b></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td align="left" valign="middle" colspan="2"> 
+                  <ol>
+                    <li>Inserire il CD nell'unità CD-ROM.<br>
+                    </li>
+                    <li>Fare clic su "<b>Start</b>" - "<b>Pannello di controllo</b>" 
+                      quindi fare clic sull'icona "<b>Aspetto e temi</b>". <br>
+                      <br>
+                      <img src="../../IMG/SETUP/WINXPB01.GIF" width="300" height="223"> 
+                      <img src="../../IMG/SETUP/WINXPB02.GIF" width="300" height="223"> 
+                      <br>
+                    <li>Fare clic sull'icona "<b>Display</b>" e scegliere la scheda 
+                      "<b>Impostazioni</b>" e successivamente fare clic su "<b>Avanzate</b>..". 
+                      <br>
+                      <br>
+                      <img src="../../IMG/SETUP/WINXPB03.GIF" width="300" height="213"> 
+                      <img src="../../IMG/SETUP/WINXPB04.GIF" width="300" height="213"> 
+                      <br>
+                    <li>Fare clic sul pulsante "<b>Proprietà</b>" della scheda 
+                      "<b>Monitor</b>" e poi selezionare la scheda "<b>Driver</b>". 
+                      <br>
+                      <br>
+                      <img src="../../IMG/SETUP/WINXPB05.GIF" width="300" height="255"> 
+                      <img src="../../IMG/SETUP/WINXPB06.GIF" width="300" height="255"><br>
+                    <li>Fare clic su "<b>Aggiorna driver</b>.." e selezionare 
+                      "<b>Installa da un elenco o</b>..." quindi fare clic sul 
+                      pulsante "<b>Avanti</b>". <br>
+                      <br>
+                      <img src="../../IMG/SETUP/WINXPB07.GIF" width="300" height="231"> 
+                      <img src="../../IMG/SETUP/WINXPB08.GIF" width="300" height="231"><br>
+                    <li>Selezionare "<b>Non cercare</b>,… ", quindi fare clic 
+                      su "<b>Avanti</b>" e poi su "<b>Disco driver</b>". <br>
+                      <br>
+                      <img src="../../IMG/SETUP/WINXPB09.GIF" width="300" height="231"> 
+                      <img src="../../IMG/SETUP/WINXPB10.GIF" width="300" height="231"><br>
+                    <li>Fare clic sul pulsante "<b>Sfoglia</b>", scegliere A:\(D:\driver) 
+                      e quindi scegliere il modello di monitor nell'elenco e fare 
+                      clic sul pulsante "<b>Avanti</b>". <br>
+                      <br>
+                      <img src="../../IMG/SETUP/WINXPB11.GIF" width="300" height="212"> 
+                      <img src="../../IMG/SETUP/WINXPB12.GIF" width="300" height="212"><br>
+                    <li>Se è possibile vedere la successiva finestra "<b>Messaggio</b>", 
+                      fare clic sul pulsante "<b>Continua comunque</b>". Poi fare 
+                      clic sul pulsante "<b>Fine</b>". <br>
+                      <br>
+                      <img src="../../IMG/SETUP/WINXPB13.GIF" width="300" height="212"> 
+                      <br>
+                      Il driver di questo monitor è conforme alla certificazione 
+                      del logo MS, e questa installazione non danneggerà il sistema.
+                      <br>
+                      *Il driver certificato sarà disponibile nella home page 
+                      dei monitor Samsung.<br> <A HREF="http://www.samsung.com/" target="_blank" id="color1">http://www.samsung.com/</a>
+                    <li>Fare clic sul pulsante "<b>Chiudi</b>" e quindi cliccare 
+                      di continuo sul pulsante "<b>OK</b>". <br>
+                      <br>
+                      <img src="../../IMG/SETUP/WINXPB14.GIF" width="300" height="217"><br>
+                      <br>
+                      <img src="../../IMG/SETUP/WINXPB15.GIF" width="300" height="217"> 
+                      <img src="../../IMG/SETUP/winxpb16.gif" width="300" height="208"> 
+                      <br>
+                    <li>L'installazione del driver del monitor è terminata. <br>
+                  </ol>
+                </td>
+              </tr>
+              <tr> 
+                <td align="center" valign="middle" colspan="2"><a href="#top"><img src="../../img/setup/up.gif" border="0"></a></td>
+              </tr>
+            </table>
+            <table cellspacing="4" cellpadding="2" border="0" width="95%">
+              <tr> 
+                <td align="left" valign="top" colspan="2"> 
+                  <hr>
+                </td>
+              </tr>
+              <tr> 
+                <td align="left" valign="top" colspan="2"> 
+                  <table cellspacing="4" cellpadding="2" border="0" width="100%" dwcopytype="CopyTableRow">
+                    <tr> 
+                      <td align="left" valign="top" width="1%"><img src="../../img/setup/se_bu.gif" border="0"></td>
+                      <td align="left" valign="middle"><a name="win2000"></a><b>Sistema Operativo Microsoft<sup>&reg;</sup> 
+                        Windows<sup>&reg;</sup> 2000</b></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td align="left" valign="top" width="1%"><img src="../../img/setup/se_dra02.gif" border="0"></td>
+                <td align="left" valign="middle"><b>Non appena appare il messaggio 
+                  "Firma digitale non trovata" sul monitor, seguire la procedura 
+                  descritta di seguito.</b></td>
+              </tr>
+              <tr> 
+                <td align="left" valign="middle" colspan="2"> 
+                  <ol>
+                    <li>Scegliere il pulsante &quot;<b>OK</b>&quot; nella finestra 
+                      &quot;<b>Inserire il disco</b>&quot;. </li>
+                    <li>Fare clic sul pulsante &quot;<b>Sfoglia</b>&quot; nella 
+                      finestra &quot;<b>File necessario</b>&quot;. 
+                    <li>Scegliere &quot;A:\(D:\driver)&quot; quindi fare clic sul pulsante 
+                      &quot;<b>Apri</b>&quot; e poi su &quot;<b>OK</b>&quot;.
+                  </ol>
+                </td>
+              </tr>
+              <tr> 
+                <td align="left" valign="top" width="1%"><img src="../../img/setup/se_dra02.gif" border="0"></td>
+                <td align="left" valign="middle"><b>Guida per l'installazione 
+                  manuale del monitor</b></td>
+              </tr>
+              <tr> 
+                <td align="left" valign="middle" colspan="2"> 
+                  <ol>
+                    <li>Fare clic su &quot;<b>Avvia</b>&quot;, &quot;<b>Impostazione</b>&quot;, 
+                      &quot;<b>Pannello di controllo</b>&quot;. 
+                    <li>Fare doppio clic sull'icona &quot;<b>Schermo</b>&quot;. 
+                    <li>Scegliere la scheda &quot;<b>Impostazioni</b>&quot; quindi 
+                      fare clic su &quot;<b>Avanzate</b>&quot;. 
+                    <li>Scegliere &quot;<b>Schermo</b>&quot;.<br>
+                      <table cellpadding="0" cellspacing="0" border="0">
+                        <tr> 
+                          <td align="left" valign="top" width="15"></td>
+                          <td align="left" valign="top">Caso1:</td>
+                          <td align="left" valign="top" width="10"></td>
+                          <td align="left" valign="top"> Se il pulsante &quot;<b>Propriet&agrave;</b>&quot; 
+                            &egrave; inattivo, il monitor &egrave; configurato 
+                            correttamente ed &egrave; opportuno interrompere l'installazione.</td>
+                        </tr>
+                        <tr> 
+                          <td align="left" valign="top" width="15"></td>
+                          <td align="left" valign="top">Caso2:</td>
+                          <td align="left" valign="top" width="10"></td>
+                          <td align="left" valign="top"> Se il pulsante &quot;<b>Propriet&agrave;</b>&quot; 
+                            &egrave; attivo, fare clic su &quot;<b>Propriet&agrave;</b>&quot;. 
+                            Seguire la procedura successiva senza interruzione.</td>
+                        </tr>
+                      </table>
+                    <li>Fare clic su &quot;<b>Driver</b>&quot;, quindi su &quot;<b>Aggiorna 
+                      driver</b>&quot; ed infine su &quot;<b>Avanti</b>&quot;. 
+                    <li>Scegliere &quot;Visualizza un elenco dei driver noti per 
+                      questa periferica, per consentire di scegliere un driver 
+                      specifico&quot; quindi fare clic su &quot;<b>Avanti</b>&quot; 
+                      e poi su &quot;<b>Disco driver</b>&quot;. 
+                    <li>Fare clic sul pulsante &quot;<b>Sfoglia</b>&quot; e poi 
+                      scegliere A:\(D:\driver). 
+                    <li>Fare clic sul pulsante &quot;<b>Apri</b>&quot;, quindi 
+                      su &quot;<b>OK</b>&quot;. 
+                    <li> Scegliere il modello del proprio monitor, quindi fare 
+                      clic su &quot;<b>Avanti</b>&quot; e poi ancora su &quot;<b>Avanti</b>&quot;. 
+                    <li>Scegliere &quot;<b>Fine</b>&quot; e quindi fare clic sul 
+                      pulsante &quot;<b>Chiudi</b>&quot;. 
+                  </ol>
+                  <blockquote>Se &egrave; possibile vedere la finestra &quot;<b>Firma 
+                    digitale non trovata</b>&quot; fare clic sul pulsante &quot;<b>S&igrave;</b>&quot; 
+                    e poi sul pulsante &quot;<b>OK</b>&quot;. In seguito scegliere 
+                    &quot;<b>Fine</b>&quot; e quindi fare clic sul pulsante &quot;<b>Chiudi</b>&quot;.</blockquote>
+                </td>
+              </tr>
+              <tr> 
+                <td align="center" valign="middle" colspan="2"><a href="#top"><img src="../../img/setup/up.gif" border="0"></a></td>
+              </tr>
+            </table>
+			
+		    <table cellspacing="4" cellpadding="2" border="0" width="695">
+              <tr> 
+                <td colspan="2">
+                  <hr>
+                </td>
+              </tr>
+              <tr> 
+                <td align="left" valign="top" width="1%"><img src="../../img/setup/se_bu.gif" border="0"></td>
+                <td align="left" valign="middle"><a name="winme"></a><b>Sistema 
+                  operativo Microsoft<sup>®</sup> Windows<sup>®</sup> Millennium</b></td>
+              </tr>
+              <tr> 
+                <td align="left" valign="top" colspan="2"> 
+                  <ol>
+                    <li>Fare clic su "<b>Avvia</b>", "<b>Impostazione</b>", "<b>Pannello 
+                      di controllo</b>". 
+                    <li>Fare doppio clic sull'icona "<b>Schermo</b>". 
+                    <li>Selezionare la scheda "<b>Impostazioni</b>" e fare clic 
+                      sul pulsante "<b>Proprietà avanzate</b>". 
+                    <li>Selezionare la scheda "<b>Monitor</b>". 
+                    <li>Fare clic sul pulsante "<b>Modifica</b>" nell'area "<b>Tipo 
+                      di monitor</b>". 
+                    <li>Scegliere "<b>Specificare la posizione del driver</b>". 
+                    <li>Scegliere "Visualizza un elenco di tutti I driver in una 
+                      posizione specifica.." quindi fare clic sul pulsante "<b>Avanti</b>". 
+                    <li>Fare clic sul pulsante "<b>Disco driver</b>". 
+                    <li>Specificare A:\(D:\driver) quindi fare clic sul pulsante 
+                      "<b>OK</b>". 
+                    <li>Selezionare "<b>Mostra tutte le periferiche</b>" e scegliere 
+                      il monitor che corrisponde a quello collegato al computer 
+                      e fare clic su "<b>OK</b>". 
+                    <li>Continuare scegliendo il pulsante "<b>Chiudi</b>" e il 
+                      pulsante "<b>OK</b>" fino a chiudere la finestra Proprietà 
+                      dello schermo. <br>
+                      (È possibile che appaiano altre schermate di avviso, quindi 
+                      fare clic sull'opzione desiderata per il monitor). 
+                  </ol>
+                </td>
+              </tr>
+              <tr> 
+                <td align="center" valign="middle" colspan="2"><a href="#top"><img src="../../img/setup/up.gif" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td colspan="2">
+                  <hr>
+                </td>
+              </tr>
+              <tr> 
+                <td align="left" valign="top" width="1%"><img src="../../img/setup/se_bu.gif" border="0"></td>
+                <td align="left" valign="middle"><a name="winnt"></a><b>Sistema 
+                  operativo Microsoft<sup>®</sup> Windows<sup>®</sup> NT</b></td>
+              </tr>
+              <tr> 
+                <td align="left" valign="top" colspan="2"> 
+                  <ol>
+                    <li>Fare clic su "<b>Start</b>", "<b>Impostazioni</b>", "<b>Pannello 
+                      di controllo</b>" e quindi fare doppio clic su "<b>Schermo</b>". 
+                    <li>Nella finestra "<b>Visualizza informazioni di registrazione</b>", 
+                      scegliere la scheda "<b>Impostazioni</b>" e quindi fare 
+                      clic su "<b>Tutte le modalità di visualizzazione</b>". 
+                    <li>Selezionare la modalità che si intende utilizzare ("<b>Risoluzione</b>", 
+                      "<b>Numero di colori</b>" e "<b>Frequenza verticale</b>") 
+                      e quindi fare clic su "<b>OK</b>". 
+                    <li>Fare clic sul pulsante "<b>Applica</b>" se lo schermo 
+                      funziona normalmente dopo aver scelto "<b>Test</b>". Se 
+                      lo schermo non appare normale, passare ad una modalità diversa 
+                      (diminuire la modalità di risoluzione, colori o frequenza). 
+                  </ol>
+                </td>
+              </tr>
+              <tr> 
+                <td align="left" valign="top" width="1%"></td>
+                <td align="left" valign="middle">Nota: Se nella finestra "Tutte 
+                  le modalità di visualizzazione" non appare alcuna modalità, 
+                  selezionare il livello di risoluzione e la frequenza verticale 
+                  facendo riferimento alle <a href="../specs/sp_mode10.htm" id="color1">Modi di Visualizzazione</a> descritte in questa guida.</td>
+              </tr>
+              <tr> 
+                <td align="center" valign="middle" colspan="2"><a href="#top"><img src="../../img/setup/up.gif" border="0"></a></td>
+              </tr>
+              <tr> 
+                <td colspan="2">
+                  <hr>
+                </td>
+              </tr>
+              <tr> 
+                <td align="left" valign="top" width="1%"><img src="../../img/setup/se_bu.gif" border="0"></td>
+                <td align="left" valign="middle"><a name="linux"></a><b>Sistema 
+                  operativo Linux</b></td>
+              </tr>
+              <tr> 
+                <td align="left" valign="top" colspan="2">Per eseguire X-Window, 
+                  occorre eseguire il file X86Config, che è un tipo di file per 
+                  l'impostazione del sistema.</td>
+              </tr>
+              <tr> 
+                <td align="left" valign="top" colspan="2"> 
+                  <ol>
+                    <li>Premere "<b>Invio</b>" alla prima e alla seconda finestra 
+                      dopo aver eseguito il file "<b>X86Config</b>". 
+                    <li>La terza finestra serve per "<b>impostare il mouse</b>". 
+                    <li>Impostare il mouse per il computer. 
+                    <li>La finestra successiva serve per "<b>selezionare una tastiera</b>". 
+                    <li>Impostare la tastiera per il computer. 
+                    <li>La finestra successiva serve per "<i>impostare il monitor</i>". 
+                    <li>Innanzitutto, impostare la "<b>frequenza orizzontale</b>" 
+                      per il monitor. È possibile inserire direttamente la frequenza. 
+                    <li>Impostare la "<b>frequenza verticale</b>" per il monitor. 
+                      È possibile inserire direttamente la frequenza. 
+                    <li>Inserire il "<b>modello di monitor</b>". Queste informazioni 
+                      non alterano l'attuale esecuzione di <br>
+                      X-Window. 
+                    <li>Il monitor è stato impostato. <br>
+                      Dopo aver impostato le altre periferiche richieste "<b>Eseguire</b>" 
+                      X-Window. 
+                  </ol>
+                </td>
+              </tr>
+              <tr> 
+                <td align="center" valign="middle" colspan="2"><a href="#top"><img src="../../img/setup/up.gif" border="0"></a></td>
+              </tr>
+            </table>
+            <br>
+		
+	</td>
+</tr>
+</table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

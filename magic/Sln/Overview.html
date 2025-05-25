@@ -1,0 +1,227 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<title>MagicTune Help - Overview</title>
+<style type="text/css">
+	<!--
+	a:link {color: #0000ff; font-size: 12pt; text-decoration:none}
+	a:visited {color: #0000ff; font-size: 12pt; text-decoration:none}
+	a:hover {color: #0000ff; font-size: 12pt; text-decoration:underline}
+	a:active {color: #0000ff; font-size: 12pt; text-decoration:underline}
+
+	a.Mlink:link {color: #aaaaaa; font-size: 12pt; text-decoration:none}
+	a.Mlink:visited {color: #aaaaaa; font-size: 12pt; text-decoration:none}
+	a.Mlink:hover {color: #aaaaaa; font-size: 12pt; text-decoration:underline}
+	a.Mlink:active {color: #aaaaaa; font-size: 12pt; text-decoration:underline}
+
+	body, p, td, left, TABLE {font-family: Arial, Helvetica, sans-serif; font-size: 11pt; line-height: 140%; }
+
+	BODY {OVERFLOW-X: hidden; OVERFLOW: scroll}
+	.popmsgper {VISIBILITY: hidden; POSITION: absolute}
+	a.Hlink:link {color: #2F90F3; font-size: 12pt; text-decoration:none}
+	a.Hlink:visited {color: #2F90F3; font-size: 12pt; text-decoration:none}
+	a.Hlink:hover {color: #008000; font-size: 12pt; text-decoration:none}
+	a.Hlink:active {color: #008000; font-size: 12pt; text-decoration:none}
+	-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF" marginwidth="0" marginheight="0" oncontextmenu="return false" ondragstart="return false">
+
+<DIV class=popmsgper id=topdeck> </DIV>
+<SCRIPT language="JAVASCRIPT">
+<!--
+var nav = (document.layers);
+var iex = (document.all);
+var skn = (nav) ? document.topdeck : topdeck.style;
+
+if (nav) document.captureEvents(Event.MOUSEMOVE);
+
+document.onmousemove = mousepos;
+
+function popmsg(msg1,msg2){
+
+	var width = document.body.offsetWidth;
+
+	if (width > 1000)
+	{width=500}
+	else
+	{width="95%"}
+
+	var content ="<TABLE WIDTH="+width+" BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#0062b2><TR><TD><TABLE WIDTH=100% BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD><CENTER><FONT COLOR=#FFFFFF font-size: 9pt><B>HELP</B></FONT></CENTER></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#FFFFFF><TR><TD><FONT COLOR=#000000 font-size: 9pt><b><left>"+msg1+"</left></b></FONT></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#FFFFFF><TR><TD><FONT COLOR=#000000 font-size: 9pt><left>"+msg2+"</left></FONT></TD></TR></TABLE></TD></TR></TABLE>";
+	
+	if (nav)
+	{
+		skn.document.write(content);
+		skn.document.close();
+		skn.visibility = "visible";
+	}
+	else if (iex)
+	{
+		document.all("topdeck").innerHTML = content;
+		skn.visibility = "visible";
+	}
+}
+
+function mousepos(e){
+	var x = (nav) ? e.pageX : event.x+document.body.scrollLeft;
+	var y = (nav) ? e.pageY : event.y+document.body.scrollTop;
+	skn.left = x - 60;
+	skn.top  = y+20;
+}
+
+function hiddenmsg(){
+	skn.visibility = "hidden";
+}
+
+//-->
+</SCRIPT>
+
+<table border="0" cellspacing="0" cellpadding="0" width="600"> 
+	<tr> 
+		<td> 
+			<p><a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0><img border="0" width="600" height="152" src="eng_top01.gif"></a></p>
+		</td>
+	</tr>
+</table>
+ 
+
+
+
+
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" width="600" height="40"> 
+<tr> 
+  <td>
+ &nbsp;&nbsp;&nbsp;<font color="#ffffff"><b>Pregled</b></font>
+ &nbsp;&nbsp;&nbsp;
+ </td>
+
+<td>	
+<font color="#aaaaaa">|</font>
+&nbsp;&nbsp;&nbsp;<a href="install.html" onfocus='this.blur()' class="Mlink">Namestitev</a> 
+&nbsp;&nbsp;&nbsp;	
+</td>
+
+<td>	
+<font color="#aaaaaa">|</font>
+&nbsp;&nbsp;&nbsp;<a href="modes.html" onfocus='this.blur()' class="Mlink">Način OSD</a>
+&nbsp;&nbsp;&nbsp;
+</td>
+ 
+
+<td>
+<font color="#aaaaaa">|</font>
+&nbsp;&nbsp;&nbsp;<a href="uninstall.html" onfocus='this.blur()' class="Mlink">Odstranitev</a>
+&nbsp;&nbsp;&nbsp;
+</td>
+
+<td>
+<font color="#aaaaaa">|</font>
+&nbsp;&nbsp;&nbsp;	<a href="tips.html" onfocus='this.blur()' class="Mlink">Odpravljanje težav</a>
+&nbsp;&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table border="0" cellspacing="0" cellpadding="10" width="600"> 
+	<tr> 
+		<td> <br>
+		
+			<h2><img src="icon01.gif" border="0">	Pregled</h2><BR><BR><BR>
+			
+			<h3><a name="Overview01"><img src="icon04.gif" border="0">	Kaj je MagicTune&trade;?</a></h3>
+			
+			<p>Učinkovitost monitorja je lahko odvisna od grafične kartice, osvetljenosti računalnika in drugih 
+dejavnikov okolja. Če želite na svojem monitorju videti kar najboljšo sliko, ga morate 
+prilagoditi na značilnosti okolja. Žal se pogosto izkaže, da je lahko ročno nastavljanje slike kar 
+zahtevno opravilo. Za pravilno prilagajanje (nastavljanje) potrebujete preprost program, ki 
+postopno pridobi podatke, potrebne za najboljšo splošno kakovost slike. </p>
+      <p>V večini primerov preprostega nastavljanja svetlosti ali kontrasta morate uporabiti večnivojske 
+menije zaslonskega prikazovalnika (OSD), ki jih ni lahko razumeti. Poleg tega nimate nobenih 
+povratnih informacij, ki bi vam pomagale pri pravilnem nastavljanju možnosti monitorja. 
+MagicTune je programsko orodje, ki vas s preprostimi navodili in vzorci ozadja vodi skozi 
+postopek naravnavanja posamezne možnosti monitorja. </p>
+			<BR><BR>
+
+
+
+			<table>
+				<tr>
+				</td>
+			<img src="line01.gif" align="right">
+			</td>
+			</tr>
+			</table>
+
+
+
+
+
+			<h3><a name="Overview02"><img src="icon04.gif" border="0">	Osnovna funkcionalnost</a></h3>
+			
+			<p> 	
+			
+			
+			MagicTune je programsko orodje, ki omogoča prilagajanje monitorja in naravnavanje barv z uporabo protokola <a onmouseover="popmsg('DDC/CI(Ukazni vmesnik za podatkovni kanal zaslona) Standard definira protokole, ki temeljijo na tehnologiji I2C, z več ravnmi zahtevnosti, ki delujejo prek kanalov DDC in se uporabljajo za nadzor monitorja in drugih nanj priključenih naprav. Ker končni uporabniki potrebujejo tehnologijo Plug and Play, je VESA definirala standard DDC, ki vsebuje različne ravni komuniciranja. Ravni DDC2Bi, DDC2B+ in DDC2AB omogočajo dvosmerno komunikacijo med računalnikom, ki je grafični gostitelj, in prikazovalno napravo.')" onmouseout=hiddenmsg() href="#" onClick="return false;" style="cursor:help" onfocus='this.blur()' class="Hlink">DDC/CI (Display Data Channel Command Interface) (Ukazni vmesnik za podatkovni kanal zaslona)</a>.&nbsp;&nbsp; 
+        Vsako prilagajanje prikaza se nadzira prek programske opreme – 
+tako nam ni treba uporabiti monitorjevega zaslonskega prikazovalnika (OSD). MagicTune 
+podpira operacijske sisteme Windows98SE, Me, 2000, NT, XP Home in XP Professional.</p>
+      <p><!-- MagicTune runs in the back ground  and can be accessed through the
+        task tray on the desktop. -->&nbsp; MagicTune deluje v ozadju, do njega pa pridete prek opravilne vrstice, menija Start ali da z 
+desno miškino tipko kliknete na namizje. MagicTune omogoča hitro in natančno naravnavanje 
+prikaza ter vam daje možnost, da shranite in uporabite konfiguracije nastavitve monitorja, ki 
+vam najbolj ustrezajo. <!-- <BR> MagicTune supports Windows 98 SE, ME, 2000, NT, XP Home and XP Professional Editions.  --></p>
+			<BR><BR>
+
+
+
+			<table>
+				<tr>
+				</td>
+			<img src="line01.gif" align="right">
+			</td>
+			</tr>
+			</table>
+
+
+
+			
+			<h3><a name="Overview03"><img src="icon04.gif" border="0">	 Način OSD</a></h3>
+			<p>Način OSD omogoča preprosto prilagajanje nastavitev monitorja, ne da bi vam bilo treba slediti vnaprej določenim korakom. Izberete lahko poljubni element v meniju in ga zlahka nastavite. <BR><BR>
+       
+		</td>
+	</tr>
+</table>
+
+<table border="0" cellspacing="0" cellpadding="10" width="600"> 
+	<tr> 
+		<td> <!-- <br>
+
+			<p><font size="1">»çľçŔş żą°í ľřŔĚ şŻ°ćµÉ Ľö ŔÖ˝Ŕ´Ď´Ů. 
+			<BR>MagicTuneŔş Samsung, Inc.ŔÇ »óÇĄŔĚ¸ç  Windows˘ç´Â Microsoft˘ç Corp.ŔÇ µî·Ď »óÇĄŔÔ´Ď´Ů. 
+			<BR>´Ů¸Ą »óÇĄ´Â ÇŘ´ç Č¸»çŔÇ ĽŇŔŻŔÔ´Ď´Ů.</font></p> -->
+
+			<p><a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0><img src="base.gif" border="0"> 
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>

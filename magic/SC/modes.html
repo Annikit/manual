@@ -1,0 +1,617 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<title>MagicTune 帮助 - OSD 模式</title>
+<style type="text/css">
+	<!--
+	a:link {color: #0000ff; font-size: 12pt; text-decoration:none}
+	a:visited {color: #0000ff; font-size: 12pt; text-decoration:none}
+	a:hover {color: #0000ff; font-size: 12pt; text-decoration:underline}
+	a:active {color: #0000ff; font-size: 12pt; text-decoration:underline}
+
+	a.Mlink:link {color: #aaaaaa; font-size: 12pt; text-decoration:none}
+	a.Mlink:visited {color: #aaaaaa; font-size: 12pt; text-decoration:none}
+	a.Mlink:hover {color: #aaaaaa; font-size: 12pt; text-decoration:underline}
+	a.Mlink:active {color: #aaaaaa; font-size: 12pt; text-decoration:underline}
+
+	body, p, td, left, TABLE {font-family: Arial, Helvetica, sans-serif; font-size: 11pt; line-height: 140%; }
+
+	BODY {OVERFLOW-X: hidden; OVERFLOW: scroll}
+	.popmsgper {VISIBILITY: hidden; POSITION: absolute}
+	a.Hlink:link {color: #2F90F3; font-size: 12pt; text-decoration:none}
+	a.Hlink:visited {color: #2F90F3; font-size: 12pt; text-decoration:none}
+	a.Hlink:hover {color: #008000; font-size: 12pt; text-decoration:none}
+	a.Hlink:active {color: #008000; font-size: 12pt; text-decoration:none}
+	-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF" marginwidth="0" marginheight="0"  oncontextmenu="return false" ondragstart="return false" >
+
+<DIV class=popmsgper id=topdeck> </DIV>
+<SCRIPT language="JAVASCRIPT">
+<!--
+var nav = (document.layers);
+var iex = (document.all);
+var skn = (nav) ? document.topdeck : topdeck.style;
+
+if (nav) document.captureEvents(Event.MOUSEMOVE);
+
+document.onmousemove = mousepos;
+
+function popmsg(msg1,msg2){
+
+	var width = document.body.offsetWidth;
+
+	if (width > 1000)
+	{width=500}
+	else
+	{width="95%"}
+
+var content ="<TABLE WIDTH="+width+" BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#0062b2><TR><TD><TABLE WIDTH=100% BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD><CENTER><FONT COLOR=#FFFFFF font-size: 9pt><B>档框富</B></FONT></CENTER></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#FFFFFF><TR><TD><FONT COLOR=#000000 font-size: 9pt><b><left>"+msg1+"</left></b></FONT></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#FFFFFF><TR><TD><FONT COLOR=#000000 font-size: 9pt><left>"+msg2+"</left></FONT></TD></TR></TABLE></TD></TR></TABLE>";
+	
+	if (nav)
+	{
+		skn.document.write(content);
+		skn.document.close();
+		skn.visibility = "visible";
+	}
+	else if (iex)
+	{
+		document.all("topdeck").innerHTML = content;
+		skn.visibility = "visible";
+	}
+}
+
+function mousepos(e){
+	var x = (nav) ? e.pageX : event.x+document.body.scrollLeft;
+	var y = (nav) ? e.pageY : event.y+document.body.scrollTop;
+	skn.left = x - 60;
+	skn.top  = y+20;
+}
+
+function hiddenmsg(){
+	skn.visibility = "hidden";
+}
+
+//-->
+</SCRIPT>
+
+<script language="JavaScript" type="text/JavaScript" src='osd.js'>
+</script>
+		
+<table border="0" cellspacing="0" cellpadding="0" width="600" onLoad="MM_preloadImages('kor_osd01_01.gif','kor_osd01_02.gif','kor_osd01_03.gif','kor_osd01_04.gif','kor_osd02_01.gif','kor_osd02_02.gif','kor_osd02_03.gif','kor_osd03_01.gif','kor_osd03_02.gif','kor_osd03_03.gif','kor_osd03_04.gif','kor_osd03_05.gif','kor_osd03_06.gif','kor_osd03_07.gif','kor_osd03_08.gif','kor_osd03_09.gif','kor_osd03_10.gif','kor_osd03_11.gif','kor_osd03_12.gif','kor_osd03_13.gif','kor_osd03_03.gif','go_on.gif','stop_off.gif')"> 
+	<tr> 
+		<td> 
+			<p><a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0><img border="0" width="600" height="152" src="eng_top01.gif"></a></p>
+		</td>
+	</tr>
+</table>
+
+ 
+
+
+
+
+
+
+
+
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" width="600" height="40"> 
+<tr> 
+  <td>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffffff"><a href="Overview.html" onfocus='this.blur()' class="Mlink">综述</a>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </td>
+
+<td>	
+<font color="#aaaaaa">|</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="install.html" onfocus='this.blur()' class="Mlink">安装</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+</td>
+
+<td>	
+<font color="#aaaaaa">|</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#ffffff"><B>OSD 模式</B>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+ 
+
+<td>
+<font color="#aaaaaa">|</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="uninstall.html" onfocus='this.blur()' class="Mlink">卸载</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+
+<td>
+<font color="#aaaaaa">|</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	<a href="tips.html" onfocus='this.blur()' class="Mlink">故障排除</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+<table width="600" border="0" cellspacing="0" cellpadding="10">
+	<tr>
+		<td>
+		
+		
+		
+		
+		
+						<CENTER>
+		<table width="550">
+		         <tr>
+		           <Td width="550" colspan="2">
+                <p align="center"><img src="osd_t2.gif" border="0"></Td>
+				   </tr>
+				   <Td width="80">
+				 
+            <p align="center">  <img src="memo01.gif" border="0"></Td>
+				   <Td width="470">
+				  <FONT COLOR="#003399">MagicTune 能够便捷地保存和调用最适合您的显示器配置信息，对显示屏进行快速而准确的调谐。<BR>
+																	<B><ul><li>随着具体显示器规格的不同，OSD 模式可能会看似与指南手册中的解释不一致。</li></ul>
+																	
+</B></FONT></Td>
+					</tr>
+					<tr>
+		           <Td width="550" colspan="2">
+				   
+            <p align="center"><img src="osd_t2.gif" border="0"></Td></tr>
+				   </table></CENTER>
+				   
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<br>
+			<h2><a name="OsdMode"><img src="icon01.gif" border="0">	OSD 模式</a></h2>
+			
+			<p align="center"><img src="kor_osd01.gif"></p>
+
+			<p> OSD 模式使所有显示器的设置调整更加便捷。如果已选择，控制窗口上端的每个选项卡显示了用于调整的子菜单项目的一般说明。如果已选择，每个选项卡显示一个菜单列表。为了快速调整显示器设置，OSD 模式允许简单、方便地访问所有选项卡和子菜单项目。
+</p> 
+			<br>
+
+			<h4><a name="OsdMode01"><img src="icon04.gif" border="0">  按钮定义</a></h4>
+			
+			<table border="0" width="600" style="border-top-width:1; border-top-color:rgb(51,51,51); border-top-style:none;" cellpadding="2" cellspacing="0" align="center">
+				<tr>
+					<td width="110" style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>确定 </b></p>
+					</td>
+					<td style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>应用所做的更改，退出 MagicTune。 <BR><BR><!-- <a onmouseover="popmsg('矫胶袍  飘饭捞','矫胶袍 飘饭捞绰 累诀钎矫临俊 矫拌客 割割 橇肺弊伐甸狼 酒捞能阑 唱鸥晨栏肺结 橇肺弊伐捞 芭扁俊 乐促绰 巴阑 荤侩磊啊 瘤加利栏肺 舅酒瞒副 荐 乐档废 窍绊, 弊吝 窍唱甫 奖霸 努腐且 荐 乐档废 窍扁 困茄 巴涝聪促. &lt;br&gt;&lt;br&gt;矫胶袍 飘饭捞绰 扩档快95/98/NT俊辑 累诀钎矫临狼 茄率 场俊(措俺 快螟 窍窜俊) 困摹秦 乐绰 何盒阑 富钦聪促.')" onmouseout=hiddenmsg() href="#" onClick="return false;" style="cursor:help" onfocus='this.blur()' class="Hlink">矫胶袍 飘饭捞</a>俊辑绰 咯傈洒 MagicTune捞 角青登绊 乐嚼聪促.<br><br> --></p> 
+					</td>
+				</tr>
+				<tr>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>重置</b></p>
+					</td>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>将在激活控制窗口中显示的显示器值恢复为制造商推荐的值。 <br><br> </p>
+					</td>
+				</tr>
+				<tr>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>取消 </b></p>
+					</td>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>退出 MagicTune，不应用所做的更改。如果没有在控制窗口进行任何更改，那么单击 “取消”，不进行任何操作。 
+<br><br> </p>
+					</td>
+				</tr>
+			</table>
+
+
+
+			<table>
+				<tr>
+				<td><BR><BR>
+			<img src="line01.gif" align="right">
+			</td>
+			</tr>
+			</table>
+
+
+
+			
+			<br><br><h4><a name="Linkosd01"><img src="icon04.gif" border="0">   “画面”选项卡定义</a></h4>
+
+			允许用户将屏幕设置调整为所需值。 
+			
+			<p align="center"><img src="kor_osd01.gif" name="osd01"></p>
+			
+			<form name="Fosd01">
+			<table border="0" width="600" style="border-top-width:1; border-top-color:rgb(51,51,51); border-top-style:none;" cellpadding="2" cellspacing="0" align="center">
+				<tr>
+					<td style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<INPUT type="radio" name="selosd01" value="kor_osd01_01" id="osd01_01" style="cursor:hand" onfocus="this.blur();" checked onClick="selOSDvalue('kor_osd01_01','osd01')"><LABEL style="cursor:hand" class="base" for="osd01_01"><nobr>亮度</nobr></LABEL>
+						<INPUT type="radio" name="selosd01" value="kor_osd01_02" id="osd01_02" value="222" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('kor_osd01_02','osd01')"><LABEL style="cursor:hand" class="base" for="osd01_02"><nobr>对比度</nobr></LABEL>						 
+						<INPUT type="radio" name="selosd01" value="kor_osd01_03" id="osd01_03" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('kor_osd01_03','osd01')"><LABEL style="cursor:hand" class="base" for="osd01_03"><nobr>MagicBright</nobr></LABEL>
+					</td>
+					<td width="110" align=center style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:1; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:solid;">
+						<p><a href="#Linkosd01" onClick="Image_change('osd01','OnStart','3')"><img src="go_off.gif" name="osd01_go" border="0" alt="play"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Linkosd01" onClick="Image_change('osd01','Off')"><img src="stop_on.gif" name="osd01_stop" border="0" alt="stop"></a></p>
+					</td>
+				</tr>
+			</table>
+			</form>
+             
+			<table border="0" width="600" style="border-top-width:1; border-top-color:rgb(51,51,51); border-top-style:none;" cellpadding="2" cellspacing="0" align="center">
+				<tr>
+					<td width="110" style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>亮度 </b></p>
+					</td>
+					<td style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>使整个屏幕更亮或更暗。如果亮度没有调整到适当水平，那么图像暗区的细节数据可能会丢失。调整亮度以得到最佳的视觉效果。  
+<br><br></p>
+					</td>
+				</tr>
+				<tr>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>对比度 </b></p>
+					</td>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>调整屏幕上亮区和暗区的亮度差。确定图像的轮廓鲜明性。 <br><br> </p>
+					</td>
+				</tr>
+
+<tr>
+                            </tr>
+				<tr>
+					<td valign=middle style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>MagicBright&trade;</b></p>
+					</td>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>
+						再按一下MagicBright按钮，可以直接进入用户希望的模式。<BR>
+                  -  四种不同模式
+<br> <BR>
+&nbsp;&nbsp;&nbsp; 
+						
+						<UL><LI> <B>高于 19 英寸 </B>
+
+</UL><ol>
+							<li> 文本：用于文档或者包含很多文本的作品。
+ 							<li> 互联网：用于使用带有文本和图形的混合图像。
+ 							<li> 游戏：用于观看游戏等动画图像。
+  							<li>娱乐：用于观看 DVD 或 VCD 等电影。
+							
+						</ol>
+
+
+	<UL><LI> <B>低于 19 英寸</B>	 
+</UL>
+						<ol>
+							<li> 文本：用于文档或者包含很多文本的作品。
+ 							<li> 互联网：用于使用带有文本和图形的混合图像。
+ 							<li> 娱乐：用于观看 DVD 或 VCD 等电影。
+  							<!-- <li> 自定义：尽管这些预配置值经过我们工程师精心挑选，
+  但可能无法适合您的视觉（取决于您的个人偏好）。如果是这样，请使用 OSD（屏幕显示）菜单，对 Brightness（亮度）和 Contrast（对比度）进行调整。 -->
+							
+						</ol>
+						<BR><BR>	
+
+				</p>
+					</td>
+				</tr>
+			</table>
+			
+
+
+			<table>
+				<tr>
+				<td><BR><BR>
+			<img src="line01.gif" align="right">
+			</td>
+			</tr>
+			</table>
+
+
+
+						
+			<br><br><h4><a name="Linkosd02"><img src="icon04.gif" border="0">  “色彩”选项卡定义</a></h4>
+
+			调整显示器背景或图像色彩的“温暖感”。
+
+			<p align="center"><img src="kor_osd02.gif" name="osd02"></p>
+			
+			<form name="Fosd02">
+			<table border="0" width="600" style="border-top-width:1; border-top-color:rgb(51,51,51); border-top-style:none;" cellpadding="2" cellspacing="0" align="center">
+				<tr>
+					<td style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<INPUT type="radio" name="selosd02" value="kor_osd02_01" id="osd02_01" style="cursor:hand" onfocus="this.blur();" checked onClick="selOSDvalue('kor_osd02_01','osd02')"><LABEL style="cursor:hand" class="base" for="osd02_01"><nobr>色调</nobr></LABEL>
+						<INPUT type="radio" name="selosd02" value="kor_osd02_02" id="osd02_02" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('kor_osd02_02','osd02')"><LABEL style="cursor:hand" class="base" for="osd02_02"><nobr>色彩控制</nobr></LABEL>
+						 
+					</td>
+
+					<td width="110" align=center style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:1; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:solid;">
+						<p><a href="#Linkosd02" onClick="Image_change('osd02','OnStart','2')"><img src="go_off.gif" name="osd02_go" border="0" alt="play"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Linkosd02" onClick="Image_change('osd02','Off')"><img src="stop_on.gif" name="osd02_stop" border="0" alt="stop"></a></p>
+					</td>
+				</tr>
+			</table>
+			</form>
+                        
+			<table border="0" width="600" style="border-top-width:1; border-top-color:rgb(51,51,51); border-top-style:none;" cellpadding="2" cellspacing="0" align="center">
+				<tr>
+					<td width="110" style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>色调</b></p>
+					</td>
+					<td style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>可以更改色温。<br>
+						<ul>
+							<li>暖色调  -  常规色调  - 冷色调 
+							<li>自定义 
+						</ul></p>
+					</td>
+				</tr>
+				<tr>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>色彩控制</b></p>
+					</td>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>调整显示器图像色彩。<BR>
+  您可以将显示器色彩更改为需要的色彩。  
+						<ul>
+							<li>R - G - B </li>
+							<li>sRGB</li>
+						</ul></p>
+					</td>
+				</tr>
+		<!--			<tr>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>Calibration</b></p>
+					</td>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>The process through which the colors of your choice are optimized and maintained. 
+You will find MagicTune extremely useful if you are one of those who wish to view images with their full details accurately reproduced - including web images and the ones that are produced using the digital camera or the scanner.  
+<BR>
+
+						
+				 		<ul>
+							<li>Select [Factory Default] to disable the Calibration feature. 
+To enable Calibration, go to [Options] ' [Basic Settings] and select [Enable Calibration] in the Basic Settings menu. 
+ </li></ul>
+
+						
+						<BR>
+						</p>
+					</td>
+				</tr>-->
+			</table>
+
+			<table>
+				<tr>
+				<td><BR><BR>
+			<img src="line01.gif" align="right">
+			</td>
+			</tr>
+			</table>
+
+		 	<br><br><h4><a name="Linkosd03"><img src="icon04.gif" border="0">   “几何形状”选项卡定义</a></h4>
+			
+			调整 位置、大小 和 旋转值。
+  
+
+			<p align="center"><img src="kor_osd03.gif" name="osd03"></p>
+
+			<form name="Fosd03">
+			<table border="0" width="600" style="border-top-width:1; border-top-color:rgb(51,51,51); border-top-style:none;" cellpadding="2" cellspacing="0" align="center">
+				<tr>
+					<td style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<B>几何形状 1</B><BR>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_01" id="osd03_01" style="cursor:hand" onfocus="this.blur();" checked onClick="selOSDvalue('kor_osd03_01','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_01"><nobr>旋转</nobr></LABEL>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_02" id="osd03_02" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('kor_osd03_02','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_02"><nobr>大小</nobr></LABEL>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_03" id="osd03_03" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('kor_osd03_03','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_03"><nobr>位置</nobr></LABEL><BR><BR>
+
+						<B>几何形状 2</B><BR>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_04" id="osd03_04" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('kor_osd03_04','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_04"><nobr>枕形</nobr></LABEL>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_05" id="osd03_05" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('kor_osd03_05','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_05"><nobr>单边失真</nobr></LABEL>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_06" id="osd03_06" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('kor_osd03_06','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_06"><nobr>梯形</nobr></LABEL>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_07" id="osd03_07" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('kor_osd03_07','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_07"><nobr>平行</nobr></LABEL><BR><BR>
+
+						<B>其它</B><BR>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_08" id="osd03_08" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('kor_osd03_08','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_08"><nobr>波纹</nobr></LABEL>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_09" id="osd03_09" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('kor_osd03_09','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_09"><nobr>消磁</nobr></LABEL>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_10" id="osd03_10" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('kor_osd03_10','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_10"><nobr>顶角弓形</nobr></LABEL>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_11" id="osd03_11" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('kor_osd03_11','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_11"><nobr>底角弓形</nobr></LABEL>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_12" id="osd03_12" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('kor_osd03_12','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_12"><nobr>顶角单边失真</nobr></LABEL>
+						<INPUT type="radio" name="selosd03" value="kor_osd03_13" id="osd03_13" style="cursor:hand" onfocus="this.blur();" onClick="selOSDvalue('kor_osd03_13','osd03')"><LABEL style="cursor:hand" class="base" for="osd03_13"><nobr>底角单边失真</nobr></LABEL>
+					</td>
+					<td width="110" align=center style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:1; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:solid;">
+						<p><a href="#Linkosd03" onClick="Image_change('osd03','OnStart','13')"><img src="go_off.gif" name="osd03_go" border="0" alt="play"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Linkosd03" onClick="Image_change('osd03','Off')"><img src="stop_on.gif" name="osd03_stop" border="0" alt="stop"></a></p>
+					</td>
+				</tr>
+			</table>
+			</form>
+                        
+			<table border="0" width="600" style="border-top-width:1; border-top-color:rgb(51,51,51); border-top-style:none;" cellpadding="2" cellspacing="0" align="center">
+				<tr>
+					<td width="110" style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>  几何形状 1  </b></p>
+					</td>
+					<td style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br> 调整 位置、  大小
+和 旋转值。
+						<ul>
+							<li>旋转</li>
+							<li>大小</li>
+							<li>位置</li>
+						</ul></p>
+					</td>
+				</tr>
+				<tr>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>几何形状 2 ）</b></p>
+					</td>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>调整 枕形、单边失真、梯形和平行值。 
+						<ul>
+							<li>枕形</li>
+							<li>单边失真</li>
+							<li>梯形</li>
+							<li>平行</li>
+						</ul> </p>
+					</td>
+				</tr>
+				<tr>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>其它</b></p>
+					</td>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br> 调整 波纹、消磁、角弓形和 单边失真值。 
+						<ul>
+							<li>波纹</li>
+							<li>消磁</li>
+							<li>顶角弓形</li>
+							<li>底角弓形</li>
+							<li>顶角单边失真</li>
+							<li>底角单边失真</li>
+						</ul> </p>
+					</td>
+				</tr>
+			</table> 
+
+
+
+			<table>
+				<tr>
+				<td><BR><BR>
+			<img src="line01.gif" align="right">
+			</td>
+			</tr>
+			</table>
+
+
+
+			
+			<br><br><h4><a name="Linkosd04"><img src="icon04.gif" border="0"> “选项”选项卡定义</a></h4>
+
+			您可以使用下列选项来配置 MagicTune。
+
+			<p align="center"><img src="kor_osd04.gif"></p>
+                        
+			<table border="0" width="600" style="border-top-width:1; border-top-color:rgb(51,51,51); border-top-style:none;" cellpadding="2" cellspacing="0" align="center">
+				<tr>
+					<td width="110" style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>偏好</b></p>
+					</td>
+					<td style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>  装入“首选”对话框。使用中的“首选”项在复选框中有一个 "V"。要打开或关闭任何“首选”项，将光标置于框上方并单击。
+						<ul>
+							<li>  
+启用任务清单。
+  - 要访问 MagicTune 菜单，单击 [启用任务清单] 上的图标。
+    如果在 [选项] - [基本设置] 中取消选择 [启用系统任务] ，那么菜单不显示。
+<BR> 
+</li>
+							<li> 选择语言 -
+  选择的语言仅影响 OSD 的语言。 
+						</ul></p>
+					</td>
+				</tr>
+			</table>
+
+
+
+
+			<table>
+				<tr>
+				<td><BR><BR>
+			<img src="line01.gif" align="right">
+			</td>
+			</tr>
+			</table>
+
+
+
+			
+			<br><br><h4><a name="Linkosd05"><img src="icon04.gif" border="0"> “支持”选项卡定义</a></h4>
+			
+			  显示资产 ID 和程序版本号，允许您使用“帮助”功能。
+
+			<p align="center"><img src="kor_osd05.gif"></p>
+                        
+			<table border="0" width="600" style="border-top-width:1; border-top-color:rgb(51,51,51); border-top-style:none;" cellpadding="2" cellspacing="0" align="center">
+				<tr>
+					<td width="110" style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b> 帮助</b></p>
+					</td>
+					<td style="border-top-width:1; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>如果您在安装或运行 MagicTune 时需要帮助，那么请访问 MagicTune
+  网站或单击打开帮助文件（用户手册）。用户手册在基本浏览器窗口打开。
+
+<br><br></p>
+					</td>
+				</tr>
+				<tr>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>资产 ID</b></p>
+					</td>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>打开显示器信息窗口，出现显示器制造日期。 
+<br><br></p>
+					</td>
+				</tr>
+				<tr>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><b>版本</b></p>
+					</td>
+					<td style="border-top-width:0; border-right-width:0; border-bottom-width:1; border-left-width:0; border-color:rgb(51,51,51); border-top-style:solid; border-right-style:none; border-bottom-style:solid; border-left-style:none;">
+						<p><br>显示 MagicTune 版本号以及与显示<!-- 器的通信方法 -->。<br><br></p>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+<table border="0" cellspacing="0" cellpadding="10" width="600"> 
+	<tr> 
+		<td> <!-- <br>
+
+			<p><font size="1">荤剧篮 抗绊 绝捞 函版瞪 荐 乐嚼聪促. 
+			<BR>MagicTune篮 Samsung, Inc.狼 惑钎捞哥  Windows㈢绰 Microsoft㈢ Corp.狼 殿废 惑钎涝聪促. 
+			<BR>促弗 惑钎绰 秦寸 雀荤狼 家蜡涝聪促.</font></p> -->
+
+			<p><a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0><img src="base.gif" border="0"> 
+		</td>
+	</tr>
+</table>
+
+
+</body>
+</html>
+

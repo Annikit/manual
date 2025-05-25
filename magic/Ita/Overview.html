@@ -1,0 +1,222 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<title>MagicTune Guida - Cenni generali</title>
+<style type="text/css">
+	<!--
+	a:link {color: #0000ff; font-size: 12pt; text-decoration:none}
+	a:visited {color: #0000ff; font-size: 12pt; text-decoration:none}
+	a:hover {color: #0000ff; font-size: 12pt; text-decoration:underline}
+	a:active {color: #0000ff; font-size: 12pt; text-decoration:underline}
+
+	a.Mlink:link {color: #aaaaaa; font-size: 12pt; text-decoration:none}
+	a.Mlink:visited {color: #aaaaaa; font-size: 12pt; text-decoration:none}
+	a.Mlink:hover {color: #aaaaaa; font-size: 12pt; text-decoration:underline}
+	a.Mlink:active {color: #aaaaaa; font-size: 12pt; text-decoration:underline}
+
+	body, p, td, left, TABLE {font-family: Arial, Helvetica, sans-serif; font-size: 11pt; line-height: 140%; }
+
+	BODY {OVERFLOW-X: hidden; OVERFLOW: scroll}
+	.popmsgper {VISIBILITY: hidden; POSITION: absolute}
+	a.Hlink:link {color: #2F90F3; font-size: 12pt; text-decoration:none}
+	a.Hlink:visited {color: #2F90F3; font-size: 12pt; text-decoration:none}
+	a.Hlink:hover {color: #008000; font-size: 12pt; text-decoration:none}
+	a.Hlink:active {color: #008000; font-size: 12pt; text-decoration:none}
+	-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF" marginwidth="0" marginheight="0" oncontextmenu="return false" ondragstart="return false">
+
+<DIV class=popmsgper id=topdeck> </DIV>
+<SCRIPT language="JAVASCRIPT">
+<!--
+var nav = (document.layers);
+var iex = (document.all);
+var skn = (nav) ? document.topdeck : topdeck.style;
+
+if (nav) document.captureEvents(Event.MOUSEMOVE);
+
+document.onmousemove = mousepos;
+
+function popmsg(msg1,msg2){
+
+	var width = document.body.offsetWidth;
+
+	if (width > 1000)
+	{width=500}
+	else
+	{width="95%"}
+
+	var content ="<TABLE WIDTH="+width+" BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#0062b2><TR><TD><TABLE WIDTH=100% BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD><CENTER><FONT COLOR=#FFFFFF font-size: 9pt><B>Guida</B></FONT></CENTER></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#FFFFFF><TR><TD><FONT COLOR=#000000 font-size: 9pt><b><left>"+msg1+"</left></b></FONT></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#FFFFFF><TR><TD><FONT COLOR=#000000 font-size: 9pt><left>"+msg2+"</left></FONT></TD></TR></TABLE></TD></TR></TABLE>";
+	
+	if (nav)
+	{
+		skn.document.write(content);
+		skn.document.close();
+		skn.visibility = "visible";
+	}
+	else if (iex)
+	{
+		document.all("topdeck").innerHTML = content;
+		skn.visibility = "visible";
+	}
+}
+
+function mousepos(e){
+	var x = (nav) ? e.pageX : event.x+document.body.scrollLeft;
+	var y = (nav) ? e.pageY : event.y+document.body.scrollTop;
+	skn.left = x - 60;
+	skn.top  = y+20;
+}
+
+function hiddenmsg(){
+	skn.visibility = "hidden";
+}
+
+//-->
+</SCRIPT>
+
+<table border="0" cellspacing="0" cellpadding="0" width="600"> 
+	<tr> 
+		<td> 
+			<p><a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0><img border="0" width="600" height="152" src="eng_top01.gif"></a></p>
+		</td>
+	</tr>
+</table>
+ 
+
+
+
+
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" width="600" height="40"> 
+<tr> 
+  <td>
+ <font color="#ffffff"><B>Cenni generali</B></font>
+ 
+ </td>
+
+<td>	
+<font color="#aaaaaa">|</font>
+<a href="install.html" onfocus='this.blur()' class="Mlink">Installazione</a> 
+	
+</td>
+
+<td>	
+<font color="#aaaaaa">|</font>
+<a href="modes.html" onfocus='this.blur()' class="Mlink">Modalità OSD</a>
+
+</td>
+ 
+
+<td>
+<font color="#aaaaaa">|</font>
+<a href="uninstall.html" onfocus='this.blur()' class="Mlink">Disinstallazione</a>
+
+</td>
+
+<td>
+<font color="#aaaaaa">|</font>
+	<a href="tips.html" onfocus='this.blur()' class="Mlink">Risoluzione dei problemi</a>
+
+</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table border="0" cellspacing="0" cellpadding="10" width="600"> 
+	<tr> 
+		<td> <br>
+		
+			<h2><img src="icon01.gif" border="0">	Cenni generali</h2><BR><BR><BR>
+			
+			<h3><a name="Overview01"><img src="icon04.gif" border="0">	Cenni generali su MagicTune&trade; </a></h3>
+			
+			<p> Le prestazioni dei monitor possono variare in base alla scheda grafica, al computer del sistema, alle conduzioni di illuminazione e ad altri fattori ambientali. Al fine di ottenere l'immagine migliore su un determinato monitor, è necessario regolarlo sulla base delle proprio impostazioni uniche. Sfortunatamente, i controlli manuali a disposizione per regolare l'immagine spesso sono difficili da usare. La regolazione appropriata (sintonizzazione) richiede un programma facile da usare che presenta una procedura passo passo che ha come risultato l'ottenimento della migliore qualità d'immagine nel complesso. </p>
+      <p>Nella maggior parte dei casi, anche semplici regolazioni a Luminosità o Contrasto richiedono la navigazione nei diversi livelli dei menu a schermo (OSD), che non sono semplici da comprendere. Inoltre, non vi è alcuna risposta in ausilio alla corretta impostazione dei controlli del monitor. MagicTune&trade; è un'utilità software che guida l'utente per tutto il corso del processo di regolazione con istruzioni semplici da capire e schemi di sfondo pensati per tutti i controlli del monitorLe impostazioni di visualizzazione relative a ciascun controllo possono essere salvate, fornendo un semplice sistema per selezionare le caratteristiche dello schermo in un ambiente multiutente, o per un singolo utente che desidera disporre di impostazioni predefinite sulla base dei contenuti e della luminosità dell'ambiente.</p>
+			<BR><BR>
+
+
+
+			<table>
+				<tr>
+				</td>
+			<img src="line01.gif" align="right">
+			</td>
+			</tr>
+			</table>
+
+
+
+
+			<h3><a name="Overview02"><img src="icon04.gif" border="0">	Funzionalità di base</a></h3>
+			
+			<p> 	
+			
+			MagicTune&trade; è un'utilità software che consente di regolare il monitor e i colori utilizzando il protocollo <a onmouseover="popmsg('DDC/CI  (Display Data Channel Command Interface, canale dati del monitor/interfaccia  di comando)','Lo standard definisce protocolli basati su I2C con  vari livelli di complessità che operano sul canale DDC allo scopo di  controllare il monitor e le periferiche opzionali annesse.In risposta alle necessità Plug &Play degli utenti  finali, VESA ha definito lo standard DDC che incorpora diversi livelli di  comunicazione.I livelli  DDC2Bi, DDC2B+ e DDC2AB offrono una comunicazione bidirezionale tra la scheda  grafica del computer e il monitor.')" onmouseout=hiddenmsg() href="#" onClick="return false;" style="cursor:help" onfocus='this.blur()' class="Hlink">DDC/CI
+  (Display Data Channel Command Interface, canale dati del monitor/interfaccia
+  di comando)</a>Tutte le regolazioni al monitor sono controllate via software per eliminare la necessità di utilizzare i menu a schermo (OSD).
+        &nbsp; MagicTune supporta Windows 98 SE, ME, 2000, NT, XP Home Edition e XP
+Professional.</p>
+      
+	  
+	  <p>MagicTune viene eseguito in
+background. MagicTune consente
+la precisa e veloce regolazione del monitor con la possibilità di salvare e
+utilizzare facilmente le configurazioni che meglio si adattano a ciascun
+utente. <!-- MagicTune supports Windows 98 SE, ME, 2000, NT, XP Home and XP Professional Editions.  --></p>
+			<BR><BR>
+
+
+
+			<table>
+				<tr>
+				</td>
+			<img src="line01.gif" align="right">
+			</td>
+			</tr>
+			</table>
+
+
+
+			
+			<h3><a name="Overview03"><img src="icon04.gif" border="0">	 Modalità OSD</a></h3>
+			<p> La modalità OSD consente di regolare
+  facilmente le impostazioni del monitor senza eseguire passaggi predefiniti. È possibile
+  accedere alla voce di menu desiderata per eseguire impostazioni con facilità.
+   </p><BR><BR>
+
+		</td>
+	</tr>
+</table>
+
+<table border="0" cellspacing="0" cellpadding="10" width="600"> 
+	<tr> 
+		<td> <!-- <br>
+
+			<p><font size="1">»ç¾çÀº ¿¹°í ¾øÀÌ º¯°æµÉ ¼ö ÀÖ½À´Ï´Ù. 
+			<BR>MagicTuneÀº Samsung, Inc.ÀÇ »óÇ¥ÀÌ¸ç  Windows¢ç´Â Microsoft¢ç Corp.ÀÇ µî·Ï »óÇ¥ÀÔ´Ï´Ù. 
+			<BR>´Ù¸¥ »óÇ¥´Â ÇØ´ç È¸»çÀÇ ¼ÒÀ¯ÀÔ´Ï´Ù.</font></p> -->
+
+			<p><a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0><img src="base.gif" border="0"> 
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>

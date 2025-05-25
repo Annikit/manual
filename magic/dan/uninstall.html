@@ -1,0 +1,187 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>MagicTune Hjælp - Afinstallation</title>
+<style type="text/css">
+	<!--
+	a:link {color: #0000ff; font-size: 12pt; text-decoration:none}
+	a:visited {color: #0000ff; font-size: 12pt; text-decoration:none}
+	a:hover {color: #0000ff; font-size: 12pt; text-decoration:underline}
+	a:active {color: #0000ff; font-size: 12pt; text-decoration:underline}
+
+	a.Mlink:link {color: #aaaaaa; font-size: 12pt; text-decoration:none}
+	a.Mlink:visited {color: #aaaaaa; font-size: 12pt; text-decoration:none}
+	a.Mlink:hover {color: #aaaaaa; font-size: 12pt; text-decoration:underline}
+	a.Mlink:active {color: #aaaaaa; font-size: 12pt; text-decoration:underline}
+
+	body, p, td, left, TABLE {font-family: Arial, Helvetica, sans-serif; font-size: 11pt; line-height: 140%; }
+
+	BODY {OVERFLOW-X: hidden; OVERFLOW: scroll}
+	.popmsgper {VISIBILITY: hidden; POSITION: absolute}
+	a.Hlink:link {color: #2F90F3; font-size: 12pt; text-decoration:none}
+	a.Hlink:visited {color: #2F90F3; font-size: 12pt; text-decoration:none}
+	a.Hlink:hover {color: #008000; font-size: 12pt; text-decoration:none}
+	a.Hlink:active {color: #008000; font-size: 12pt; text-decoration:none}
+	-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" marginwidth="0" marginheight="0" oncontextmenu="return false" ondragstart="return false">
+
+<DIV class=popmsgper id=topdeck> </DIV>
+<SCRIPT language="JAVASCRIPT">
+<!--
+var nav = (document.layers);
+var iex = (document.all);
+var skn = (nav) ? document.topdeck : topdeck.style;
+
+if (nav) document.captureEvents(Event.MOUSEMOVE);
+
+document.onmousemove = mousepos;
+
+function popmsg(msg1,msg2){
+
+	var width = document.body.offsetWidth;
+
+	if (width > 1000)
+	{width=500}
+	else
+	{width="95%"}
+
+	var content ="<TABLE WIDTH="+width+" BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#0E1F83><TR><TD><TABLE WIDTH=100% BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD><CENTER><FONT COLOR=#FFFFFF SIZE=2><B>HELP</B></FONT></CENTER></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#FFFFFF><TR><TD><FONT COLOR=#000000 SIZE=2><b><left>"+msg1+"</left></b></FONT></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#FFFFFF><TR><TD><FONT COLOR=#000000 SIZE=2><left>"+msg2+"</left></FONT></TD></TR></TABLE></TD></TR></TABLE>";
+	
+	if (nav)
+	{
+		skn.document.write(content);
+		skn.document.close();
+		skn.visibility = "visible";
+	}
+	else if (iex)
+	{
+		document.all("topdeck").innerHTML = content;
+		skn.visibility = "visible";
+	}
+}
+
+function mousepos(e){
+	var x = (nav) ? e.pageX : event.x+document.body.scrollLeft;
+	var y = (nav) ? e.pageY : event.y+document.body.scrollTop;
+	skn.left = x - 60;
+	skn.top  = y+20;
+}
+
+function hiddenmsg(){
+	skn.visibility = "hidden";
+}
+
+//-->
+</SCRIPT>
+
+
+		<table border="0" cellspacing="0" cellpadding="0" width="600"> 
+	<tr> 
+		<td> 
+			<p><a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0><img border="0" width="600" height="152" src="eng_top01.gif"></a></p>
+		</td>
+	</tr>
+</table>
+
+
+</table>
+
+
+
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" width="600" height="40"> 
+<tr> 
+  <td>&nbsp;&nbsp;&nbsp;
+<a href="overview.html" onfocus='this.blur()' class="Mlink">Oversigt</a>
+ </td>
+
+<td>&nbsp;&nbsp;&nbsp;
+<font color="#aaaaaa">|</font>&nbsp;&nbsp;
+<a href="install.html" onfocus='this.blur()' class="Mlink">Installation</a>
+  </td>
+
+  <td>&nbsp;&nbsp;&nbsp;
+  <font color="#aaaaaa">|</font>&nbsp;&nbsp;	
+   <a href="modes.html" onfocus='this.blur()' class="Mlink">OSD-tilstand</a>&nbsp;&nbsp;
+  </td>
+
+<td>&nbsp;&nbsp;&nbsp;
+<font color="#aaaaaa">|</font>&nbsp;&nbsp;
+<font color="#ffffff"><B>Afinstallation</B></font>
+</td>
+
+<td>&nbsp;&nbsp;&nbsp;
+<font color="#aaaaaa">|</font>&nbsp;&nbsp;
+<a href="tips.html" onfocus='this.blur()' class="Mlink">Fejlfinding</a>
+&nbsp;&nbsp;&nbsp;&nbsp;</font></td></tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<table width="600" border="0" cellspacing="0" cellpadding="10">
+	<tr>
+		<td><br>
+			<h2><a name="Uninstall"><img src="../eng/icon01.gif" border="0">	Afinstallation</a></h2>
+
+			<p>MagicTune-programmet kan fjernes ved at
+  bruge indstillingen "Add or Remove Programs" (Tilføj/fjern
+  programmer) i Kontrolpanel i Windows. </p>
+			
+			<p>Benyt følgende fremgangsmåde for at fjerne MagicTune.</p>
+
+			<p><ol>
+				<li>  Gå til [Tusk Tray (Opgavebakke)] ' [Start (Start)] ' [Settings
+  (Indstillinger)], og vælg derefter [Control Panel (Kontrolpanel)] i menuen. Hvis programmet kører på Windows XP, skal du gå til [Control Panel
+  (Kontrolpanel)] i menuen [Start (Start)]. 
+  
+
+</li> <BR><BR>
+				<li>Klik på ikonet "Add or Remove Programs" (Tilføj/fjern
+  programmer i Kontrolpanel.
+ </li><BR><BR>
+				<li>Rul ned til "MagicTune" på
+  skærmbilledet "Add or Remove Programs" (Tilføj/fjern programmer). Klik på det for at markere det. 
+</li><BR><BR>
+				<li>Klik på knappen "Change/Remove" (Rediger/fjern) for at fjerne
+  programmet.</li><BR><BR>
+				<li>Klik på "Yes" (Ja) for at begynde afinstallationen. </li><BR><BR>
+				<li>Vent på, at dialogboksen "Uninstall Complete" (Fjernelsen er
+  fuldført) vises. </li>
+			</ol></p>
+
+			<p>Besøg <a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0>webstedet</a> for MagicTune for at få
+  teknisk support til MagicTune, se FAQs (ofte
+  stillede spørgsmål og svar) og hente softwareopgraderinger.
+  </p>
+
+		</td>
+	</tr>
+</table>
+
+<table border="0" cellspacing="0" cellpadding="10" width="600"> 
+	<tr> 
+		<td> <!-- <br>
+
+			<p><font size="1">»ç¾çÀº ¿¹°í ¾øÀÌ º¯°æµÉ ¼ö ÀÖ½À´Ï´Ù. 
+			<BR>MagicTuneÀº Samsung, Inc.ÀÇ »óÇ¥ÀÌ¸ç  Windows¢ç´Â Microsoft¢ç Corp.ÀÇ µî·Ï »óÇ¥ÀÔ´Ï´Ù. 
+			<BR>´Ù¸¥ »óÇ¥´Â ÇØ´ç È¸»çÀÇ ¼ÒÀ¯ÀÔ´Ï´Ù.</font></p> --><BR><BR>
+
+			<p><a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0><img src="base.gif" border="0"> 
+		</td>
+	</tr>
+</table>
+
+
+</body>
+</html>

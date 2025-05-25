@@ -1,0 +1,565 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=gb2312">
+<TITLE>SAMSUNG SyncMaster Monitor User's Manual</TITLE>
+
+<STYLE type=text/css>
+<!--
+a:link { font-family:Arial; color:blue; text-decoration:none; }
+a:visited { font-family:Arial; color:blue; text-decoration:none; }
+a:hover { font-family:Arial; color:red; text-decoration:none; }
+a:active { font-family:Arial; color:red; text-decoration:none; }
+
+body { font-family:Arial; font-size:13pt; }
+td { font-family:Arial; font-size:13pt; }
+p { font-family:Arial; font-size:13pt; }
+b { font-family:Arial; font-size:13pt; }
+ol { font-family:Arial; font-size:13pt; }
+blockquote { font-family:Arial; font-size:13pt; }
+h3 { font-family:Arial; font-size:12pt; color:white; }
+
+#lang { font-family:Arial; font-size:10pt; } 
+#lang1 { font-family:Arial; font-size:10pt; }  
+#color1 { font-family:Arial; font-size:12pt; color:blue; } 
+#select1 { color:rgb(0,51,102); position:absolute; left:14; top:420; z-index:0; }
+#size1 { font-family:Arial; font-size:15pt; color:red; }
+#size2 { font-family:Arial; font-size:15pt; color:rgb(128,0,255); }
+#size3 { font-family:'Times New Roman'; font-size:11pt; color:rgb(22,111,43); }
+#size4 { font-family:Arial; font-size:13pt; color:black; }
+#size5 { font-family:Arial; font-size:13pt; color:white; }
+.white { font-weight:bold; color:white; }
+.red { font-size:14pt; color:red; }
+.10pt { font-size:10pt; }
+
+--></STYLE>
+<script language="JavaScript" src = "../java.js">
+</script>
+<script language="JavaScript">
+<!-- Hide the script from old browsers --
+function openwin(str)
+{
+		var thereman = screen.availWidth;
+		var hereman = screen.availHeight;
+		window.open(str, '1004', 'toolbar=no,resizable=no,scrollbars=no,width=915,height=700,left=' + 30 + ',top=' + 30)
+}
+//-->
+</script>
+<script language="JavaScript">
+<!--
+function namosw_goto_byselect(sel, targetstr)
+{
+  var index = sel.selectedIndex;
+  if (sel.options[index].value != '') {
+     if (targetstr == 'blank') {
+       window.open(sel.options[index].value, 'win1');
+     } else {
+       var frameobj;
+       if (targetstr == '') targetstr = 'self';
+       if ((frameobj = eval(targetstr)) != null)
+         frameobj.location = sel.options[index].value;
+     }
+  }
+}
+
+// -->
+</script>
+</head>
+
+<BODY aLink=red bgColor="D7D7D7" link=blue text=black vLink=purple topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" background="../../img/m_img/bg.gif">
+<div style="position:absolute; left:400px; top:14px; z-index:11; visibility: show;">
+<table border="0" cellpadding="0" cellspacing="0" width="260">
+<tr>
+	<td align="center" height="21" width="130" valign="top">
+	<img src="../../img/select/sc/sel_lang.gif" border="0" width="129" height="21"></td>
+	<td align="center" height="21" width="130" valign="top">
+	<img src="../../IMG/SELECT/SC/SEL_MODE.GIF" width="129" height="21" border="0">
+	</td></tr>
+        <tr><td align="center" width="130" valign="top">
+	<form name="myform">
+	<select name="select1" size="1" onChange="gogo(this.form)">
+		<option value="../../en/setup/SE_DRIB9.htm">英文</option>
+		<option value="../../ge/setup/SE_DRIB9.htm">德文</option>
+		<option value="../../fr/setup/SE_DRIB9.htm">法文</option>
+		<option value="../../it/setup/SE_DRIB9.htm">意大利文</option>
+		<option value="../../sw/setup/SE_DRIB9.htm">瑞典文</option>		
+		<option value="../../po/setup/SE_DRIB9.htm">葡萄牙文</option>
+		<option value="../../sp/setup/SE_DRIB9.htm">西班牙文</option>
+		<option value="../../ru/setup/SE_DRIB9.htm">俄文</option>
+		<option value="../../pol/setup/SE_DRIB9.htm">波兰文</option>
+		<option value="../../hun/setup/SE_DRIB9.htm">匈牙利文</option>		
+		<option value="../../nor/setup/SE_DRIB9.htm">挪威文</option>
+		<option value="../../dan/setup/SE_DRIB9.htm">丹麦文</option>
+		<option value="../../fin/setup/SE_DRIB9.htm">芬兰文</option>
+		<option value="../../dut/setup/SE_DRIB9.htm">荷兰文</option>
+		<option value="../../est/setup/SE_DRIB9.htm">爱沙尼亚文</option>		
+		<option value="../../gre/setup/SE_DRIB9.htm">希腊文</option>
+		<option value="../../lat/setup/SE_DRIB9.htm">拉脱维亚文</option>
+		<option value="../../lit/setup/SE_DRIB9.htm">立陶宛文</option><!--
+		<option value="../../ko/setup/SE_DRIB9.htm">Korean</option>-->
+		<option value="SE_DRIB9.htm" selected>简体中文</option>
+		<option value="../../tc/setup/SE_DRIB9.htm">繁體中文</option>
+		<option value="../../VIE/setup/se_drib9.htm">越南文</option>
+		<option value="../../tur/setup/se_drib9.htm">土耳其文</option>
+		<option value="../../cze/setup/se_drib9.htm">捷克文</option>
+		<option value="../../rom/setup/se_drib9.htm">罗马尼亚文</option>
+		<option value="../../cro/setup/se_drib9.htm">克罗地亚文</option>
+		<option value="../../bul/setup/se_drib9.htm">保加利亚文</option>
+		<option value="../../slk/setup/se_drib9.htm">斯洛伐克文</option>
+		<option value="../../sln/setup/se_drib9.htm">斯洛文尼亚文</option>
+	</select>
+	</form></td>
+ 	<td align="center">
+	<form name="myform">
+	<select size="1" OnChange="namosw_goto_byselect(this, 'self')">
+        <option value="se_drib.htm">SyncMaster 591S</option>
+		<option value="se_drib2.htm">SyncMaster 793S</option>
+		<option value="se_drib9.htm" selected>SyncMaster 591V</option>
+		<option value="se_drib10.htm">SyncMaster 793V</option>
+		<option value="se_drib11.htm">SyncMaster 783DF</option>
+		<option value="se_drib3.htm">SyncMaster 793DF</option>
+		<option value="se_drib4.htm">SyncMaster 795DF</option>
+		<option value="se_drib5.htm">SyncMaster 797DF</option>
+		<option value="se_drib6.htm">SyncMaster 997DF</option>
+		<option value="se_drib7.htm">SyncMaster 793MB</option>
+		<option value="se_drib8.htm">SyncMaster 795MB</option>
+	</select>
+	</form>
+</td></tr>
+</table>
+</div>
+
+<DIV STYLE="position:absolute; left:25px; top:114px; width:282px; visibility: show; z-index:1">
+<table width="144" border="0" cellspacing="0" cellpadding="0">
+<tr> 
+	<td><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=4,0,2,0" width="95" height="72">
+		<param name=movie value="../../img/m_img/monitor.swf">
+		<param name=quality value=high>
+		<embed src="../../img/m_img/monitor.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="95" height="72">
+		</embed> 
+		</object></td>
+</tr>
+</table>
+</div>
+	
+<DIV ID="menu2" STYLE="width:200px; height:41px; position:absolute; left:84px; top:94px; z-index:1; visibility:hidden;">
+<table valign="top" width="214" height="17" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" >
+<tr onMouseOut="MM_showHideLayers('comselect','','show','menu2','','hide')" onMouseOver="MM_showHideLayers('comselect','','hide','menu2','','show')"><td>
+	<table align="center" valign="top" width="212" height="17" border="0" cellspacing="0" cellpadding="0" bgcolor="#D7D7D7">
+    <tr><td align="center" valign="middle" class="10pt">
+		<a href="../safty/index9.htm">符号</a> | 
+		<a href="../safty/s_power9.htm">电源</a> | 
+		<a href="../safty/s_setup9.htm">安装</a> | 
+		<a href="../safty/s_clean9.htm">清洁</a> | 
+		<a href="../safty/s_other9.htm">其他</a>
+	</td></tr></table>
+</td></tr></table>
+</DIV>
+
+<DIV ID="menu3" STYLE="width:200px; height:41px; position:absolute; left:234px; top:94px; z-index:1; visibility:hidden;">
+<table valign="top" width="202" height="17" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" >
+<tr onMouseOut="MM_showHideLayers('comselect','','show','menu3','','hide')" onMouseOver="MM_showHideLayers('comselect','','hide','menu3','','show')"><td>
+	<table align="center" valign="top" width="200" height="17" border="0" cellspacing="0" cellpadding="0" bgcolor="#D7D7D7">
+    <tr><td align="center" valign="middle" class="10pt">
+		<a href="../product/index9.htm">开箱</a> | 
+		<a href="../product/p_front9.htm">前面板</a> | 
+		<a href="../product/p_rear9.htm">后面板</a> |
+		<a href="../product/p_bottom9.htm">底部</a>
+	</td></tr></table>
+</td></tr></table>
+</DIV>
+
+<DIV ID="menu4" STYLE="width:200px; height:41px; position:absolute; left:324px; top:94px; z-index:1; visibility:hidden;">
+<table valign="top" width="320" height="17" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" >
+<tr onMouseOut="MM_showHideLayers('comselect','','show','menu4','','hide')" onMouseOver="MM_showHideLayers('comselect','','hide','menu4','','show')"><td>
+	<table align="center" valign="top" width="318" height="17" border="0" cellspacing="0" cellpadding="0" bgcolor="#D7D7D7">
+    <tr><td align="center" valign="middle" class="10pt">
+		<a href="../setup/index9.htm">连接你的显示器</a> | 
+		<a href="../setup/se_drive9.htm">安装视频驱动程序</a> | 
+		<a href="../setup/se_tilt9.htm">基座安装</a> 
+	</td></tr></table>
+</td></tr></table>
+</DIV>
+			  
+<DIV ID="menu6" STYLE="width:200px; height:41px; position:absolute; left:556px; top:94px; z-index:1; visibility:hidden;">
+<table valign="top" width="296" height="17" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" >
+<tr onMouseOut="MM_showHideLayers('comselect','','show','menu6','','hide')" onMouseOver="MM_showHideLayers('comselect','','hide','menu6','','show')"><td>
+	<table align="center" valign="top" width="294" height="17" border="0" cellspacing="0" cellpadding="0" bgcolor="#D7D7D7">
+    <tr><td align="center" valign="middle" class="10pt">
+		<a href="../trouble/index9.htm">检查表</a> | 
+		<a href="../trouble/t_specif9.htm">问题与回答</a> | 
+		<a href="../trouble/t_monito9.htm">自我测试功能特点检查</a>
+	</td></tr></table>
+</td></tr></table>
+</DIV>
+
+<DIV ID="menu7" STYLE="width:200px; height:41px; position:absolute; left:688px; top:94px; z-index:1; visibility:hidden;">
+<table valign="top" width="204" height="17" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" >
+<tr onMouseOut="MM_showHideLayers('comselect','','show','menu7','','hide')" onMouseOver="MM_showHideLayers('comselect','','hide','menu7','','show')"><td>
+	<table align="center" valign="top" width="202" height="17" border="0" cellspacing="0" cellpadding="0" bgcolor="#D7D7D7">
+    <tr><td align="center" valign="middle" class="10pt">
+		<a href="../specs/index9.htm">总体的</a> | 
+		<a href="../specs/sp_dpms9.htm">节电器</a> | 
+		<a href="../specs/sp_mode9.htm">当前计时模</a> 
+
+	</td></tr></table>
+</td></tr></table>
+</DIV>
+
+<DIV ID="menu8" STYLE="width:200px; height:48px; position:absolute; left:702px; top:94px; z-index:1; visibility:hidden;">
+<table valign="top" width="202" height="18" border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" >
+<tr onMouseOut="MM_showHideLayers('comselect','','show','menu8','','hide')" onMouseOver="MM_showHideLayers('comselect','','hide','menu8','','show')"><td>
+	<table align="center" valign="top" width="200" height="18" border="0" cellspacing="0" cellpadding="0" bgcolor="#D7D7D7">
+    <tr><td align="center" valign="middle" class="10pt">
+		<a href="../otc/index9.htm">服务</a> | 
+		<a href="../otc/o_terms9.htm">术语</a> | 
+		<a href="../otc/o_regs9.htm">规则的</a> | 		
+		<a href="../otc/o_auth9.htm">权限</a>
+	</td></tr></table>
+</td></tr></table>
+</DIV>
+
+<table width="910" border="0" cellspacing="0" cellpadding="0" height="73" bgcolor="D7D7D7">
+  <tr> 
+    <td width="668" height="73" bgcolor="#FFFFFF"> 
+      <table width="1" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td><img src="../../img/m_img/in-2.gif" width="148" height="44"></td>
+        </tr>
+        <tr> 
+          <td><!--<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=4,0,2,0" width="180" height="25">
+              <param name=movie value="../../img/m_img/t-1.swf">
+              <param name=quality value=high>
+              <embed src="../../img/m_img/t-1.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="180" height="25">
+              </embed> 
+            </object>--></td>
+        </tr>
+      </table>
+    </td>
+    <td width="204" height="73" bgcolor="#FFFFFF" valign="bottom"> 
+      <div align="right"><img src="../../img/m_img/sync.gif" width="187" height="50"></div>
+    </td>
+    <td width="38" height="73"> 
+      <div align="right"><img src="../../img/m_img/top_right.gif" width="39" height="73"></div>
+    </td>
+  </tr>
+</table>
+      <table width="910" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+         <td><a href="../site/index9.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','../../img/m_img/sc/topbar_total2_01.gif',1);MM_showHideLayers('comselect','','show','menu2','','hide');MM_showHideLayers('comselect','','show','menu3','','hide');MM_showHideLayers('comselect','','show','menu4','','hide');MM_showHideLayers('comselect','','show','menu5','','hide');MM_showHideLayers('comselect','','show','menu6','','hide');MM_showHideLayers('comselect','','show','menu7','','hide');MM_showHideLayers('comselect','','show','menu8','','hide');"><img name="Image4" border="0" src="../../img/m_img/sc/topbar_total_01.gif" alt="索引"></a></td>
+         
+          <td><a href="../safty/index9.htm" onMouseOut="MM_swapImgRestore(); MM_showHideLayers('comselect','','show','menu2','','hide')" onMouseOver="MM_swapImage('Image5','','../../img/m_img/sc/topbar_total2_02.gif',1);MM_showHideLayers('comselect','','show','menu2','','hide');MM_showHideLayers('comselect','','show','menu3','','hide');MM_showHideLayers('comselect','','show','menu4','','hide');MM_showHideLayers('comselect','','show','menu5','','hide');MM_showHideLayers('comselect','','show','menu6','','hide');MM_showHideLayers('comselect','','show','menu7','','hide');MM_showHideLayers('comselect','','hide','menu2','','show');"><img name="Image5" border="0" src="../../img/m_img/sc/topbar_total_02.gif" alt="安全指示"></a></td>
+
+          <td><a href="../product/index9.htm" onMouseOut="MM_swapImgRestore(); MM_showHideLayers('comselect','','show','menu3','','hide')" onMouseOver="MM_swapImage('Image6','','../../img/m_img/sc/topbar_total2_03.gif',1);MM_showHideLayers('comselect','','show','menu2','','hide');MM_showHideLayers('comselect','','show','menu3','','hide');MM_showHideLayers('comselect','','show','menu4','','hide');MM_showHideLayers('comselect','','show','menu5','','hide');MM_showHideLayers('comselect','','show','menu6','','hide');MM_showHideLayers('comselect','','show','menu7','','hide');MM_showHideLayers('comselect','','hide','menu3','','show');"><img name="Image6" border="0" src="../../img/m_img/sc/topbar_total_03.gif" alt="介绍"></a></td>
+
+          <td><a href="index9.htm" onMouseOut="MM_swapImgRestore(); MM_showHideLayers('comselect','','show','menu4','','hide')" onMouseOver="MM_swapImage('Image7','','../../img/m_img/sc/topbar_total2_04.gif',1);MM_showHideLayers('comselect','','show','menu2','','hide');MM_showHideLayers('comselect','','show','menu3','','hide');MM_showHideLayers('comselect','','show','menu4','','hide');MM_showHideLayers('comselect','','show','menu5','','hide');MM_showHideLayers('comselect','','show','menu6','','hide');MM_showHideLayers('comselect','','show','menu7','','hide');MM_showHideLayers('comselect','','hide','menu4','','show');"><img name="Image7" border="0" src="../../img/m_img/sc/topbar_total2_04.gif" alt="安装"></a></td>
+
+          <td><a href="../OSD/index9.htm"  onMouseOut="MM_swapImgRestore(); MM_showHideLayers('comselect','','show','menu5','','hide')" onMouseOver="MM_swapImage('Image8','','../../img/m_img/sc/topbar_total2_05.gif',1);MM_showHideLayers('comselect','','show','menu2','','hide');MM_showHideLayers('comselect','','show','menu3','','hide');MM_showHideLayers('comselect','','show','menu4','','hide');MM_showHideLayers('comselect','','show','menu5','','hide');MM_showHideLayers('comselect','','show','menu6','','hide');MM_showHideLayers('comselect','','show','menu7','','hide');MM_showHideLayers('comselect','','hide','menu5','','show');"><img name="Image8" border="0" src="../../img/m_img/sc/topbar_total_05.gif" alt="显示在屏幕上"></a></td>
+
+          <td><a href="../trouble/index9.htm" onMouseOut="MM_swapImgRestore(); MM_showHideLayers('comselect','','show','menu6','','hide')" onMouseOver="MM_swapImage('Image9','','../../img/m_img/sc/topbar_total2_06.gif',1);MM_showHideLayers('comselect','','show','menu2','','hide');MM_showHideLayers('comselect','','show','menu3','','hide');MM_showHideLayers('comselect','','show','menu4','','hide');MM_showHideLayers('comselect','','show','menu5','','hide');MM_showHideLayers('comselect','','show','menu6','','hide');MM_showHideLayers('comselect','','show','menu7','','hide');MM_showHideLayers('comselect','','hide','menu6','','show');"><img name="Image9" border="0" src="../../img/m_img/sc/topbar_total_06.gif" alt="故障排除"></a></td>
+
+          <td><a href="../specs/index9.htm" onMouseOut="MM_swapImgRestore(); MM_showHideLayers('comselect','','show','menu7','','hide')" onMouseOver="MM_swapImage('Image10','','../../img/m_img/sc/topbar_total2_07.gif',1);MM_showHideLayers('comselect','','show','menu2','','hide');MM_showHideLayers('comselect','','show','menu3','','hide');MM_showHideLayers('comselect','','show','menu4','','hide');MM_showHideLayers('comselect','','show','menu5','','hide');MM_showHideLayers('comselect','','show','menu6','','hide');MM_showHideLayers('comselect','','show','menu7','','hide');MM_showHideLayers('comselect','','hide','menu7','','show');"><img name="Image10" border="0" src="../../img/m_img/sc/topbar_total_07.gif" alt="性能指标"></a></td>
+
+          <td><a href="../otc/index9.htm" onMouseOut="MM_swapImgRestore(); MM_showHideLayers('comselect','','show','menu8','','hide')" onMouseOver="MM_swapImage('Image11','','../../img/m_img/sc/topbar_total2_08.gif',1);MM_showHideLayers('comselect','','show','menu2','','hide');MM_showHideLayers('comselect','','show','menu3','','hide');MM_showHideLayers('comselect','','show','menu4','','hide');MM_showHideLayers('comselect','','show','menu5','','hide');MM_showHideLayers('comselect','','show','menu6','','hide');MM_showHideLayers('comselect','','show','menu7','','hide');MM_showHideLayers('comselect','','hide','menu8','','show');"><img name="Image11" border="0" src="../../img/m_img/sc/topbar_total_08.gif" alt="信息"></a></td>
+        </tr>
+      </table>
+<table width="903" border="0" cellspacing="0" cellpadding="0" height="46">
+  <tr> 
+    <td height="10" bgcolor="#FFC850"><img src="../../img/m_img/topbu_1.gif" width="144" height="50"></td>
+    <td height="20" width="31"><img src="../../img/m_img/bg4_3.gif" width="31" height="50"></td>
+    <td height="20" width="729" background="../../img/m_img/topbu_23.gif"> 
+		<div align="right">主页 &gt; 安装 &gt; 安装视频驱动程序 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div> 
+    </td>
+  </tr>
+</table>
+<table width="903" border="0" cellspacing="0" cellpadding="0" height="600">
+  <tr> 
+    <td height="494"> 
+      <table width="903" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="600" width="138" bgcolor="#FEE6AD" valign="top"> 
+            <table width="140" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td height="15" colspan="2"><div align="right"><img src="../../img/m_img/topbu_2.gif" width="144" height="68"></div></td>
+              </tr>
+              <tr valign="top"> 
+                <td height="25" colspan="2"><img src="../../img/m_img/sc/setup.gif" width="144" height="22"></td>
+              </tr>
+              <tr>
+			    <td width="25" valign="top" align="left"><img src="../../img/m_img/arrow01.gif" align="absmiddle" name="ma01"></td> 
+               <td height="22" width="119" align="left"><a href="index9.htm" onMouseOut="document.ma01.src='../../img/m_img/arrow01.gif';" onMouseOver="document.ma01.src='../../img/m_img/arrow02.gif';">连接你的<br>显示器</a></td>
+              </tr>
+              <tr>
+                <td height="1" bgcolor="#FFFFFF" colspan="2"></td>
+              </tr>
+              <tr>
+			    <td width="25" valign="top" align="left"><img src="../../img/m_img/arrow02.gif" align="absmiddle" name="ma02"></td> 
+                <td height="22" width="119" align="left" class="red">安装视频<br>驱动程序</td>
+              </tr>
+              <tr> 
+                <td height="1" bgcolor="#FFFFFF" colspan="2"></td>
+              </tr>			  
+              <tr>
+			    <td width="25" valign="top" align="left"><img src="../../img/m_img/arrow01.gif" align="absmiddle" name="ma03"></td> 
+                <td height="22" width="119" align="left"><a href="se_tilt9.htm" onMouseOut="document.ma03.src='../../img/m_img/arrow01.gif';" onMouseOver="document.ma03.src='../../img/m_img/arrow02.gif';">基座安装</a></td>
+              </tr>	
+              <tr> 
+                <td height="1" bgcolor="#FFFFFF" colspan="2"></td>
+              </tr>
+              <tr> 
+                <td height="40" colspan="2" align="center"> 
+                  <a href="../index9.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image30','','../../img/m_img/sc/mainpage2.gif',1)"><img name="Image30" border="0" src="../../img/m_img/sc/mainpage1.gif" width="132" height="21"></a>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td height="700" width="765" align="center" valign="top"> <br>
+		
+		<table cellspacing="0" cellpadding="0" border="0" width="95%">
+		<tr>
+			<td align="left" valign="bottom"><br><A href="se_drive9.htm" onmouseout="document.ti1.src='../../img/setup/sc/se_dri1a.gif'" onmouseover="document.ti1.src='../../img/setup/sc/se_dri1b.gif'"><img src="../../img/setup/sc/se_dri1a.gif" name="ti1" border="0"></a></td>
+			<td align="left" valign="bottom" width="80%"><br><A href="se_drib9.htm"><img src="../../img/setup/sc/se_dri2b.gif" name="ti2" border="0"></a></td>
+		</tr>
+		<tr>
+			<td align="left" valign="bottom" colspan="2"><br>&nbsp;
+				<A href="#winxp">Windows XP</a>
+				&nbsp;|&nbsp;					
+				<A href="#win2000">Windows 2000</a>
+				&nbsp;|&nbsp;
+				<A href="#winme">Windows Me</a>
+				&nbsp;|&nbsp;
+				<A href="#winnt">Windows NT</a>
+				&nbsp;|&nbsp;
+				<A href="#linux">Linux</a></td>
+		</tr>
+		</table>
+					
+		<table cellspacing="6" cellpadding="2" border="0" width="695">
+		<tr>
+			<td align="left" valign="top"><hr></td>
+		</tr>
+		</table>
+			
+		<table cellspacing="6" cellpadding="2" border="0" width="95%">
+		<tr>
+			<td align="left" valign="top"><img src="../../img/setup/sc/moment.gif" border="0" width="49" height="40"></td>
+			<td align="left" valign="top">
+<p> 
+<b>当操作系统提示出要显示器驱动程序时，插入显示器所带的光盘。对不同的操作系统来说，驱动程序的安装会略有不同。按照适合你的操作系统的指示去做。</b></p> 
+ 
+ 
+                        <p> 
+			准备好一张空白盘，将下面给出的互联网网站上的驱动程序文件下载下来。<br></p> 
+ 
+
+
+
+			</td>
+		</tr>
+		<tr>
+			<td align="left" valign="top" colspan="2">
+				<table border="0" width="707">
+				<tr>
+					<td valign="top" width="152">
+                                        <ul>
+<li>互联网网站 :
+                                        </ul>
+ </td>
+					<td valign="top" width="545"><a href="http://www.samsung.com/" target="_blank">http://www.samsung.com/</a> (全世界)<br><a href="http://www.samsungmonitor.com.cn/" target="_blank">http://www.samsungmonitor.com.cn/</a> (中国单独)</td>
+				</tr>
+				</table>
+
+			</td>
+		</tr>
+		</table>
+			
+		<table cellspacing="4" cellpadding="2" border="0" width="95%">
+		<tr>
+			<td align="left" valign="top" colspan="2"><hr></td>
+		</tr>
+		<tr>
+			<td align="left" valign="top" width="1%"><img src="../../img/setup/se_bu.gif" border="0"></td>
+			<td align="left" valign="middle"><a name="winxp"></a><b>Microsoft<SUP>&reg;</SUP> Windows<SUP>&reg;</SUP> XP 操作系统</b></td>
+		</tr>		
+		<tr>
+		<td colspan="2" align="left">
+                  <ol>
+                    <li>将CD放入CD-ROM驱动器中。
+                    <li> &quot;<strong>开始</strong>&quot;—&gt; 选择&quot;<strong>控制面板</strong> &quot;后，按下&quot;<b>格式及主题</b>&quot; 按钮。
+                    <img src="../../img/setup/winxpb01.gif" border="0">&nbsp;&nbsp;&nbsp;<img src="../../img/setup/winxpb02.gif" border="0"><br><br>
+				    <li>按下 &quot;<strong>显示</strong>&quot; 按钮后，选择 &quot;<strong>设置</strong>&quot; 条，按下 &quot;<strong>高级</strong>&quot;。<br>
+				    <img src="../../img/setup/winxpb03.gif" border="0">&nbsp;&nbsp;&nbsp;<img src="../../img/setup/winxpb04.gif" border="0"><BR><BR>					
+                    <li>按下&quot;<strong>显示器</strong>&quot; 条的 &quot;<strong>属性</strong>&quot; 按钮，选择 &quot;<strong>驱动器</strong>&quot; 条。
+                    <img src="../../img/setup/winxpb05.gif" border="0">&nbsp;&nbsp;&nbsp;<img src="../../img/setup/winxpb06.gif" border="0"><BR><BR>
+					<li>点击 &quot;<strong>驱动器更新</strong>&quot; ，选择 &quot;<strong>在目录中安装</strong>&quot; ，然后点击 &quot;<strong>下一步</strong>&quot; 按钮。
+                    <img src="../../img/setup/winxpb07.gif" border="0">&nbsp;&nbsp;&nbsp;<img src="../../img/setup/winxpb08.gif" border="0"><BR><BR>
+					<li>选择 &quot;<strong>无需查看。我..</strong>&quot; ，然后选择 &quot;<strong>下一步</strong>&quot; ，然后点击 &quot;<strong>有磁盘</strong>&quot;。
+					<img src="../../img/setup/winxpb09.gif" border="0">&nbsp;&nbsp;&nbsp;<img src="../../img/setup/winxpb10.gif" border="0"><BR>
+                    <li>选择&quot;<strong>流览器</strong>&quot; 按钮，然后选择A:(D:\Driver)，在模式目录中选择您的显示器型号，然后点击 &quot;<strong>下一步</strong>&quot; 。
+                    <img src="../../img/setup/winxpb11.gif" border="0">&nbsp;&nbsp;&nbsp;<img src="../../img/setup/winxpb12.gif" border="0"><BR><BR>					
+                    <li>如出现如下的 &quot;<strong>信息</strong>&quot; 窗，则选择 &quot;<strong>继续</strong>&quot; 按钮，然后 &quot;<strong>确认</strong>&quot; 。<BR>
+                    <img src="../../img/setup/winxpb13.gif" border="0"><BR><BR>
+				    <br>此显示器驱动器已得到MS商标认可，驱动器的安装不会给您的操作系统造成损伤。您可在三星显示器网站 
+					<br><a href="http://www.samsungelectronics.com/" target="_blank" id="color1">http://www.samsungelectronics.com/</a>中查询获得认证的显示器。
+                    <li>点击 &quot;<strong>关闭</strong>&quot; 按钮后 &quot;<strong>确认</strong>&quot;。<br>
+					<img src="../../img/setup/winxpb14.gif" border="0"><br><br>
+					<img src="../../img/setup/winxpb15.gif" border="0">&nbsp;&nbsp;&nbsp;<img src="../../img/setup/winxpb16.gif" border="0"><BR><BR>
+					<li>显示器驱动器的安装(Monitor Driver Installation)完成。
+                  </ol>
+                </td>
+		</tr>	
+		<tr>
+			<td align="center" valign="middle" colspan="2"><a href="#top"><img src="../../img/setup/up.gif" border="0"></a></td>
+		</tr>			
+		<tr>
+			<td align="left" valign="top" colspan="2"><hr></td>
+		</tr>
+		<tr>
+			<td align="left" valign="top" width="1%"><img src="../../img/setup/se_bu.gif" border="0"></td>
+			<td align="left" valign="middle"><a name="win2000"></a><b>Microsoft<SUP>&reg;</SUP> Windows<SUP>&reg;</SUP> 2000 操作系统</b></td>
+		</tr>
+		<tr>
+			<td align="left" valign="top" width="1%"><img src="../../img/setup/se_dra02.gif" border="0"></td>
+			<td align="left" valign="middle"><b>如果显示器上出现 &quot;未找到数字签名&quot; 的提示，则请按照下面的程序进行操作。</b></td>
+		</tr>
+		<tr>
+			<td align="left" valign="middle" colspan="2">
+			<ol>
+				<li>放入磁盘后，点击&quot;<b>确认</b>&quot;。
+				<li>选择文件窗中的&quot;<b>流览器</b>&quot;。
+				<li>选择A:(D:\Driver)后，点击&quot;打开&quot;按钮后，&quot;<b>确认</b>&quot;。
+			</ol></td>
+		</tr>
+		<tr>
+			<td align="left" valign="top" width="1%"><img src="../../img/setup/se_dra02.gif" border="0"></td>
+			<td align="left" valign="middle"><b>安装方法</b></td>
+		</tr>
+		<tr>
+			<td align="left" valign="middle" colspan="2">
+			<ol>
+				<li>点击 &quot;<strong>开始</strong>&quot; 、&quot;<strong>设置</strong>&quot; 、&quot;<strong>控制面板</strong>&quot;。 
+				<li>双击&quot;<strong>显示</strong>&quot; 按钮。
+				<li>选择 &quot;<strong>设置</strong>&quot; 条后，点击&quot;<strong>高级</strong>&quot;。
+				<li>选择 &quot;<strong>显示器</strong>&quot;。
+					<table cellpadding="0" cellspacing="0" border="0">
+					<tr>
+						<td align="left" valign="top" width="15"></td>
+						<td align="left" valign="top">情况 
+                                                    1:</td>
+						<td align="left" valign="top" width="10"></td>
+						<td align="left" valign="top">
+						如 &quot;属性&quot; 按钮不能执行，则表明显示器已正常。可中断安装。 </td>
+					</tr>
+					<tr>
+						<td align="left" valign="top" width="15"></td>
+						<td align="left" valign="top">情况 2:</td>
+						<td align="left" valign="top" width="10"></td>
+						<td align="left" valign="top">
+						如 &quot;属性&quot; 按钮可运行，则点击 &quot;属性&quot; 按钮后，继续执行下面程序。</td>
+					</tr>
+					</table>
+				<li>在点击 &quot;<strong>驱动器</strong>&quot; 后，请点击 &quot;<strong>驱动器升级</strong>&quot;。然后点击&quot;下一步&quot; 。
+				<li>在选择&quot;<b>为选择特定的驱动器，查看此装置驱动器目录</b>&quot;后，点击&quot;<b>有磁盘</b>&quot;。
+				<li>点击 &quot;<strong>流览器</strong>&quot; 按钮后，选择A:(D:\Driver)。
+				<li>点击 &quot;<strong>打开</strong>&quot; 按钮后，点击 &quot;<strong>确认</strong>&quot; 按钮。
+				<li>选择您的显示器型号后，点击 &quot;<strong>下一步</strong>&quot; 按钮，然后再 &quot;<strong>下一步</strong>&quot; 。
+				<li>点击 &quot;<strong>完成</strong>&quot; 按钮后，点击 &quot;<strong>关闭</strong>&quot;按钮。
+			</ol>
+			<blockquote>如出现 &quot;<strong>未找到数字签名</strong>&quot; 的提示，则点击 &quot;<strong>是</strong>&quot;按钮，然后点击 &quot;<strong>完成</strong>&quot; 按钮后， &quot;<strong>关闭</strong>&quot; 。</blockquote></td>				
+		</tr>
+		<tr>
+			<td align="center" valign="middle" colspan="2"><a href="#top"><img src="../../img/setup/up.gif" border="0"></a></td>
+		</tr>		
+		</table>
+			
+		<table cellspacing="4" cellpadding="2" border="0" width="695">
+		<tr>
+			<td align="left" valign="top"><hr></td>
+		</tr>		
+		</table>
+		<table cellspacing="4" cellpadding="2" border="0" width="695">
+		<tr>
+			<td align="left" valign="top" width="1%"><img src="../../img/setup/se_bu.gif" border="0"></td>
+			<td align="left" valign="middle"><a name="winme"></a><b>Microsoft<SUP>&reg;</SUP> Windows<SUP>&reg;</SUP> Millennium 操作系统</b></td>
+		</tr>
+		<tr>
+			<td align="left" valign="top" colspan="2">
+			<ol>
+				<li>依次点击 &quot;<strong>开始</strong>&quot; , &quot;<strong>设置</strong>&quot;、&quot;<strong>控制面板</strong>&quot;。
+				<li>双击 &quot;<strong>显示</strong>&quot; 按钮。 
+				<li>选择 &quot;<strong>设置</strong>&quot; 条后，点击 &quot;<strong>高级属性</strong>&quot; 按钮。
+				<li>选择 &quot;<strong>显示器</strong>&quot; 条。
+				<li>在 &quot;显示器种类&quot; 中，点击 &quot;<strong>变更</strong>&quot; 按钮。  
+				<li>选择 &quot;<strong>指定驱动器位置</strong>&quot;按钮。
+				<li>选择特定位置上的 &quot;<strong>查看所有驱动器目录</strong>&quot; 后，点击 &quot;<strong>下一步</strong>&quot; 按钮。
+				<li>选择 &quot;<strong>有磁盘</strong>&quot; 按钮。
+				<li>在选择A:\(D:\driver)后，点击 &quot;<strong>确认</strong>&quot; 按钮。
+				<li>选择 &quot;<strong>查看所有装置</strong>&quot; 后，选择与您的计算机相连接的显示器并 &quot;<strong>确认</strong>&quot;。
+				<li>选择 &quot;<strong>关闭</strong>&quot; 按钮后，继续点击&quot;<strong>确认</strong>&quot; 按钮，直到&quot;查看属性&quot;对话框消失为止。
+				<br>(可能会出现警告或其他提示。此时选择与显示器相应项。)			
+			</ol></td>
+		</tr>
+		<tr>
+			<td align="center" valign="middle" colspan="2"><a href="#top"><img src="../../img/setup/up.gif" border="0"></a></td>
+		</tr>
+		<tr>
+			<td colspan="2"><hr></td>
+		</tr>
+		<tr>
+			<td align="left" valign="top" width="1%"><img src="../../img/setup/se_bu.gif" border="0"></td>
+			<td align="left" valign="middle"><a name="winnt"></a><b>Microsoft<SUP>&reg;</SUP> Windows<SUP>&reg;</SUP> NT 操作系统</b></td>
+		</tr>
+		<tr>
+			<td align="left" valign="top" colspan="2">
+			<ol>
+				<li>依次点击&quot;<strong>开始</strong>&quot;、 &quot;<strong>设置</strong>&quot;、&quot;<b>控制面板</b>&quot;后，双击&quot;<b>显示</b>&quot;按钮。
+				<li>在&quot;显示登录信息&quot;窗中，点击&quot;<b>设置</b>&quot;条后，点击&quot;<b>所有显示模式</b>&quot;。
+				<li>在选择所希望的模式(清晰度、色彩数及垂直周波数)后点击确认。 
+				<li>点击&quot; <strong>预览</strong>&quot;后，如画面正常则可点击&quot;<b>适用</b>&quot;按钮。如画面不理想，则可选择&quot;其他模式&quot;(清晰度、色彩、周波等较小模式)。 
+			</ol></td>
+		</tr>
+		<tr>
+			<td align="left" valign="top" width="1%"></td>
+			<td align="left" valign="middle"><b>参考</b>:如&quot;<b>所有显示模式</b>&quot;中无相应的模式，则参考使用说明书中的&quot;<b><a href="../specs/sp_mode9.htm">当前计时模</a></b>&quot;，选择清晰度和垂直周波数。</td>
+		</tr>
+		<tr>
+			<td align="center" valign="middle" colspan="2"><a href="#top"><img src="../../img/setup/up.gif" border="0"></a></td>
+		</tr>
+		<tr>
+			<td colspan="2"><hr></td>
+		</tr>
+		<tr>
+			<td align="left" valign="top" width="1%"><img src="../../img/setup/se_bu.gif" border="0"></td>
+			<td align="left" valign="middle"><a name="linux"></a><b>Linux Operating 操作系统</b></td>
+		</tr>
+		<tr>
+			<td align="left" valign="top" colspan="2">要执行X-Window，应先建立一个属于设置文件的X86Config文件。 </td>
+		</tr>
+		<tr>
+			<td align="left" valign="top" colspan="2">
+			<ol>
+				<li>在执行X86Config文件后，在第一个和第二个画面中点击&quot;确认&quot;。 
+				<li>第三个画面是<b>鼠标设置画面</b>。 
+				<li>选择与您计算机相应的鼠标。 	
+				<li>然后是<b>键盘选择</b>画面。
+				<li>设置与您的计算机相应的键盘。
+				<li>然后是<b>显示器设置画面</b>。 
+				<li>首先，请选择与您的显示器相对应的<b>水平周波数</b>。(可直接输入周波数。)
+				<li>设置与您的显示器相应的<b>垂直周波数</b>。(可直接输入周波数。)
+				<li>请输入<b>您的显示器的型号</b>。此信息并不影响 X-Window的实际执行。
+				<li>显示器设置<b>完成</b>。
+				<br>在安装完其他所需硬件后，<b>执行 </b>X-Window。
+			</ol></td>
+		</tr>
+		<tr>
+			<td align="center" valign="middle" colspan="2"><a href="#top"><img src="../../img/setup/up.gif" border="0"></a></td>
+		</tr>
+		</table>
+	</td>
+</tr>
+</table>
+        </td>
+    </tr>
+    </table>
+</body>
+</html>

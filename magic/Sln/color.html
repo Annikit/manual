@@ -1,0 +1,250 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=ks_c_5601-1987">
+<title>MagicTune Help - Color Calibration</title>
+<style type="text/css">
+	<!--
+	a:link {color: #0000ff; font-size: 12pt; text-decoration:none}
+	a:visited {color: #0000ff; font-size: 12pt; text-decoration:none}
+	a:hover {color: #0000ff; font-size: 12pt; text-decoration:underline}
+	a:active {color: #0000ff; font-size: 12pt; text-decoration:underline}
+
+	a.Mlink:link {color: #aaaaaa; font-size: 12pt; text-decoration:none}
+	a.Mlink:visited {color: #aaaaaa; font-size: 12pt; text-decoration:none}
+	a.Mlink:hover {color: #aaaaaa; font-size: 12pt; text-decoration:underline}
+	a.Mlink:active {color: #aaaaaa; font-size: 12pt; text-decoration:underline}
+
+	body, p, td, left, TABLE {font-family: Arial, Helvetica, sans-serif; font-size: 11pt; line-height: 140%; }
+
+	BODY {OVERFLOW-X: hidden; OVERFLOW: scroll}
+	.popmsgper {VISIBILITY: hidden; POSITION: absolute}
+	a.Hlink:link {color: #2F90F3; font-size: 12pt; text-decoration:none}
+	a.Hlink:visited {color: #2F90F3; font-size: 12pt; text-decoration:none}
+	a.Hlink:hover {color: #008000; font-size: 12pt; text-decoration:none}
+	a.Hlink:active {color: #008000; font-size: 12pt; text-decoration:none}
+	-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF" marginwidth="0" marginheight="0" oncontextmenu="return false" ondragstart="return false">
+
+<DIV class=popmsgper id=topdeck> </DIV>
+<SCRIPT language="JAVASCRIPT">
+<!--
+var nav = (document.layers);
+var iex = (document.all);
+var skn = (nav) ? document.topdeck : topdeck.style;
+
+if (nav) document.captureEvents(Event.MOUSEMOVE);
+
+document.onmousemove = mousepos;
+
+function popmsg(msg1,msg2){
+
+	var width = document.body.offsetWidth;
+
+	if (width > 1000)
+	{width=500}
+	else
+	{width="95%"}
+
+	var content ="<TABLE WIDTH="+width+" BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#0E1F83><TR><TD><TABLE WIDTH=100% BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD><CENTER><FONT COLOR=#FFFFFF SIZE=2><B>HELP</B></FONT></CENTER></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#FFFFFF><TR><TD><FONT COLOR=#000000 SIZE=2><b><left>"+msg1+"</left></b></FONT></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#FFFFFF><TR><TD><FONT COLOR=#000000 SIZE=2><left>"+msg2+"</left></FONT></TD></TR></TABLE></TD></TR></TABLE>";
+	
+	if (nav)
+	{
+		skn.document.write(content);
+		skn.document.close();
+		skn.visibility = "visible";
+	}
+	else if (iex)
+	{
+		document.all("topdeck").innerHTML = content;
+		skn.visibility = "visible";
+	}
+}
+
+function mousepos(e){
+	var x = (nav) ? e.pageX : event.x+document.body.scrollLeft;
+	var y = (nav) ? e.pageY : event.y+document.body.scrollTop;
+	skn.left = x - 60;
+	skn.top  = y+20;
+}
+
+function hiddenmsg(){
+	skn.visibility = "hidden";
+}
+
+//-->
+</SCRIPT>
+		
+<table border="0" cellspacing="0" cellpadding="0" width="600"> 
+	<tr> 
+		<td> 
+			<p><a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0><img border="0" width="600" height="152" src="eng_top01.gif"></a></p>
+		</td>
+	</tr>
+</table>
+
+
+</table>
+
+
+
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" width="600" height="40"> 
+	<tr> 
+		<td  align=center>
+		<tr> 
+  <td>
+  &nbsp;&nbsp;&nbsp;<a href="Eng_overview.html" onfocus='this.blur()' class="Mlink">Overview</a>
+
+	 </td>
+	 <td>	<font color="#aaaaaa">|</font>&nbsp;&nbsp;&nbsp;<a href="install.html" onfocus='this.blur()' class="Mlink">Installation</a>
+			&nbsp;		&nbsp;<font color="#aaaaaa">|</font>&nbsp;			
+  </td>
+
+<td>
+  <a href="Eng_modes.html" onfocus='this.blur()' class="Mlink">OSD Mode</a>
+			&nbsp;<font color="#aaaaaa">&nbsp;		|</font>&nbsp;
+  </td>
+<td>	<font color="#ffffff">
+<b><center>Color<BR>Calibration</center></b></font>
+			
+  </td>
+
+<td>&nbsp;		&nbsp;<font color="#aaaaaa">|</font>&nbsp;&nbsp;		
+			<a href="Eng_uninstall.html" onfocus='this.blur()' class="Mlink">Uninstall</a>
+			&nbsp;<font color="#aaaaaa">&nbsp;		|</font>&nbsp;
+  </td>
+
+<td>
+			<a href="Eng_tips.html" onfocus='this.blur()' class="Mlink">Troubleshooting</a>
+		</font>
+		</td>
+	</tr>
+</table>
+
+<table width="600" border="0" cellspacing="0" cellpadding="10">
+	<tr>
+		<td><br>
+			<h2><a name="Calibration"><img src="icon01.gif" border="0">	Color Calibration</a></h2>
+
+			<p><p>MagicTune 
+        color calibration makes it possible to achieve sRGB color on your LCD. 
+        sRGB color is used to display images from websites as well as specifying 
+        a color matching technique to provide monitor and output device color 
+        that is consistent. MagicTune color calibration is handled through an 
+        interactive series of targets to &quot;dial in&quot; the high, mid, and low tone 
+        colors. Once the process is complete, the user will experience accurate 
+        color representation of images within Windows and from the web.</font></p> 
+			<br>
+
+
+			<table>
+				<tr>
+				<td>
+			<img src="line01.gif" align="right">
+			</td>
+			</tr>
+			</table>			
+			
+			
+			<table border="0" width="600"  cellpadding="2" cellspacing="0" align="center">
+	
+				<tr>
+					<td width="50">
+						<b>NOTE</b>
+					</td>
+					<td>
+						<br>Selecting the Factory Default Preset will disable color calibration. <br>
+        To enable color calibration, go to Options&gt;Preferences and select Enable 
+        Color Calibration from the preference list.
+				</tr>
+				</table>
+
+			<table>
+				<tr>
+				<td>
+			<img src="line01.gif" align="right">
+			</td>
+			</tr>
+			</table>
+
+
+
+
+			<br><br><h3><a name="Calibration01">1. Color Calibration </a></h3>
+			
+			
+			<p align="center"><img src="kor_screenshot_color_calib.gif"></p>
+
+			<a onmouseover="popmsg('Color Calibration','사용자가 원하는 색상을 최적화시키고 일괄적인 컬러가 유지될 수 있도록 하는 과정을 말합니다.')" onmouseout=hiddenmsg() href="#" onClick="return false;" style="cursor:help" onfocus='this.blur()' class="Hlink">Color Calibration</a>guides you to get optimal color condition for your monitor.<br><br>
+			
+			Proceed following 5steps for getting optimal monitor color condition .
+                        
+			<p><ol>
+				<li>Control "Brightness control bar" for matching the brightness of control patch and the 
+brightness of background pattern
+</li>
+				<li>When you detect specific color tone on "Control patch", move the control cursor 
+toward to the direction of the color tone referring to "Color reference Circle".
+<BR>=&gt; Adjustment is finished properly, you won't detect any color tone on Control patch. </li>
+				<li>When you finish adjustment for step1,Click "Next" button .</li>
+				<li>Repeat  1), 2), 3) procedures for remaining step2 ~ step5. </li>
+				<li>You can easily view the calibration effect through clicking "Preview " button!</li>
+			</ol></p>
+
+
+
+
+
+
+
+			<table>
+				<tr>
+				</td>
+			<img src="line01.gif" align="right">
+			</td>
+			</tr>
+			</table>
+
+
+
+
+
+
+
+<br><br><h3><a name="Calibration01">2. Preview</a></h3>
+
+
+			 
+
+			<p align="center"><img src="kor_screenshot_5people_good.jpg"></p>
+
+			<br><br>Press &quot;Preview&quot; button on the  <a onmouseover="popmsg('Color Calibration','사용자가 원하는 색상을 최적화시키고 일괄적인 컬러가 유지될 수 있도록 하는 과정을 말합니다.')" onmouseout=hiddenmsg() href="#" onClick="return false;" style="cursor:help" onfocus='this.blur()' class="Hlink">Color Calibration</a>.
+			
+
+			<BR>The above picture will be shown.
+<p><ol>
+				<li>Press &quot;View Calibrated&quot; button to see the calibration effect which you adjusted.</li>
+				<li>Press &quot;View Uncalibrated&quot; button to see the original image. </li></ol></p>
+
+		</td>
+	</tr>
+</table>
+
+<table border="0" cellspacing="0" cellpadding="10" width="600"> 
+	<tr> 
+		<td> <!-- <br>
+
+			<p><font size="1">사양은 예고 없이 변경될 수 있습니다. 
+			<BR>MagicTune은 Samsung, Inc.의 상표이며  Windows®는 Microsoft® Corp.의 등록 상표입니다. 
+			<BR>다른 상표는 해당 회사의 소유입니다.</font></p> -->
+
+			<p><a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0><img src="base.gif" border="0"> 
+		</td>
+	</tr>
+</table>
+
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>MagicTune Hjælp - Oversigt</title>
+<style type="text/css">
+	<!--
+	a:link {color: #0000ff; font-size: 12pt; text-decoration:none}
+	a:visited {color: #0000ff; font-size: 12pt; text-decoration:none}
+	a:hover {color: #0000ff; font-size: 12pt; text-decoration:underline}
+	a:active {color: #0000ff; font-size: 12pt; text-decoration:underline}
+
+	a.Mlink:link {color: #aaaaaa; font-size: 12pt; text-decoration:none}
+	a.Mlink:visited {color: #aaaaaa; font-size: 12pt; text-decoration:none}
+	a.Mlink:hover {color: #aaaaaa; font-size: 12pt; text-decoration:underline}
+	a.Mlink:active {color: #aaaaaa; font-size: 12pt; text-decoration:underline}
+
+	body, p, td, left, TABLE {font-family: Arial, Helvetica, sans-serif; font-size: 11pt; line-height: 140%; }
+
+	BODY {OVERFLOW-X: hidden; OVERFLOW: scroll}
+	.popmsgper {VISIBILITY: hidden; POSITION: absolute}
+	a.Hlink:link {color: #2F90F3; font-size: 12pt; text-decoration:none}
+	a.Hlink:visited {color: #2F90F3; font-size: 12pt; text-decoration:none}
+	a.Hlink:hover {color: #008000; font-size: 12pt; text-decoration:none}
+	a.Hlink:active {color: #008000; font-size: 12pt; text-decoration:none}
+	-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF" marginwidth="0" marginheight="0" oncontextmenu="return false" ondragstart="return false">
+
+<DIV class=popmsgper id=topdeck> </DIV>
+<SCRIPT language="JAVASCRIPT">
+<!--
+var nav = (document.layers);
+var iex = (document.all);
+var skn = (nav) ? document.topdeck : topdeck.style;
+
+if (nav) document.captureEvents(Event.MOUSEMOVE);
+
+document.onmousemove = mousepos;
+
+function popmsg(msg1,msg2){
+
+	var width = document.body.offsetWidth;
+
+	if (width > 1000)
+	{width=500}
+	else
+	{width="95%"}
+
+	var content ="<TABLE WIDTH="+width+" BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#0062b2><TR><TD><TABLE WIDTH=100% BORDER=0 CELLPADDING=0 CELLSPACING=0><TR><TD><CENTER><FONT COLOR=#FFFFFF font-size: 9pt><B>Hjælp</B></FONT></CENTER></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#FFFFFF><TR><TD><FONT COLOR=#000000 font-size: 9pt><b><left>"+msg1+"</left></b></FONT></TD></TR></TABLE><TABLE WIDTH=100% BORDER=0 CELLPADDING=2 CELLSPACING=0 BGCOLOR=#FFFFFF><TR><TD><FONT COLOR=#000000 font-size: 9pt><left>"+msg2+"</left></FONT></TD></TR></TABLE></TD></TR></TABLE>";
+	
+	if (nav)
+	{
+		skn.document.write(content);
+		skn.document.close();
+		skn.visibility = "visible";
+	}
+	else if (iex)
+	{
+		document.all("topdeck").innerHTML = content;
+		skn.visibility = "visible";
+	}
+}
+
+function mousepos(e){
+	var x = (nav) ? e.pageX : event.x+document.body.scrollLeft;
+	var y = (nav) ? e.pageY : event.y+document.body.scrollTop;
+	skn.left = x - 60;
+	skn.top  = y+20;
+}
+
+function hiddenmsg(){
+	skn.visibility = "hidden";
+}
+
+//-->
+</SCRIPT>
+
+<table border="0" cellspacing="0" cellpadding="0" width="600"> 
+	<tr> 
+		<td> 
+			<p><a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0><img border="0" width="600" height="152" src="eng_top01.gif"></a></p>
+		</td>
+	</tr>
+</table>
+ 
+
+
+
+<table border="0" cellspacing="0" cellpadding="0" bgcolor="#000000" width="600" height="40"> 
+<tr> 
+  <td>&nbsp;&nbsp;&nbsp;
+ <font color="#ffffff"><B>Oversigt</B></font>
+ </td>
+
+<td>&nbsp;&nbsp;&nbsp;
+<font color="#aaaaaa">|</font>&nbsp;&nbsp;
+<a href="install.html" onfocus='this.blur()' class="Mlink"><font color="#aaaaaa">Installation</a></font>
+  </td>
+
+  <td>&nbsp;&nbsp;&nbsp;
+  <font color="#aaaaaa">|</font>&nbsp;&nbsp;	
+  <a href="modes.html" onfocus='this.blur()' class="Mlink">OSD-tilstand</a>&nbsp;&nbsp;
+
+  </td>
+ 
+<td>&nbsp;&nbsp;&nbsp;
+<font color="#aaaaaa">|</font>&nbsp;&nbsp;
+<a href="uninstall.html" onfocus='this.blur()' class="Mlink">Afinstallation</a>
+</td>
+
+<td>&nbsp;&nbsp;&nbsp;
+<font color="#aaaaaa">|</font>&nbsp;&nbsp;
+<a href="tips.html" onfocus='this.blur()' class="Mlink">Fejlfinding</a>
+&nbsp;&nbsp;&nbsp;&nbsp;</font></td></tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table border="0" cellspacing="0" cellpadding="10" width="600"> 
+	<tr> 
+		<td> <br>
+		
+			<h2><img src="../eng/icon01.gif" border="0">	Oversigt</h2><BR><BR><BR>
+			
+			<h3><a name="Overview01"><img src="../eng/icon04.gif" border="0">	Hvad er MagicTune&#153; ?</a></h3>
+			
+			<p>Ydeevnen for skærme kan variere, afhængigt af grafikkort, værtscomputeren, lysforhold og andre miljømæssige faktorer.Det bedste billede på en skærm fås, ved at du justerer skærmen efter netop dine forhold.Desværre viser det sig ofte, at de manuelle knapper, der findes til justering af billedet er svære at bruge. Korrekt justering kræver et letanvendeligt program, hvor du bliver ført trinvist igennem processen og derved opnår den bedste overordnede billedkvalitet. <BR><BR>
+I de fleste tilfælde kræver selv simple justeringer som Lysstyrke eller Kontrast <br> navigation i skærmmenuerne på flere niveauer (OSD-menuerne), som ikke er brugervenlige. Desuden er der ingen feedback til at hjælpe med den korrekte indstilling af knapperne på skærmen. MagicTune&#153; er et softwareværktøj, som fører dig gennem justeringsprocessen med brugervenlig vejledning og baggrundsmønstre, som er udviklet til hver enkelt skærmknap. Skærmindstillingerne for hver enkelt bruger kan gemmes, hvilket giver en nem måde at vælge skærmindstillinger i et miljø med flere brugere, eller en enkelt bruger kan have flere definerede forudindstillinger baseret på indhold og omgivende lys.</p>
+			<BR><BR>
+
+
+
+			<table>
+				<tr>
+				</td>
+			<img src="../eng/line01.gif" align="right">
+			</td>
+			</tr>
+			</table>
+
+
+
+
+			<h3><a name="Overview02"><img src="../eng/icon04.gif" border="0">	Grundlæggende funktioner</a></h3>
+			
+			<p> 	
+			
+			
+			MagicTune™ er et softwareværktøj, som bruges til skærmjustering og farveindstilling vha. <a onmouseover="popmsg('DDC/CI(Display Data Channel Command Interface)','Standard definerer I2C-baserede protokoller med forskellige  kompleksitetsniveauer, som fungerer via DDC-kanalen og styrer skærmen og  valgfrie tillægsenheder. VESA imødekommer slutbrugernes  Plug and Play-behov og har defineret DDC-standarden, som inkorporerer  forskellige kommunikationsniveauer. Niveauerne af typen DDC2Bi, DDC2B+  og DDC2AB tilbyder tovejskommunikation mellem computergrafikværten og skærmenheden.')" onmouseout=hiddenmsg() href="#" onClick="return false;" style="cursor:help" onfocus='this.blur()' class="Hlink">DDC/CI-protokollen (Display Data Channel Command Interface).</a> Alle justeringer af skærmen styres via softwaren, så det er ikke nødvendigt at bruge skærmdisplayet.&nbsp; 
+		
+		
+		
+		
+		MagicTune understøtter Windows 98SE, Me,  2000, NT, XP Home og XP Professional.</p>
+      <p><!-- MagicTune kører i baggrunden og er
+  tilgængelig via opgavebakken, startmenuen og skrivebordet. --> Med MagicTune får du hurtigt og præcist
+  indstillet skærmen og kan let gemme og bruge de skærmkonfigurationer, som er
+  mest velegnet til dig. </p>
+			<BR><BR>
+
+
+
+			<table>
+				<tr>
+				</td>
+			<img src="../eng/line01.gif" align="right">
+			</td>
+			</tr>
+			</table>
+
+
+
+			
+			<h3><a name="Overview03"><img src="../eng/icon04.gif" border="0">	 OSD-tilstand</a></h3>
+			<p> Med OSD-tilstand kan du let
+  justere skærmindstillingerne uden at udføre foruddefinerede trin. Du har adgang til det ønskede menupunkt og let angive indstillinger. 
+		</td>
+	</tr>
+</table>
+
+<table border="0" cellspacing="0" cellpadding="10" width="600"> 
+	<tr> 
+		<td> <!-- <br>
+
+			<p><font size="1">»ç¾çÀº ¿¹°í ¾øÀÌ º¯°æµÉ ¼ö ÀÖ½À´Ï´Ù. 
+			<BR>MagicTuneÀº Samsung, Inc.ÀÇ »óÇ¥ÀÌ¸ç  Windows¢ç´Â Microsoft¢ç Corp.ÀÇ µî·Ï »óÇ¥ÀÔ´Ï´Ù. 
+			<BR>´Ù¸¥ »óÇ¥´Â ÇØ´ç È¸»çÀÇ ¼ÒÀ¯ÀÔ´Ï´Ù.</font></p> -->
+
+			<p><a href="http://www.samsung.com/monitor/magictune" target="Samsung" border=0><img src="base.gif" border="0"> 
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>
